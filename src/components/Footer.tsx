@@ -1,0 +1,117 @@
+import { Link } from "@tanstack/react-router";
+import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+
+export function Footer() {
+  return (
+    <footer
+      className="relative overflow-hidden text-[color:var(--steel-light)]"
+      style={{ background: "var(--gradient-dark)" }}
+    >
+      <div
+        className="absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage:
+            "linear-gradient(oklch(1 0 0) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
+        }}
+      />
+      <div className="relative container mx-auto max-w-7xl px-6 py-20">
+        <div className="grid gap-12 lg:grid-cols-4">
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-2.5">
+              <div
+                className="flex h-10 w-10 items-center justify-center rounded-lg font-serif text-lg font-bold text-[color:var(--brand-foreground)]"
+                style={{ background: "var(--gradient-brand)" }}
+              >
+                A
+              </div>
+              <span className="font-serif text-2xl font-bold tracking-tight text-white">
+                ABERTURAH
+              </span>
+            </div>
+            <p className="mt-5 text-sm leading-relaxed">
+              Fabricação e beneficiamento de chapas ACM para fachadas,
+              revestimentos e projetos arquitetônicos em todo o Brasil.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-white">
+              Navegação
+            </h4>
+            <ul className="mt-5 space-y-3 text-sm">
+              {[
+                { to: "/", label: "Home" },
+                { to: "/sobre", label: "Sobre Nós" },
+                { to: "/produtos", label: "Produtos" },
+                { to: "/noticias", label: "Notícias" },
+                { to: "/contato", label: "Contato" },
+              ].map((l) => (
+                <li key={l.to}>
+                  <Link
+                    to={l.to}
+                    className="transition-colors hover:text-[color:var(--brand)]"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-white">
+              Contato
+            </h4>
+            <ul className="mt-5 space-y-3 text-sm">
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
+                <span>Av. Industrial, 1000 — São Paulo / SP</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
+                <span>(11) 4000-0000</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
+                <span>contato@aberturah.com.br</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-white">
+              Siga-nos
+            </h4>
+            <div className="mt-5 flex gap-3">
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                aria-label="YouTube"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]"
+              >
+                <Youtube className="h-5 w-5" />
+              </a>
+            </div>
+            <p className="mt-6 text-xs uppercase tracking-widest text-[color:var(--steel)]">
+              Segunda a Sexta · 8h–18h
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[color:var(--steel)] sm:flex-row">
+          <span>
+            © {new Date().getFullYear()} ABERTURAH. Todos os direitos reservados.
+          </span>
+          <span className="font-serif italic">Fachadas que definem skylines.</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
