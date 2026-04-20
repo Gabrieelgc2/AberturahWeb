@@ -1,31 +1,53 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles } from "lucide-react";
+import heroImage from "@/assets/hero-facade.png";
+import { useParallax } from "@/hooks/use-parallax";
 
 export function Hero() {
+  const { ref: bgRef, offset: bgOffset } = useParallax<HTMLDivElement>(0.35);
+  const { ref: contentRef, offset: contentOffset } = useParallax<HTMLDivElement>(-0.15);
+
   return (
     <section
-      className="relative overflow-hidden pb-32 pt-40 sm:pb-40 sm:pt-48"
-      style={{ background: "var(--gradient-dark)" }}
+      className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-40 sm:pt-48"
     >
+      {/* Parallax background image */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.06]"
+        ref={bgRef}
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-20"
         style={{
-          backgroundImage:
-            "linear-gradient(oklch(1 0 0) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transform: `translate3d(0, ${bgOffset}px, 0) scale(1.15)`,
+          willChange: "transform",
+        }}
+      />
+      {/* Dark overlay for legibility */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(180deg, oklch(0.12 0.01 50 / 0.75) 0%, oklch(0.12 0.01 50 / 0.55) 40%, oklch(0.12 0.01 50 / 0.85) 100%)",
         }}
       />
       <div
-        className="pointer-events-none absolute -top-32 -right-32 h-[600px] w-[600px] rounded-full opacity-30 blur-3xl"
+        aria-hidden
+        className="pointer-events-none absolute -bottom-32 left-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
         style={{ background: "var(--gradient-brand)" }}
-      />
-      <div
-        className="pointer-events-none absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full opacity-20 blur-3xl"
-        style={{ background: "oklch(0.55 0.16 25)" }}
       />
 
       <div className="container relative mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-4xl text-center">
+        <div
+          ref={contentRef}
+          className="mx-auto max-w-4xl text-center"
+          style={{
+            transform: `translate3d(0, ${contentOffset}px, 0)`,
+            willChange: "transform",
+          }}
+        >
           <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--steel-light)] backdrop-blur">
             <Sparkles className="h-3 w-3 text-[color:var(--brand)]" />
             +15 anos transformando fachadas

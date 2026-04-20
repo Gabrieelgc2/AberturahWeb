@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
+import { Parallax } from "@/components/Parallax";
+import heroImage from "@/assets/hero-facade.png";
 
 export function AboutPreview() {
   return (
@@ -37,17 +39,17 @@ export function AboutPreview() {
           </div>
 
           <div className="relative">
-            <div
-              className="aspect-square rounded-3xl"
-              style={{ background: "var(--gradient-dark)" }}
-            >
-              <div
-                className="h-full w-full rounded-3xl opacity-30"
-                style={{
-                  backgroundImage:
-                    "repeating-linear-gradient(135deg, transparent, transparent 30px, oklch(1 0 0 / 0.08) 30px, oklch(1 0 0 / 0.08) 31px)",
-                }}
-              />
+            <div className="aspect-square overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
+              <Parallax speed={0.2} className="h-full w-full">
+                <div
+                  className="h-[120%] w-full"
+                  style={{
+                    backgroundImage: `url(${heroImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
+              </Parallax>
             </div>
             <div
               className="absolute -bottom-6 -right-6 max-w-[260px] rounded-2xl bg-background p-6 shadow-[var(--shadow-card)]"
