@@ -69,17 +69,17 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.98 0.005 60);
-  --foreground: oklch(0.18 0.015 60);
-  --brand: oklch(0.62 0.18 35);
-  --brand-foreground: oklch(0.98 0.005 60);
-  --brand-deep: oklch(0.32 0.05 40);
-  --steel: oklch(0.45 0.012 60);
-  --steel-light: oklch(0.88 0.008 60);
-  --gradient-brand: linear-gradient(135deg, oklch(0.62 0.18 35), oklch(0.55 0.16 25));
-  --gradient-dark: linear-gradient(160deg, oklch(0.18 0.015 60), oklch(0.12 0.01 50));
-  --shadow-brand: 0 20px 50px -20px oklch(0.62 0.18 35 / 0.4);
-  --shadow-card: 0 1px 3px oklch(0.18 0.015 60 / 0.06), 0 20px 40px -20px oklch(0.18 0.015 60 / 0.15);
+  --background: oklch(0.985 0.002 250);
+  --foreground: oklch(0.18 0.012 250);
+  --brand: oklch(0.55 0.025 245);
+  --brand-foreground: oklch(0.985 0.002 250);
+  --brand-deep: oklch(0.22 0.015 250);
+  --steel: oklch(0.48 0.012 250);
+  --steel-light: oklch(0.9 0.005 250);
+  --gradient-brand: linear-gradient(135deg, oklch(0.78 0.012 250), oklch(0.55 0.018 250) 50%, oklch(0.32 0.012 250));
+  --gradient-dark: linear-gradient(160deg, oklch(0.22 0.012 250), oklch(0.14 0.008 250));
+  --shadow-brand: 0 20px 50px -20px oklch(0.32 0.012 250 / 0.5);
+  --shadow-card: 0 1px 3px oklch(0.18 0.012 250 / 0.06), 0 20px 40px -20px oklch(0.18 0.012 250 / 0.15);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
