@@ -1,11 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Aberturah from "@/assets/Aberturah.png";
 
 const navItems = [
   { to: "/", label: "Home" },
-  { to: "/sobre", label: "Sobre" },
   { to: "/produtos", label: "Produtos" },
+  { to: "/sobre", label: "Sobre nós" },
   { to: "/noticias", label: "Notícias" },
   { to: "/contato", label: "Contato" },
 ] as const;
@@ -16,91 +17,79 @@ export function Header() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
-    onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "border-b border-[color:var(--steel-light)] bg-background/85 backdrop-blur-xl"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to="/" className="group flex items-center gap-2.5">
-          <div
-            className="flex h-9 w-9 items-center justify-center rounded-lg font-serif text-lg font-bold text-[color:var(--brand-foreground)] transition-transform group-hover:rotate-12"
-            style={{ background: "var(--gradient-brand)" }}
-          >
-            A
-          </div>
-          <span className="font-serif text-xl font-bold tracking-tight text-foreground">
-            ABERTURAH
-          </span>
-        </Link>
+    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/90  border-b border-white/10 backdrop-blur-md" : "bg-transparent"}`}>
+      <div className="container mx-auto flex max-w-7xl items-center px-6 py-5">
 
-        <nav className="hidden items-center gap-1 lg:flex">
+        {/* 1. LOGO (Esquerda) */}
+        <div className="flex flex-1 justify-start">
+          <img src={Aberturah} alt="Aberturah" className="h-9 w-auto md:h-12 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
+        </div>
+
+        {/* 2. MENU CENTRAL */}
+        <nav className="hidden lg:flex items-center gap-10">
           {navItems.map((item) => (
             <Link
               key={item.to}
               to={item.to}
-              activeOptions={{ exact: item.to === "/" }}
+              activeOptions={{ exact: true }}
               activeProps={{
-                className:
-                  "text-foreground after:scale-x-100 bg-[color:var(--steel-light)]/60",
+                className: "text-white bg-[length:100%_2px]"
               }}
-              inactiveProps={{ className: "text-[color:var(--steel)]" }}
-              className="relative rounded-full px-4 py-2 text-sm font-medium transition-colors after:absolute after:inset-x-4 after:bottom-1 after:h-px after:origin-left after:scale-x-0 after:bg-[color:var(--brand)] after:transition-transform hover:text-foreground"
+              className="group relative text-white/90 text-[12px] uppercase tracking-[0.2em] font-semibold transition-all hover:text-white py-1
+                 bg-gradient-to-r from-white to-white 
+                 bg-[length:0%_2px] bg-left-bottom bg-no-repeat 
+                 hover:bg-[length:100%_2px] transition-[background-size] duration-300 ease-out"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
-          <a
-            href="https://wa.me/5500000000000"
-            target="_blank"
-            rel="noreferrer"
-            className="hidden items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-[color:var(--brand-foreground)] shadow-[var(--shadow-brand)] transition-transform hover:scale-105 sm:inline-flex"
-            style={{ background: "var(--gradient-brand)" }}
-          >
-            <MessageCircle className="h-4 w-4" strokeWidth={2.25} />
-            Orçamento
-          </a>
-          <button
-            onClick={() => setOpen((v) => !v)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[color:var(--steel-light)] text-foreground lg:hidden"
-            aria-label="Menu"
-          >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        {/* 3. IDIOMAS E MENU MOBILE*/}
+        <div className="flex flex-1 justify-end items-center gap-6">
+          
+          {/* Seletor de Idiomas (Desktop) */}
+          <div className="hidden md:flex items-center gap-3">
+            <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
+              <span className="text-[10px] font-bold text-white uppercase tracking-tighter">EN</span>
+              <img src="https://flagcdn.com/w20/us.png" alt="USA" className="w-4 h-3 object-cover" />
+            </button>
+            <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity border-l border-white/20 pl-3">
+              <img src="https://flagcdn.com/w20/br.png" alt="Brasil" className="w-4 h-3 object-cover" />
+              <span className="text-[10px] font-bold text-white uppercase tracking-tighter">PT</span>
+            </button>
+          </div>
+
+          {/* Botão Hamburger */}
+          <button onClick={() => setOpen(!open)} className="text-white lg:hidden">
+            {open ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
+      {/* Menu Mobile */}
       {open && (
-        <div className="border-t border-[color:var(--steel-light)] bg-background lg:hidden">
-          <nav className="container mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4">
-            {navItems.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                activeOptions={{ exact: item.to === "/" }}
-                activeProps={{
-                  className: "bg-[color:var(--steel-light)] text-foreground",
-                }}
-                inactiveProps={{ className: "text-[color:var(--steel)]" }}
-                className="rounded-lg px-4 py-3 text-base font-medium"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
+        <nav className="fixed inset-0 top-[70px] flex flex-col bg-black/95 h-screen p-8 gap-6 lg:hidden animate-in slide-in-from-top duration-300">
+          {navItems.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              className="text-white text-xl uppercase tracking-widest font-light border-b border-white/10 pb-4"
+              onClick={() => setOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <div className="flex gap-6 mt-4">
+             <span className="text-white text-sm">PT</span>
+             <span className="text-white/50 text-sm">EN</span>
+          </div>
+        </nav>
       )}
     </header>
   );

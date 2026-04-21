@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import AberturahLogo from "@/assets/Aberturah.png";
 
 export function Footer() {
   return (
@@ -19,14 +20,8 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
-              <div
-                className="flex h-10 w-10 items-center justify-center rounded-lg font-serif text-lg font-bold text-[color:var(--brand-foreground)]"
-                style={{ background: "var(--gradient-brand)" }}
-              >
-                A
-              </div>
               <span className="font-serif text-2xl font-bold tracking-tight text-white">
-                ABERTURAH
+               <img src={AberturahLogo} alt="Aberturah" className="h-11 w-auto" />
               </span>
             </div>
             <p className="mt-5 text-sm leading-relaxed">

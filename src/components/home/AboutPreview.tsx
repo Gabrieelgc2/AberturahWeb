@@ -1,8 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
-import { Parallax } from "@/components/Parallax";
-import heroImage from "@/assets/hero-facade.png";
+import AberturahCasa from "@/assets/image.png";
 
 export function AboutPreview() {
   return (
@@ -40,16 +39,14 @@ export function AboutPreview() {
 
           <div className="relative">
             <div className="aspect-square overflow-hidden rounded-3xl shadow-[var(--shadow-card)]">
-              <Parallax speed={0.2} className="h-full w-full">
                 <div
                   className="h-[120%] w-full"
                   style={{
-                    backgroundImage: `url(${heroImage})`,
+                    backgroundImage: `url(${AberturahCasa})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
                 />
-              </Parallax>
             </div>
             <div
               className="absolute -bottom-6 -right-6 max-w-[260px] rounded-2xl bg-background p-6 shadow-[var(--shadow-card)]"

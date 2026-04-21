@@ -1,5 +1,3 @@
-import { Parallax } from "@/components/Parallax";
-
 const timeline = [
   { year: "2009", title: "Fundação", desc: "Nasce a ABERTURAH em São Paulo, focada em revenda de ACM importado." },
   { year: "2014", title: "Beneficiamento próprio", desc: "Inauguração da primeira linha CNC para corte e dobra." },
@@ -12,7 +10,6 @@ export function HistoriaSection() {
     <section className="bg-background py-24 sm:py-32">
       <div className="container mx-auto max-w-7xl px-6">
         <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
-          <Parallax speed={0.05}>
             <div className="inline-flex items-center gap-2 rounded-full border border-[color:var(--steel-light)] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--steel)]">
               <span className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--brand)" }} />
               Nossa história
@@ -20,8 +17,6 @@ export function HistoriaSection() {
             <h2 className="mt-6 font-serif text-4xl font-bold leading-[1.05] text-foreground sm:text-5xl">
               Uma trajetória feita de <span className="italic">obras icônicas.</span>
             </h2>
-          </Parallax>
-
           <div className="space-y-8">
             <p className="text-lg leading-relaxed text-[color:var(--steel)]">
               A ABERTURAH começou pequena, em um galpão modesto em São Paulo. Movidos pela paixão por arquitetura e pela frustração com a baixa qualidade do mercado, decidimos importar apenas chapas premium e oferecer um atendimento que faltava ao setor.

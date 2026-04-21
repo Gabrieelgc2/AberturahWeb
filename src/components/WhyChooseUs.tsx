@@ -115,66 +115,6 @@ export function WhyChooseUs() {
             );
           })}
         </div>
-
-        <div
-          className="relative mt-16 overflow-hidden rounded-3xl p-10 sm:p-14"
-          style={{ background: "var(--gradient-dark)", boxShadow: "var(--shadow-brand)" }}
-        >
-          <div
-            className="absolute inset-0 opacity-10"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(45deg, transparent, transparent 20px, oklch(1 0 0 / 0.1) 20px, oklch(1 0 0 / 0.1) 21px)",
-            }}
-          />
-          <div className="relative grid gap-8 sm:grid-cols-3">
-            <div>
-              <div
-                className="font-serif text-5xl font-bold sm:text-6xl"
-                style={{
-                  background: "var(--gradient-brand)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                +15
-              </div>
-              <p className="mt-2 text-sm uppercase tracking-widest text-[color:var(--steel-light)]">
-                Anos no mercado de ACM
-              </p>
-            </div>
-            <div>
-              <div
-                className="font-serif text-5xl font-bold sm:text-6xl"
-                style={{
-                  background: "var(--gradient-brand)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                2.500+
-              </div>
-              <p className="mt-2 text-sm uppercase tracking-widest text-[color:var(--steel-light)]">
-                Obras entregues no Brasil
-              </p>
-            </div>
-            <div>
-              <div
-                className="font-serif text-5xl font-bold sm:text-6xl"
-                style={{
-                  background: "var(--gradient-brand)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                40+
-              </div>
-              <p className="mt-2 text-sm uppercase tracking-widest text-[color:var(--steel-light)]">
-                Cores e acabamentos
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

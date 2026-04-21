@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
+import rock from "@/assets/rock1.png"
 
 const categories = [
   {
@@ -78,9 +79,16 @@ export function ProductsPreview() {
                   <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </div>
               </div>
+              
             </Link>
           ))}
         </div>
+              <div className="position: absolute;
+              inset: 0 0 0 0;
+              pointer-events: none;">
+             <img className="absolute transition-normal h-96 bottom-96 left-10" src={rock} alt="" 
+              ></img>              
+              </div>
       </div>
     </section>
   );

@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-facade.png";
 import { useParallax } from "@/hooks/use-parallax";
@@ -15,13 +14,11 @@ export function Hero() {
       <div
         ref={bgRef}
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-20"
+        className="pointer-events-none absolute inset-0"
         style={{
           backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          transform: `translate3d(0, ${bgOffset}px, 0) scale(1.15)`,
-          willChange: "transform",
         }}
       />
       {/* Dark overlay for legibility */}
@@ -30,7 +27,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(180deg, oklch(0.12 0.01 50 / 0.75) 0%, oklch(0.12 0.01 50 / 0.55) 40%, oklch(0.12 0.01 50 / 0.85) 100%)",
+            "linear-gradient(180deg, oklch(0.12 0.01 50 / 0.75) 0%, oklch(0.12 0.01 50 / 0.55) 10%, oklch(0.12 0.01 50 / 0.85) 100%)",
         }}
       />
       <div
@@ -48,31 +45,37 @@ export function Hero() {
             willChange: "transform",
           }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--steel-light)] backdrop-blur">
-            <Sparkles className="h-3 w-3 text-[color:var(--brand)]" />
-            +15 anos transformando fachadas
-          </div>
 
-          <h1 className="mt-8 font-serif text-6xl font-bold leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-8xl">
-            Fachadas que
+          <h1 className="mt-8 font-serif text-6xl font-bold leading-[0.95] tracking-normal sm:text-7xl lg:text-6xl">
+            <span
+          style={{color: "#faf9d7"}}>
+            Projetos de 
+            </span>
+            <span
+            style={{
+                WebkitTextFillColor: "#faf9d7",
+              }}> alto</span>
+           
             <br />
+            <span
+            style={{
+                color: "#faf9d7",
+              }}> padrão </span>
+
             <span
               className="italic"
               style={{
-                background: "var(--gradient-brand)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              definem skylines.
-            </span>
+                WebkitTextFillColor: "#faf9d7",
+              }}> em </span>
+
+               <span style={{ 
+                color: "#faf9d7",
+                 }}> ACM </span>
           </h1>
 
-          <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-[color:var(--steel-light)] sm:text-xl">
-            ABERTURAH é referência em chapas de ACM premium e beneficiamento de
-            precisão. Da matéria-prima ao acabamento, entregamos o que sua obra
-            merece.
-          </p>
+          <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-[color:white] sm:text-xl">
+Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. Somos especializados em portas, revestimentos, brises e pergolados.
+</p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
@@ -85,36 +88,6 @@ export function Hero() {
               Solicitar orçamento
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <Link
-              to="/produtos"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-4 text-sm font-semibold text-white transition-colors hover:bg-white/5"
-            >
-              Ver produtos
-            </Link>
-          </div>
-
-          <div className="mt-20 grid grid-cols-3 gap-8 border-t border-white/10 pt-10">
-            {[
-              { v: "+15", l: "Anos de mercado" },
-              { v: "2.500+", l: "Obras entregues" },
-              { v: "40+", l: "Acabamentos" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div
-                  className="font-serif text-4xl font-bold sm:text-5xl"
-                  style={{
-                    background: "var(--gradient-brand)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
-                  {s.v}
-                </div>
-                <p className="mt-2 text-xs uppercase tracking-widest text-[color:var(--steel-light)]">
-                  {s.l}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </div>
