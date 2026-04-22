@@ -21,7 +21,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
               <span className="font-serif text-2xl font-bold tracking-tight text-white">
-               <img src={AberturahLogo} alt="Aberturah" className="h-11 w-auto" />
+               <img src={AberturahLogo} alt="Aberturah" className="h-13 w-auto" />
               </span>
             </div>
             <p className="mt-5 text-sm leading-relaxed">
