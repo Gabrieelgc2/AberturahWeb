@@ -40,7 +40,7 @@ export function Header() {
               activeProps={{
                 className: "text-white bg-[length:100%_2px]"
               }}
-              className="group relative text-white/90 text-[12px] uppercase tracking-[0.2em] font-semibold transition-all hover:text-white py-1
+              className="group relative text-white/90 text-[14px] uppercase tracking-[0.2em] font-semibold transition-all hover:text-white py-1
                  bg-gradient-to-r from-white to-white 
                  bg-[length:0%_2px] bg-left-bottom bg-no-repeat 
                  hover:bg-[length:100%_2px] transition-[background-size] duration-300 ease-out"

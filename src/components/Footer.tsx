@@ -34,7 +34,7 @@ export function Footer() {
             <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-white">
               Navegação
             </h4>
-            <ul className="mt-5 space-y-3 text-sm">
+            <ul className="mt-5 space-y-3 text-md">
               {[
                 { to: "/", label: "Home" },
                 { to: "/sobre", label: "Sobre Nós" },
