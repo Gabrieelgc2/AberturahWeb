@@ -45,7 +45,7 @@ const { ref: contentRef, offset: contentOffset } = useParallax<HTMLDivElement>(-
           }}
           >
 
-          <h1 className="mt-8 font-serif text-6xl font-bold leading-[0.95] tracking-normal sm:text-7xl lg:text-6xl">
+          <h1 className="mt-8 font-serif text-6xl font-bold leading-[0.95] tracking-normal sm:text-7xl lg:text-7xl">
             <span
           style={{color: "#faf9d7"}}>
             Projetos de 
