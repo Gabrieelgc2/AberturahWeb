@@ -7,7 +7,7 @@ export const Route = createFileRoute("/noticias")({
   component: NoticiasPage,
   head: () => ({
     meta: [
-      { title: "Notícias — ABERTURAH" },
+      { title: "ABERTURAH | Notícias" },
       {
         name: "description",
         content:

@@ -1,4 +1,3 @@
-import { SectionHeading } from "@/components/SectionHeading";
 
 const steps = [
   {

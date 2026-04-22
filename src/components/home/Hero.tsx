@@ -1,18 +1,17 @@
-import { ArrowRight, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-facade.png";
+import { ArrowRight } from "lucide-react";
+import heroImage from "../../assets/hero-facade.png";
 import { useParallax } from "@/hooks/use-parallax";
 
 export function Hero() {
-  const { ref: bgRef, offset: bgOffset } = useParallax<HTMLDivElement>(0.35);
-  const { ref: contentRef, offset: contentOffset } = useParallax<HTMLDivElement>(-0.15);
-
+const { ref: bgRef, offset: bgOffset } = useParallax<HTMLDivElement>(0.35);
+const { ref: contentRef, offset: contentOffset } = useParallax<HTMLDivElement>(-0.15);
   return (
     <section
       className="relative isolate overflow-hidden pb-32 pt-40 sm:pb-40 sm:pt-48"
     >
       {/* Parallax background image */}
       <div
-        ref={bgRef}
+      ref={bgRef}
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
@@ -37,14 +36,14 @@ export function Hero() {
       />
 
       <div className="container relative mx-auto max-w-7xl px-6">
-        <div
+         <div
           ref={contentRef}
           className="mx-auto max-w-4xl text-center"
           style={{
             transform: `translate3d(0, ${contentOffset}px, 0)`,
             willChange: "transform",
           }}
-        >
+          >
 
           <h1 className="mt-8 font-serif text-6xl font-bold leading-[0.95] tracking-normal sm:text-7xl lg:text-6xl">
             <span
@@ -90,7 +89,7 @@ Entregamos projetos personalizados em ACM para quem busca design, precisão e ex
             </a>
           </div>
         </div>
-      </div>
+        </div>
     </section>
   );
 }

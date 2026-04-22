@@ -9,7 +9,7 @@ export const Route = createFileRoute("/sobre")({
   component: SobrePage,
   head: () => ({
     meta: [
-      { title: "Sobre Nós — ABERTURAH" },
+      { title: "ABERTURAH | Sobre nós" },
       {
         name: "description",
         content:

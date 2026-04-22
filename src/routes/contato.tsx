@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHero } from "@/components/PageHero";
-import { InformacoesContato } from "@/components/contato/InformacoesContato";
-import { WhatsAppSection } from "@/components/contato/WhatsAppSection";
+import { PageHero } from "../components/PageHero";
+import { InformacoesContato } from "../components/contato/InformacoesContato";
+import { WhatsAppSection } from "../components/contato/WhatsAppSection";
 
 export const Route = createFileRoute("/contato")({
   component: ContatoPage,
   head: () => ({
     meta: [
-      { title: "Contato — ABERTURAH" },
+      { title: "ABERTURAH | Contato" },
       {
         name: "description",
         content:

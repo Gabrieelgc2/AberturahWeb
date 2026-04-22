@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
-import { SectionHeading } from "@/components/SectionHeading";
-import rock from "@/assets/rock1.png"
+import { SectionHeading } from "../../components/SectionHeading";
+import rock from "../../assets/rock1.png"
 
 const categories = [
   {

@@ -3,8 +3,8 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { SectionHeading } from "@/components/SectionHeading";
+} from "../../components/ui/accordion";
+import { SectionHeading } from "../../components/SectionHeading";
 
 const faqs = [
   {
