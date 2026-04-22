@@ -27,7 +27,7 @@ export function Header() {
 
         {/* 1. LOGO (Esquerda) */}
         <div className="flex flex-1 justify-start">
-          <img src={Aberturah} alt="Aberturah" className="h-9 w-auto md:h-12 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
+          <img src={Aberturah} alt="Aberturah" className="h-11 w-auto md:h-13 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
         </div>
 
         {/* 2. MENU CENTRAL */}
