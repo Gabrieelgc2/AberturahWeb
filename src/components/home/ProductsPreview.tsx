@@ -1,43 +1,46 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "../../components/SectionHeading";
-import rock from "../../assets/rock1.png"
+import foto1 from "../../assets/Foto1.jpeg";
+import foto2 from "../../assets/Foto2.jpeg";
+import foto3 from "../../assets/Foto3.jpeg";
+import foto4 from "../../assets/Foto4.jpeg";
 
 const categories = [
   {
     name: "ACM Brilhante",
     desc: "Cores sólidas com brilho intenso. Ideal para fachadas com identidade marcante.",
-    grad: "linear-gradient(135deg, oklch(0.62 0.18 35), oklch(0.42 0.14 30))",
+    grad:  foto1,
   },
   {
     name: "ACM Escovado",
     desc: "Acabamento metálico contemporâneo. Reflexos suaves e visual sofisticado.",
-    grad: "linear-gradient(135deg, oklch(0.72 0.02 250), oklch(0.42 0.015 250))",
+    grad: foto2,
   },
   {
     name: "ACM Madeirado",
     desc: "Texturas que reproduzem madeiras nobres com a durabilidade do alumínio.",
-    grad: "linear-gradient(135deg, oklch(0.55 0.09 60), oklch(0.32 0.05 40))",
+    grad: foto3,
   },
   {
     name: "ACM Especial",
     desc: "Espelhado, perfurado e efeitos exclusivos para projetos autorais.",
-    grad: "linear-gradient(135deg, oklch(0.45 0.04 280), oklch(0.22 0.03 280))",
+    grad: foto4,
   },
 ];
 
 export function ProductsPreview() {
   return (
     <section className="bg-background py-24 sm:py-32">
-      <div className="container mx-auto max-w-7xl px-6">
-        <div className="flex flex-col items-end justify-between gap-8 sm:flex-row">
+      <div className="container mx-auto max-w-7xl px-10">
+        <div className="flex flex-col items-center gap-8 sm:flex-row justify-between sm:items-end">
           <SectionHeading
             align="left"
             eyebrow="Linha de produtos"
             title={
               <>
                 Material ACM<br />
-                <span className="italic font-normal text-[color:var(--steel)]">
+                <span className="italic font-normal text-(--steel)">
                   para cada visão.
                 </span>
               </>
@@ -45,7 +48,7 @@ export function ProductsPreview() {
           />
           <Link
             to="/produtos"
-            className="group inline-flex items-center gap-2 rounded-full border border-foreground px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-background"
+            className="-ml-10 active:scale-95 active:bg-foreground active:text-background group inline-flex items-center gap-2 rounded-full border border-foreground px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
             Ver linha completa
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
@@ -60,8 +63,10 @@ export function ProductsPreview() {
               className="group relative aspect-[3/4] overflow-hidden rounded-3xl"
             >
               <div
-                className="absolute inset-0 transition-transform duration-700 group-hover:scale-110"
-                style={{ background: c.grad }}
+                className="absolute inset-0 transition-transform  duration-700 group-hover:scale-110"
+                style={{ backgroundImage: `url(${c.grad})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center", }}
               />
               <div
                 className="absolute inset-0 opacity-30 mix-blend-overlay"
@@ -70,7 +75,7 @@ export function ProductsPreview() {
                     "repeating-linear-gradient(45deg, transparent, transparent 8px, oklch(1 0 0 / 0.15) 8px, oklch(1 0 0 / 0.15) 9px)",
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-white">
                 <h3 className="font-serif text-2xl font-bold">{c.name}</h3>
                 <p className="mt-2 text-sm text-white/80">{c.desc}</p>
@@ -83,12 +88,6 @@ export function ProductsPreview() {
             </Link>
           ))}
         </div>
-              <div className="position: absolute;
-              inset: 0 0 0 0;
-              pointer-events: none;">
-             <img className="absolute transition-normal h-96 bottom-96 left-10" src={rock} alt="" 
-              ></img>              
-              </div>
       </div>
     </section>
   );
