@@ -22,7 +22,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/90  border-b border-white/10 backdrop-blur-md" : "bg-transparent"}`}>
+    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#D9D9D9]  shadow-md" : "bg-transparent"}`}>
       <div className="container mx-auto flex max-w-7xl items-center px-6 py-5">
 
         {/* 1. LOGO (Esquerda) */}

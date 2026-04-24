@@ -26,7 +26,7 @@ export function Process() {
   return (
     <section
       className="relative overflow-hidden py-24 sm:py-32"
-      style={{ background: "var(--gradient-dark)" }}
+      style={{ background: " #414042" }}
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.05]"
@@ -54,7 +54,7 @@ export function Process() {
               style={{
                 background: "var(--gradient-brand)",
                 WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                WebkitTextFillColor: "grey",
               }}
             >
               em 4 etapas.

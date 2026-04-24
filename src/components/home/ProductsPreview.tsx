@@ -31,7 +31,7 @@ const categories = [
 
 export function ProductsPreview() {
   return (
-    <section className="bg-background py-24 sm:py-32">
+    <section className="bg-[#D9D9D9]/30 py-24 sm:py-32">
       <div className="container mx-auto max-w-7xl px-10">
         <div className="flex flex-col items-center gap-8 sm:flex-row justify-between sm:items-end">
           <SectionHeading

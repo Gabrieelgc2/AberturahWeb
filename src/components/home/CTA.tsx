@@ -7,7 +7,7 @@ export function CTA() {
       <div className="container mx-auto max-w-7xl px-6">
         <div
           className="relative overflow-hidden rounded-3xl p-10 sm:p-16"
-          style={{ background: "var(--gradient-brand)" }}
+          style={{ background: "#414042" }}
         >
           <div
             className="absolute inset-0 opacity-15"
@@ -21,11 +21,11 @@ export function CTA() {
               <h2 className="font-serif text-4xl font-bold leading-[1.05] text-[color:var(--brand-foreground)] sm:text-5xl">
                 Vamos transformar
                 <br />
-                <span className="italic">sua fachada?</span>
+                <span className="italic">seu projeto?</span>
               </h2>
               <p className="mt-5 max-w-md text-lg leading-relaxed text-[color:var(--brand-foreground)]/85">
                 Fale com nosso time técnico e receba um orçamento personalizado
-                em até 24 horas.
+                em até 48 horas.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">

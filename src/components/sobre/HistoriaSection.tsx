@@ -15,14 +15,14 @@ export function HistoriaSection() {
               Nossa história
             </div>
             <h2 className="mt-6 font-serif text-4xl font-bold leading-[1.05] text-foreground sm:text-5xl">
-              Uma trajetória feita de <span className="italic">obras icônicas.</span>
+              Uma trajetória feita  <span className="italic">sob medida.</span>
             </h2>
           <div className="space-y-8">
             <p className="text-lg leading-relaxed text-[color:var(--steel)]">
-              A ABERTURAH começou pequena, em um galpão modesto em São Paulo. Movidos pela paixão por arquitetura e pela frustração com a baixa qualidade do mercado, decidimos importar apenas chapas premium e oferecer um atendimento que faltava ao setor.
+              A ABERTURAH! surgiu como uma solução para atender demandas personalizadas dos projetos arquitetônicos, integrando técnica, funcionalidade e design. A empresa se destaca pela capacidade de realizar projetos ousados com especificações de alta complexidade. 
             </p>
             <p className="text-lg leading-relaxed text-[color:var(--steel)]">
-              Em pouco tempo, fachadas projetadas pelos maiores escritórios do país passaram a sair da nossa linha. Investimos em CNC, ampliamos o portfólio de acabamentos e construímos uma logística que entrega para qualquer canto do Brasil.
+            Utilizando materiais premium, como ACM, e tecnologias inovadoras, ela busca se tornar referência em propostas sob medida para o mercado da construção e design.
             </p>
 
             <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-[color:var(--steel-light)] bg-[color:var(--steel-light)] sm:grid-cols-2">

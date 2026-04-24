@@ -47,28 +47,28 @@ const { ref: contentRef, offset: contentOffset } = useParallax<HTMLDivElement>(-
 
           <h1 className="mt-8 font-serif text-6xl font-bold leading-[0.95] tracking-normal sm:text-7xl lg:text-7xl">
             <span
-          style={{color: "#faf9d7"}}>
+          style={{color: "#ffff"}}>
             Projetos de 
             </span>
             <span
             style={{
-                WebkitTextFillColor: "#faf9d7",
+                WebkitTextFillColor: "#ffff",
               }}> alto</span>
            
             <br />
             <span
             style={{
-                color: "#faf9d7",
+                color: "#ffff",
               }}> padrão </span>
 
             <span
               className="italic"
               style={{
-                WebkitTextFillColor: "#faf9d7",
+                WebkitTextFillColor: "#ffff",
               }}> em </span>
 
                <span style={{ 
-                color: "#faf9d7",
+                color: "#ffff",
                  }}> ACM </span>
           </h1>
 

@@ -11,25 +11,25 @@ const reasons = [
     icon: Layers,
     title: "Variedade de Acabamentos",
     description:
-      "Mais de 40 cores e texturas disponíveis — do escovado ao brilhante, passando por madeira e efeitos metálicos. Sua fachada com a identidade que ela merece.",
+      "Mais de 40 cores e texturas disponíveis — do escovado ao brilhante, passando pelo acabamento amadeirado e efeitos metálicos. Sua fachada com a identidade que ela merece.",
   },
   {
     icon: Hammer,
     title: "Beneficiamento Próprio",
     description:
-      "Corte CNC, dobra e usinagem realizados em nossa fábrica. Precisão milimétrica para fachadas ventiladas, totens e revestimentos sob medida.",
+      "Corte CNC, dobra e usinagem realizados em nossa fábrica. Precisão milimétrica para fachadas ventiladas, portas, brises, pergolados e revestimentos sob medida.",
   },
   {
     icon: Zap,
     title: "Prazo Cumprido",
     description:
-      "Estoque robusto e linha de produção otimizada. Entregamos pedidos urgentes sem comprometer a qualidade do beneficiamento.",
+      "Linha de produção otimizada para entrega e instalação de acordo com os cronogramas estabelecidos. ",
   },
   {
     icon: Truck,
-    title: "Logística Nacional",
+    title: "Logística Eficiente",
     description:
-      "Embalagem técnica e frete especializado para todo o Brasil. Suas chapas chegam intactas, prontas para instalação imediata.",
+      "Logística estruturada para atender todo Nordeste. Suas chapas e portas chegam devidamente protegidas, prontas para inicio das etapas de instalação. ",
   },
   {
     icon: Award,
@@ -41,18 +41,18 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="relative overflow-hidden bg-background py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-white py-24 sm:py-32">
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage:
-            "linear-gradient(var(--foreground) 1px, transparent 1px), linear-gradient(90deg, var(--foreground) 1px, transparent 1px)",
+            "linear-gradient(var(--white) 1px, transparent 1px), linear-gradient(90deg, var(--white) 1px)",
           backgroundSize: "60px 60px",
         }}
       />
       <div
         className="pointer-events-none absolute -top-40 right-0 h-[500px] w-[500px] rounded-full opacity-20 blur-3xl"
-        style={{ background: "var(--gradient-brand)" }}
+        style={{ background: "var(--white)" }}
       />
 
       <div className="container relative mx-auto max-w-7xl px-6">
@@ -70,20 +70,14 @@ export function WhyChooseUs() {
             <span
               className="italic"
               style={{
-                background: "var(--gradient-brand)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
+                WebkitTextFillColor: "#404142",
               }}
             >
               escolher?
             </span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[color:var(--steel)]">
-            Há anos a ABERTURAH transforma fachadas, revestimentos e projetos
-            arquitetônicos em todo o país. Combinamos matéria-prima premium,
-            tecnologia de beneficiamento e atendimento próximo para entregar
-            resultados que valorizam cada obra.
+            A ABERTURAh! Chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos em todo Nordeste. Combinamos matéria-prima premium, tecnologia de beneficiamento e atendimento próximo para entregar resultados que valorizam cada obra.
           </p>
         </div>
 
@@ -97,9 +91,9 @@ export function WhyChooseUs() {
               >
                 <div
                   className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110"
-                  style={{ background: "var(--gradient-brand)" }}
+                  style={{ background: "#5DADEC" }}
                 >
-                  <Icon className="h-7 w-7 text-[color:var(--brand-foreground)]" strokeWidth={1.75} />
+                  <Icon className="h-7 w-7 text-shadow-black" strokeWidth={1.75} />
                 </div>
                 <h3 className="font-serif text-2xl font-semibold text-foreground transition-colors group-hover:text-[color:var(--brand-foreground)]">
                   {reason.title}

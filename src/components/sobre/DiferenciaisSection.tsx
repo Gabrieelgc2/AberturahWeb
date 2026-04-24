@@ -5,7 +5,7 @@ const diferenciais = [
   { icon: Layers, title: "+40 acabamentos", desc: "Maior variedade de cores e texturas do mercado." },
   { icon: Zap, title: "Beneficiamento CNC", desc: "Precisão milimétrica em fábrica própria." },
   { icon: Award, title: "Garantia estendida", desc: "Até 10 anos para projetos arquitetônicos." },
-  { icon: Users, title: "Suporte técnico", desc: "Engenheiros à disposição em todas as fases." },
+  { icon: Users, title: "Suporte técnico", desc: "Equipe técnica à disposição em todas as fases." },
   { icon: Target, title: "Prazo cumprido", desc: "Estoque robusto para atender urgências." },
 ];
 

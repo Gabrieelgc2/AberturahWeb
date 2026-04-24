@@ -5,8 +5,8 @@ import AberturahLogo from "@/assets/Aberturah.png";
 export function Footer() {
   return (
     <footer
-      className="relative overflow-hidden text-[color:var(--steel-light)]"
-      style={{ background: "var(--gradient-dark)" }}
+      className="relative overflow-hidden text-[color:black)]"
+      style={{ background: "#D9D9D9" }}
     >
       <div
         className="absolute inset-0 opacity-[0.04]"
@@ -21,17 +21,17 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
               <span className="font-serif text-2xl font-bold tracking-tight text-white">
-               <img src={AberturahLogo} alt="Aberturah" className="h-13 w-auto" />
+               <img src={AberturahLogo} alt="Aberturah" className="h-13 w-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]" />
               </span>
             </div>
             <p className="mt-5 text-sm leading-relaxed">
               Fabricação e beneficiamento de chapas ACM para fachadas,
-              revestimentos e projetos arquitetônicos em todo o Brasil.
+              revestimentos e projetos arquitetônicos em todo o Nordeste.
             </p>
           </div>
 
           <div>
-            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-white">
+            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-[color:black]">
               Navegação
             </h4>
             <ul className="mt-5 space-y-3 text-md">
@@ -45,7 +45,7 @@ export function Footer() {
                 <li key={l.to}>
                   <Link
                     to={l.to}
-                    className="transition-colors hover:text-[color:var(--brand)]"
+                    className="transition-colors hover:text-[color:black)]"
                   >
                     {l.label}
                   </Link>
@@ -55,17 +55,17 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-white">
+            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-black">
               Contato
             </h4>
             <ul className="mt-5 space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
-                <span>Av. Industrial, 1000 — São Paulo / SP</span>
+                <span>Rua Desembargador João Paes, 414 - Boa Viagem - Recife/PE</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
-                <span>(11) 4000-0000</span>
+                <span>(81) 99984.0131</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
@@ -75,7 +75,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-white">
+            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-black">
               Siga-nos
             </h4>
             <div className="mt-5 flex gap-3">
@@ -100,11 +100,10 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-[color:var(--steel)] sm:flex-row">
+        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-black pt-8 text-xs text-[color:black] sm:flex-row">
           <span>
             © {new Date().getFullYear()} ABERTURAH. Todos os direitos reservados.
           </span>
-          <span className="font-serif italic">Fachadas que definem skylines.</span>
         </div>
       </div>
     </footer>

@@ -35,7 +35,7 @@ function SobrePage() {
             <span className="italic">precisão e arte.</span>
           </>
         }
-        description="Há mais de 15 anos transformando a forma como o Brasil reveste seus edifícios."
+        description="Transformando especificações técnicas em soluções eficientes para cada projeto."
       />
       <HistoriaSection />
       <MissaoValoresSection />

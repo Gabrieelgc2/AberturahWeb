@@ -7,8 +7,16 @@ export function AboutPreview() {
   return (
     <section
       className="relative overflow-hidden py-24 sm:py-32"
-      style={{ background: "var(--steel-light)" }}
+      style={{ background: "#414042" }}
     >
+      <div 
+      className="pointer-events-none absolute inset-0 opacity-[0.05]"
+      style={{
+           
+            backgroundImage:
+            "linear-gradient(oklch(1 0 0) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0) 1px, transparent 1px)",
+            backgroundSize: "60px 60px"}}/>
+
       <div className="container mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
@@ -17,12 +25,14 @@ export function AboutPreview() {
               eyebrow="Quem somos"
               title={
                 <>
-                  Indústria,<br />
-                  <span className="italic">precisão e arte.</span>
+                <span className="text-[color:#D9D9D9]">
+                  Indústria,
+                  </span><br />
+                  <span className="italic text-[color:#D9D9D9]">precisão e design.</span>
                 </>
               }
             />
-            <p className="mt-6 text-lg leading-relaxed text-[color:var(--steel)]">
+            <p className="mt-6 text-lg leading-relaxed text-[color:#D9D9D9]">
               Fundada com a missão de elevar o padrão de revestimentos
               arquitetônicos no Brasil, a ABERTURAH integra fabricação,
               beneficiamento e logística sob um único teto. Cada chapa que sai
@@ -30,7 +40,7 @@ export function AboutPreview() {
             </p>
             <Link
               to="/sobre"
-              className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-foreground underline-offset-4 hover:underline"
+              className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[color:#D9D9D9] underline-offset-4 hover:underline"
             >
               Conheça nossa história
               <ArrowRight className="h-4 w-4" />
