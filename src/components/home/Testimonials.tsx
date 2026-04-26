@@ -1,6 +1,12 @@
 import { Quote } from "lucide-react";
 import { SectionHeading } from "../../components/SectionHeading";
 
+interface SectionHeadingProps {
+  eyebrow: string;
+  title: React.ReactNode;
+  eyebrowClassName?: string;
+}
+
 const testimonials = [
   {
     quote:
@@ -28,6 +34,7 @@ export function Testimonials() {
       <div className="container mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="Quem confia"
+          eyebrowClassName="RevealText"
           title={
             <>
               Vozes de quem
@@ -41,7 +48,7 @@ export function Testimonials() {
           {testimonials.map((t, i) => (
             <article
               key={t.name}
-              className="group relative flex flex-col rounded-3xl border border-[color:var(--steel-light)] bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
+              className="RevealText group relative flex flex-col rounded-3xl border border-[color:var(--steel-light)] bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
               style={{
                 background:
                   i === 1
@@ -50,11 +57,11 @@ export function Testimonials() {
               }}
             >
               <Quote
-                className="h-10 w-10"
+                className="RevealText h-10 w-10"
                 style={{ color: i === 1 ? "var(--brand)" : "var(--brand)" }}
               />
               <p
-                className={`mt-6 flex-1 font-serif text-xl leading-relaxed ${
+                className={`RevealText mt-6 flex-1 font-serif text-xl leading-relaxed ${
                   i === 1 ? "text-white" : "text-foreground"
                 }`}
               >
@@ -66,14 +73,14 @@ export function Testimonials() {
                 }`}
               >
                 <div
-                  className={`font-semibold ${
+                  className={`RevealText font-semibold ${
                     i === 1 ? "text-white" : "text-foreground"
                   }`}
                 >
                   {t.name}
                 </div>
                 <div
-                  className={`mt-1 text-sm ${
+                  className={`RevealText mt-1 text-sm ${
                     i === 1
                       ? "text-[color:var(--steel-light)]"
                       : "text-[color:var(--steel)]"

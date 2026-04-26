@@ -1,4 +1,5 @@
 import { ShieldCheck, Layers, Zap, Award, Truck, Hammer } from "lucide-react";
+import React from "react";
 
 const reasons = [
   {
@@ -35,13 +36,14 @@ const reasons = [
     icon: Award,
     title: "Suporte Técnico Completo",
     description:
-      "Equipe de engenheiros à disposição para dimensionamento, especificação de subestrutura e acompanhamento de obra do início ao fim.",
+      "Equipe técnica à disposição para dimensionamento, especificação de subestrutura e acompanhamento de obra do início ao fim.",
   },
 ];
 
 export function WhyChooseUs() {
   return (
-    <section className="relative overflow-hidden bg-white py-24 sm:py-32">
+    <section 
+    className="relative bg-white py-24 sm:py-32">
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.03]"
         style={{
@@ -51,20 +53,25 @@ export function WhyChooseUs() {
         }}
       />
       <div
-        className="pointer-events-none absolute -top-40 right-0 h-[500px] w-[500px] rounded-full opacity-20 blur-3xl"
+        className="pointer-events-none absolute -top-40 right-0 h-125 w-125 rounded-full opacity-20 blur-3xl"
         style={{ background: "var(--white)" }}
       />
 
       <div className="container relative mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[color:var(--steel-light)] bg-background px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--steel)]">
+          <div className="RevealText mb-6 inline-flex items-center gap-2 
+          rounded-full border border-(--steel-light)
+          bg-background px-4 py-1.5 text-xs font-semibold uppercase 
+          tracking-widest text-(--steel)"
+          style={{"--delay": "0ms"} as React.CSSProperties}>
             <span
               className="h-1.5 w-1.5 rounded-full"
               style={{ background: "var(--brand)" }}
             />
             ABERTURAH · Material ACM
           </div>
-          <h2 className="font-serif text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+          <h2 className="RevealText font-serif text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl"
+            style={{"--delay": "150ms"} as React.CSSProperties}>
             Por que nos
             <br />
             <span
@@ -76,29 +83,32 @@ export function WhyChooseUs() {
               escolher?
             </span>
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[color:var(--steel)]">
-            A ABERTURAh! Chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos em todo Nordeste. Combinamos matéria-prima premium, tecnologia de beneficiamento e atendimento próximo para entregar resultados que valorizam cada obra.
+          <p className="RevealText mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-(--steel)">
+            A ABERTURAh! Chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos em todo Nordeste.
+             Combinamos matéria-prima premium, tecnologia de beneficiamento e atendimento próximo para entregar resultados que valorizam cada obra.
           </p>
         </div>
 
-        <div className="mt-20 grid gap-px overflow-hidden rounded-3xl border border-[color:var(--steel-light)] bg-[color:var(--steel-light)] sm:grid-cols-2 lg:grid-cols-3">
+        <div 
+        className="RevealText mt-20 grid gap-px rounded-3xl border border-steel-light bg-(--steel-light) sm:grid-cols-2 lg:grid-cols-3"
+        >
           {reasons.map((reason) => {
             const Icon = reason.icon;
             return (
               <article
                 key={reason.title}
-                className="group relative bg-background p-8 transition-colors duration-300 hover:bg-[color:var(--brand-deep)]"
+                className="group relative bg-background p-8 transition-colors duration-300 hover:bg-(--brand-deep)"
               >
                 <div
-                  className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110"
+                  className="RevealText mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110"
                   style={{ background: "#5DADEC" }}
                 >
                   <Icon className="h-7 w-7 text-shadow-black" strokeWidth={1.75} />
                 </div>
-                <h3 className="font-serif text-2xl font-semibold text-foreground transition-colors group-hover:text-[color:var(--brand-foreground)]">
+                <h3 className="RevealText font-serif text-2xl font-semibold text-foreground transition-colors group-hover:text-[color:var(--brand-foreground)]">
                   {reason.title}
                 </h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-[color:var(--steel)] transition-colors group-hover:text-[color:var(--steel-light)]">
+                <p className="RevealText mt-3 text-[15px] leading-relaxed text-[color:var(--steel)] transition-colors group-hover:text-[color:var(--steel-light)]">
                   {reason.description}
                 </p>
                 <div

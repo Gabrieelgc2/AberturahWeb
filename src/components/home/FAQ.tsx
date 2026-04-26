@@ -39,6 +39,7 @@ export function FAQ() {
       <div className="container mx-auto max-w-4xl px-6">
         <SectionHeading
           eyebrow="Perguntas frequentes"
+          eyebrowClassName="RevealText"
           title={
             <>
               Tire suas dúvidas
@@ -53,7 +54,7 @@ export function FAQ() {
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="rounded-2xl border border-[color:var(--steel-light)] bg-background px-6 transition-colors data-[state=open]:bg-[color:var(--steel-light)]/40"
+              className="RevealText rounded-2xl border border-[color:var(--steel-light)] bg-background px-6 transition-colors data-[state=open]:bg-[color:var(--steel-light)]/40"
             >
               <AccordionTrigger className="py-6 text-left font-serif text-lg font-semibold text-foreground hover:no-underline">
                 {f.q}

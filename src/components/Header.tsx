@@ -27,7 +27,7 @@ export function Header() {
 
         {/* 1. LOGO (Esquerda) */}
         <div className="flex flex-1 justify-start">
-          <img src={Aberturah} alt="Aberturah" className="h-11 w-auto md:h-13 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
+          <img src={Aberturah} alt="Aberturah" className="RevealImage h-11 w-auto md:h-13 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
         </div>
 
         {/* 2. MENU CENTRAL */}
@@ -57,10 +57,10 @@ export function Header() {
           <div className="hidden md:flex items-center gap-3">
             <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
               <span className="text-[10px] font-bold text-white uppercase tracking-tighter">EN</span>
-              <img src="https://flagcdn.com/w20/us.png" alt="USA" className="w-4 h-3 object-cover" />
+              <img src="https://flagcdn.com/w20/us.png" alt="USA" className="RevealImage w-4 h-3 object-cover" />
             </button>
             <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity border-l border-white/20 pl-3">
-              <img src="https://flagcdn.com/w20/br.png" alt="Brasil" className="w-4 h-3 object-cover" />
+              <img src="https://flagcdn.com/w20/br.png" alt="Brasil" className="RevealImage w-4 h-3 object-cover" />
               <span className="text-[10px] font-bold text-white uppercase tracking-tighter">PT</span>
             </button>
           </div>

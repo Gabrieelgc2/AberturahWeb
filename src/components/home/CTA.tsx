@@ -6,7 +6,7 @@ export function CTA() {
     <section className="bg-background pb-24 pt-8 sm:pb-32">
       <div className="container mx-auto max-w-7xl px-6">
         <div
-          className="relative overflow-hidden rounded-3xl p-10 sm:p-16"
+          className="RevealText relative rounded-3xl p-10 sm:p-16"
           style={{ background: "#414042" }}
         >
           <div
@@ -18,12 +18,12 @@ export function CTA() {
           />
           <div className="relative grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="font-serif text-4xl font-bold leading-[1.05] text-[color:var(--brand-foreground)] sm:text-5xl">
+              <h2 className="RevealText font-serif text-4xl font-bold leading-[1.05] text-[color:var(--brand-foreground)] sm:text-5xl">
                 Vamos transformar
                 <br />
-                <span className="italic">seu projeto?</span>
+                <span className="RevealText italic">seu projeto?</span>
               </h2>
-              <p className="mt-5 max-w-md text-lg leading-relaxed text-[color:var(--brand-foreground)]/85">
+              <p className="RevealText mt-5 max-w-md text-lg leading-relaxed text-[color:var(--brand-foreground)]/85">
                 Fale com nosso time técnico e receba um orçamento personalizado
                 em até 48 horas.
               </p>
@@ -35,7 +35,7 @@ export function CTA() {
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm font-semibold text-background transition-transform hover:scale-105"
               >
-                <MessageCircle className="h-4 w-4" />
+                <MessageCircle className="RevealTexth-4 w-4" />
                 WhatsApp
               </a>
               <Link
@@ -43,7 +43,7 @@ export function CTA() {
                 className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[color:var(--brand-foreground)] px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] transition-colors hover:bg-[color:var(--brand-foreground)] hover:text-[color:var(--brand)]"
               >
                 Página de contato
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="RevealText h-4 w-4" />
               </Link>
             </div>
           </div>

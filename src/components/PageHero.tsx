@@ -23,18 +23,18 @@ export function PageHero({ eyebrow, title, description }: Props) {
         style={{ background: "var(--gradient-brand)" }}
       />
       <div className="container relative mx-auto max-w-5xl px-6 text-center">
-        <div className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--steel-light)]">
+        <div className="RevealText inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--steel-light)]">
           <span
             className="h-1.5 w-1.5 rounded-full"
             style={{ background: "var(--brand)" }}
           />
           {eyebrow}
         </div>
-        <h1 className="mt-6 font-serif text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+        <h1 className="RevealText mt-6 font-serif text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
           {title}
         </h1>
         {description && (
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[color:var(--steel-light)]">
+          <p className="RevealText mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[color:var(--steel-light)]">
             {description}
           </p>
         )}

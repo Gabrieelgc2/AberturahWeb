@@ -5,7 +5,7 @@ import AberturahLogo from "@/assets/Aberturah.png";
 export function Footer() {
   return (
     <footer
-      className="relative overflow-hidden text-[color:black)]"
+      className="RevealText relative text-[color:black)]"
       style={{ background: "#D9D9D9" }}
     >
       <div
@@ -21,20 +21,20 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
               <span className="font-serif text-2xl font-bold tracking-tight text-white">
-               <img src={AberturahLogo} alt="Aberturah" className="h-13 w-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]" />
+               <img src={AberturahLogo} alt="Aberturah" className="RevealText h-13 w-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]" />
               </span>
             </div>
-            <p className="mt-5 text-sm leading-relaxed">
+            <p className="RevealText mt-5 text-sm leading-relaxed">
               Fabricação e beneficiamento de chapas ACM para fachadas,
               revestimentos e projetos arquitetônicos em todo o Nordeste.
             </p>
           </div>
 
           <div>
-            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-[color:black]">
+            <h4 className="RevealText font-serif text-sm font-bold uppercase tracking-widest text-[color:black]">
               Navegação
             </h4>
-            <ul className="mt-5 space-y-3 text-md">
+            <ul className="RevealText mt-5 space-y-3 text-md">
               {[
                 { to: "/", label: "Home" },
                 { to: "/sobre", label: "Sobre Nós" },
@@ -55,36 +55,36 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-black">
+            <h4 className="RevealText font-serif text-sm font-bold uppercase tracking-widest text-black">
               Contato
             </h4>
             <ul className="mt-5 space-y-3 text-sm">
               <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
+                <MapPin className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
                 <span>Rua Desembargador João Paes, 414 - Boa Viagem - Recife/PE</span>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
+                <Phone className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
                 <span>(81) 99984.0131</span>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
+                <Mail className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
                 <span>contato@aberturah.com.br</span>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-serif text-sm font-bold uppercase tracking-widest text-black">
+            <h4 className="RevealText font-serif text-sm font-bold uppercase tracking-widest text-black">
               Siga-nos
             </h4>
-            <div className="mt-5 flex gap-3">
+            <div className="RevealTextmt-5 flex gap-3">
               <a
                 href="#"
                 aria-label="Instagram"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="RevealText h-5 w-5" />
               </a>
               <a
                 href="#"
@@ -94,13 +94,13 @@ export function Footer() {
                 <Youtube className="h-5 w-5" />
               </a>
             </div>
-            <p className="mt-6 text-xs uppercase tracking-widest text-[color:var(--steel)]">
+            <p className="RevealText mt-6 text-xs uppercase tracking-widest text-[color:var(--steel)]">
               Segunda a Sexta · 8h–18h
             </p>
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-black pt-8 text-xs text-[color:black] sm:flex-row">
+        <div className="RevealText mt-16 flex flex-col items-center justify-between gap-4 border-t border-black pt-8 text-xs text-[color:black] sm:flex-row">
           <span>
             © {new Date().getFullYear()} ABERTURAH. Todos os direitos reservados.
           </span>
