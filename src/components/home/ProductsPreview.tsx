@@ -49,14 +49,14 @@ export function ProductsPreview() {
           />
           <Link
             to="/produtos"
-            className="-ml-10 active:scale-95 active:bg-foreground active:text-background group inline-flex items-center gap-2 rounded-full border border-foreground px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-background"
+            className="RevealText -ml-10 active:scale-95 active:bg-foreground active:text-background group inline-flex items-center gap-2 rounded-full border border-foreground px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
             Ver linha completa
-            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
+            <ArrowUpRight className="RevealText h-4 w-4 transition-transform group-hover:rotate-45" />
           </Link>
         </div>
 
-        <div
+    <div
           className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 RevealImage">
           {categories.map((c) => (
             <Link

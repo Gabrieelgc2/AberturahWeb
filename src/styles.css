@@ -168,6 +168,7 @@
     animation-range: var(--range, entry 10% cover 40%);
 }
 
+
 .progress{
   position: fixed;
   top: 0;
@@ -180,7 +181,7 @@
   z-index: 99999;
   transform-origin: 0 50%;
   animation: grow-progress linear forwards;
-  animation-timeline: scroll();
+  animation-timeline: view();
 }
 
 @keyframes grow-progress{
@@ -198,6 +199,7 @@
         opacity: 0;
         scale: .95;
         translate: 0 4rem;
+        
     }
 
     to{
@@ -216,10 +218,11 @@
 
 @keyframes RevealImage{
   from {
-        filter: saturate(0) brightness(0.8) contrast(4) blur(5px); 
+        filter: saturate(0) brightness(0.8) contrast(4) blur(2px); 
         opacity: 0;
         scale: 0.95;
         translate: 0 4rem;
+        clip-path: inset(100% 0 0 0);
       }
       to {
         filter: none;
