@@ -62,7 +62,7 @@ export function ProductsPreview() {
             <Link
               key={c.name}
               to="/produtos"
-              className="group relative aspect-[3/4] overflow-hidden rounded-3xl"
+              className="group relative aspect-3/4 overflow-hidden rounded-3xl"
             >
               <div
                 className="absolute inset-0 transition-transform duration-700 group-hover:scale-110"
@@ -85,7 +85,7 @@ export function ProductsPreview() {
               <div className="absolute inset-x-0 bottom-0 p-6 text-white">
                 <h3 className="font-serif text-2xl font-bold">{c.name}</h3>
                 <p className="mt-2 text-sm text-white/80">{c.desc}</p>
-                <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--brand)]">
+                <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-(--brand)">
                   Explorar
                   <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </div>

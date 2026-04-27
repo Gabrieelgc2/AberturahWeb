@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="RevealText font-serif text-sm font-bold uppercase tracking-widest text-[color:black]">
+            <h4 className="RevealText font-serif text-sm font-bold uppercase tracking-widest text-[black]">
               Navegação
             </h4>
             <ul className="RevealText mt-5 space-y-3 text-md">
@@ -60,15 +60,15 @@ export function Footer() {
             </h4>
             <ul className="mt-5 space-y-3 text-sm">
               <li className="flex items-start gap-3">
-                <MapPin className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
+                <MapPin className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[--brand]" />
                 <span>Rua Desembargador João Paes, 414 - Boa Viagem - Recife/PE</span>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
+                <Phone className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[--brand]" />
                 <span>(81) 99984.0131</span>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[color:var(--brand)]" />
+                <Mail className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[--brand]" />
                 <span>contato@aberturah.com.br</span>
               </li>
             </ul>
@@ -82,25 +82,25 @@ export function Footer() {
               <a
                 href="#"
                 aria-label="Instagram"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
                 <Instagram className="RevealText h-5 w-5" />
               </a>
               <a
                 href="#"
                 aria-label="YouTube"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
                 <Youtube className="h-5 w-5" />
               </a>
             </div>
-            <p className="RevealText mt-6 text-xs uppercase tracking-widest text-[color:var(--steel)]">
+            <p className="RevealText mt-6 text-xs uppercase tracking-widest text-[(--steel)]">
               Segunda a Sexta · 8h–18h
             </p>
           </div>
         </div>
 
-        <div className="RevealText mt-16 flex flex-col items-center justify-between gap-4 border-t border-black pt-8 text-xs text-[color:black] sm:flex-row">
+        <div className="RevealText mt-16 flex flex-col items-center justify-between gap-4 border-t border-black pt-8 text-xs text-[black] sm:flex-row">
           <span>
             © {new Date().getFullYear()} ABERTURAH. Todos os direitos reservados.
           </span>
