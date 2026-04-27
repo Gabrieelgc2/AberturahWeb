@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import heroImage from "../../assets/hero-facade.png";
+import heroImage from "../../assets/hero-facade.webp";
 import { useParallax } from "@/hooks/use-parallax";
 
 export function Hero() {
