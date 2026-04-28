@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHero } from "@/components/PageHero";
+import { PageHero, PageLayout } from "@/components/PageLayout";
 import { CTA } from "@/components/home/CTA";
 import { NoticiasFeed } from "@/components/noticias/NoticiasFeed";
 
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/noticias")({
 function NoticiasPage() {
   return (
     <>
-      <PageHero
+      <PageLayout
         eyebrow="Notícias"
         title={
           <>

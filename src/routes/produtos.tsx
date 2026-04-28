@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHero } from "@/components/PageHero";
 import { CTA } from "@/components/home/CTA";
 import { ProdutosCatalogo } from "@/components/produtos/ProdutosCatalogo";
+import BackGroundProduto from "../assets/Produtos.jpeg";
+import { PageLayout } from "@/components/PageLayout";
 
 export const Route = createFileRoute("/produtos")({
   component: ProdutosPage,
@@ -25,7 +26,7 @@ export const Route = createFileRoute("/produtos")({
 function ProdutosPage() {
   return (
     <>
-      <PageHero
+      <PageLayout
         eyebrow="Produtos"
         title={
           <>
@@ -34,6 +35,7 @@ function ProdutosPage() {
           </>
         }
         description="Mais de 40 acabamentos certificados para qualquer projeto, do residencial ao corporativo."
+        image={BackGroundProduto}
       />
       <ProdutosCatalogo />
       <CTA />

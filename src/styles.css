@@ -184,6 +184,8 @@
   animation-timeline: scroll();
 }
 
+
+
 @keyframes grow-progress{
   from{
     transform: scaleX(0);

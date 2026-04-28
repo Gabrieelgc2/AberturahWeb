@@ -2,26 +2,20 @@ interface Props {
   eyebrow: string;
   title: React.ReactNode;
   description?: string;
+  image: string;
 }
 
-export function PageHero({ eyebrow, title, description }: Props) {
+export function PageLayout({ eyebrow, title, description, image }: Props) {
   return (
     <section
-      className="relative overflow-hidden pb-20 pt-40 sm:pb-28 sm:pt-48"
+      className="relative overflow-hidden pb-20 pt-40 sm:pb-28 sm:pt-48 w-full"
       style={{ background: "var(--gradient-dark)" }}
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.06]"
-        style={{
-          backgroundImage:
-            "linear-gradient(oklch(1 0 0) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-      <div
-        className="pointer-events-none absolute -bottom-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
-        style={{ background: "var(--gradient-brand)" }}
-      />
+        className="pointer-events-none absolute inset-0 opacity-[.20]"
+      >
+        <img src={image} alt="Background" className="h-full w-full object-cover" />
+      </div>
       <div className="container relative mx-auto max-w-5xl px-6 text-center">
         <div className="RevealText inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--steel-light)]">
           <span

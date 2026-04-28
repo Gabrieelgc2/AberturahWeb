@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHero } from "../components/PageHero";
+import { PageHero, PageLayout } from "../components/PageLayout";
 import { InformacoesContato } from "../components/contato/InformacoesContato";
 import { WhatsAppSection } from "../components/contato/WhatsAppSection";
 
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/contato")({
 function ContatoPage() {
   return (
     <>
-      <PageHero
+      <PageLayout
         eyebrow="Contato"
         title={
           <>
