@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CTA } from "@/components/home/CTA";
-import { ProdutosCatalogo } from "@/components/produtos/ProdutosCatalogo";
+import {ProdutosCatalogo} from "@/components/produtos/ProdutosCatalogo";
 import BackGroundProduto from "../assets/Produtos.jpeg";
 import { PageLayout } from "@/components/PageLayout";
 
