@@ -88,7 +88,7 @@ const titleRef = useRef(null);
                  }}> ACM </span> */}
           </h1>
 
-          <p className="mx-auto mt-8 max-w-2xl text-xl leading-relaxed text-[color:white] sm:text-xl">
+          <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-[color:white] sm:text-xl">
 Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. Somos especializados em portas, revestimentos, brises e pergolados.
 </p>
 

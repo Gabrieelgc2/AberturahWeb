@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHero, PageLayout } from "@/components/PageLayout";
+import { PageLayout } from "@/components/PageLayout";
 import { CTA } from "@/components/home/CTA";
 import { NoticiasFeed } from "@/components/noticias/NoticiasFeed";
 
