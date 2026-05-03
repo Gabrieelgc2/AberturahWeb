@@ -1,6 +1,6 @@
-import MissionPhoto from "../../assets/goalmission.png"
-import Visao from "../../assets/vision1.png";
-import teste from "../../assets/diamond.png";
+import MissionPhoto from "../../assets/goalmission.webp"
+import Visao from "../../assets/vision1.webp";
+import teste from "../../assets/diamond.webp";
 import { Section } from "../ui/Section";
 import { Text } from "../ui/TextVariant";
 

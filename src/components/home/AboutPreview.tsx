@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "../../components/SectionHeading";
-import AberturahCasa from "../../assets/image.png";
+import AberturahCasa from "../../assets/image.webp";
 
 export function AboutPreview() {
   return (

@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import Aberturah from "@/assets/Aberturah.png";
+import Aberturah from "@/assets/Aberturah.webp";
 
 const navItems = [
   { to: "/", label: "Home" },

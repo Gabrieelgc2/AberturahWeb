@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
-import AberturahLogo from "@/assets/Aberturah.png";
+import AberturahLogo from "@/assets/Aberturah.webp";
 
 export function Footer() {
   return (

@@ -1,10 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "../../components/SectionHeading";
-import foto1 from "../../assets/Foto1.jpeg";
-import foto2 from "../../assets/Foto2.jpeg";
-import foto3 from "../../assets/Foto3.jpeg";
-import foto4 from "../../assets/Foto4.jpeg";
+import foto1 from "../../assets/Foto1.webp";
+import foto2 from "../../assets/Foto2.webp";
+import foto3 from "../../assets/Foto3.webp";
+import foto4 from "../../assets/Foto4.webp";
 
 
 const categories = [
