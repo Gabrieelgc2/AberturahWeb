@@ -32,7 +32,7 @@ function SobrePage() {
         title={
           <>
             Indústria,<br />
-            <span className="italic">precisão e arte.</span>
+            <span className="italic">precisão e design.</span>
           </>
         }
         description="Transformando especificações técnicas em soluções eficientes para cada projeto."

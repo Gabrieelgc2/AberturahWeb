@@ -1,51 +1,29 @@
-const timeline = [
-  { year: "2009", title: "Fundação", desc: "Nasce a ABERTURAH em São Paulo, focada em revenda de ACM importado." },
-  { year: "2014", title: "Beneficiamento próprio", desc: "Inauguração da primeira linha CNC para corte e dobra." },
-  { year: "2018", title: "Expansão nacional", desc: "Logística estruturada para atender obras em todas as regiões." },
-  { year: "2024", title: "Nova fábrica", desc: "Ampliação da planta com tecnologia de última geração." },
-];
+import { Section } from "../ui/Section";
+import { Text } from "../ui/TextVariant";
 
 export function HistoriaSection() {
   return (
-    <section className="bg-background py-24 sm:py-32">
-      <div className="container mx-auto max-w-7xl px-6">
-        <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[color:var(--steel-light)] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--steel)]">
-              <span className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--brand)" }} />
-              Nossa história
-            </div>
-            <h2 className="mt-6 font-serif text-4xl font-bold leading-[1.05] text-foreground sm:text-5xl">
-              Uma trajetória feita  <span className="italic">sob medida.</span>
-            </h2>
-          <div className="space-y-8">
-            <p className="text-lg leading-relaxed text-[color:var(--steel)]">
-              A ABERTURAH! surgiu como uma solução para atender demandas personalizadas dos projetos arquitetônicos, integrando técnica, funcionalidade e design. A empresa se destaca pela capacidade de realizar projetos ousados com especificações de alta complexidade. 
-            </p>
-            <p className="text-lg leading-relaxed text-[color:var(--steel)]">
-            Utilizando materiais premium, como ACM, e tecnologias inovadoras, ela busca se tornar referência em propostas sob medida para o mercado da construção e design.
-            </p>
-
-            <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-[color:var(--steel-light)] bg-[color:var(--steel-light)] sm:grid-cols-2">
-              {timeline.map((t) => (
-                <div key={t.year} className="bg-background p-6">
-                  <div
-                    className="font-serif text-3xl font-bold"
-                    style={{
-                      background: "var(--gradient-brand)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
-                  >
-                    {t.year}
-                  </div>
-                  <h4 className="mt-2 font-serif text-lg font-semibold text-foreground">{t.title}</h4>
-                  <p className="mt-1 text-sm text-[color:var(--steel)]">{t.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+    <Section size="default">
+      <div className="flex flex-col items-center align-center max-w-6xl mx-auto text-center tracking-tight">
+        {/* HEADER */}
+        <div className="max-w-xl">
+          <Text variant="Title" className="RevealText">
+            NOSSA MARCA
+          </Text>
         </div>
+        <Text variant="Subtitle" className="mt-3 text-[#404142] leading-relaxed RevealText">
+          Trazendo ACM de qualidade
+        </Text>
+        <Text variant="normalDescription" className="RevealText mt-6 text-[#404142] leading-relaxed max-w-2xl">
+          Desde o início, nossa missão sempre foi elevar o padrão dos revestimentos arquitetônicos, oferecendo soluções em ACM que unem durabilidade, estética e inovação. Atuamos com foco na excelência, desde a escolha dos materiais até a entrega final, garantindo resultados que valorizam cada projeto.
+        </Text>
+        <Text variant="normalDescription" className="RevealText mt-6 text-[#404142] leading-relaxed max-w-2xl">
+          Com uma trajetória construída sobre confiança e compromisso, buscamos constantemente evoluir nossos processos e acompanhar as tendências do mercado. Nosso objetivo é proporcionar aos clientes não apenas um produto, mas uma experiência completa, com suporte técnico especializado e atenção em cada detalhe.
+        </Text>
+        <Text variant="normalDescription" className="RevealText mt-6 text-[#404142] leading-relaxed max-w-2xl">
+          Ao longo dos anos, consolidamos nossa presença no setor através de parcerias sólidas e projetos bem-sucedidos. Seguimos trabalhando com dedicação para transformar ideias em realidade, entregando qualidade que se destaca e agrega valor em cada aplicação.
+        </Text>
       </div>
-    </section>
+    </Section>
   );
 }

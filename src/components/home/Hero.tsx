@@ -62,30 +62,6 @@ const titleRef = useRef(null);
 
           <h1 ref={titleRef} className="text-white mt-8 font-serif text-4xl font-bold leading-[1.2] tracking-normal sm:text-7xl lg:text-7xl">
             Projetos de alto <br></br> padrão em ACM
-            {/* <span
-          style={{color: "#ffff"}}>
-            Projetos de 
-            </span>
-            <span
-            style={{
-                WebkitTextFillColor: "#ffff",
-              }}> alto</span>
-           
-            <br />
-            <span
-            style={{
-                color: "#ffff",
-              }}> padrão </span>
-
-            <span
-              className="italic"
-              style={{
-                WebkitTextFillColor: "#ffff",
-              }}> em </span>
-
-               <span style={{ 
-                color: "#ffff",
-                 }}> ACM </span> */}
           </h1>
 
           <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-[color:white] sm:text-xl">

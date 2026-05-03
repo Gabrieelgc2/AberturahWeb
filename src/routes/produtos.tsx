@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CTA } from "@/components/home/CTA";
 import {ProdutosCatalogo} from "@/components/produtos/ProdutosCatalogo";
-import BackGroundProduto from "../assets/Produtos.jpeg";
+import BackGroundProduto from "../assets/image-casa-aberturah.jpeg";
 import { PageLayout } from "@/components/PageLayout";
 
 export const Route = createFileRoute("/produtos")({
