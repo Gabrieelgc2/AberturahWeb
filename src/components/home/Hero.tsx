@@ -1,25 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import heroImage from "../../assets/hero-facade.webp";
 import { useParallax } from "@/hooks/use-parallax";
-import { useEffect, useRef } from "react";
-import { startTitleAnimation } from "@/components/animations/animations";
 import { WHATSAPP_URL } from "@/config/site";
+import SplittingText from "../animations/animations";
 
 export function Hero() {
 const { ref: bgRef, offset: bgOffset } = useParallax<HTMLDivElement>(0.35);
 const { ref: contentRef, offset: contentOffset } = useParallax<HTMLDivElement>(-0.15);
-const titleRef = useRef(null);
-
-  useEffect(() => {
-    // Passamos a referência do elemento para a nossa função externa
-    const instance = startTitleAnimation(titleRef.current);
-
-    return () => {
-    if (instance) {
-      instance.revert();
-    }
-  };
-}, []);
 
   return (
     <section
@@ -63,9 +50,13 @@ const titleRef = useRef(null);
           }}
           >
 
-          <h1 ref={titleRef} className="text-white mt-8 font-serif text-4xl font-bold leading-[1.2] tracking-normal sm:text-7xl lg:text-7xl">
-            Projetos de alto <br></br> padrão em ACM
-          </h1>
+          <h1 className="text-white mt-8 font-serif text-4xl font-bold leading-[1.1] tracking-normal sm:text-7xl lg:text-7xl">
+<SplittingText text="Projetos de alto" />
+<br></br>
+<SplittingText text="padrão em ACM" 
+delay={720}
+/>
+         </h1>
 
           <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-[color:white] sm:text-xl">
 Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. Somos especializados em portas, revestimentos, brises e pergolados.
