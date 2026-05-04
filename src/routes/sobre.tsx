@@ -4,6 +4,7 @@ import { CTA } from "@/components/home/CTA";
 import { HistoriaSection } from "@/components/sobre/HistoriaSection";
 import { MissaoValoresSection } from "@/components/sobre/MissaoValoresSection";
 import { DiferenciaisSection } from "@/components/sobre/DiferenciaisSection";
+import BackGroundSobre from "../assets/aboutbg.jpeg";
 
 export const Route = createFileRoute("/sobre")({
   component: SobrePage,
@@ -36,6 +37,7 @@ function SobrePage() {
           </>
         }
         description="Transformando especificações técnicas em soluções eficientes para cada projeto."
+        image={BackGroundSobre}
       />
       <HistoriaSection />
       <MissaoValoresSection />

@@ -59,7 +59,8 @@ delay={720}
          </h1>
 
           <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-[color:white] sm:text-xl">
-Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. Somos especializados em portas, revestimentos, brises e pergolados.
+Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. Somos especializados em portas, revestimentos, brises e pergolados."
+
 </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
