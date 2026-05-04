@@ -1,8 +1,10 @@
+import heroImage from "@/assets/hero-facade.webp";
+
 interface Props {
   eyebrow: string;
   title: React.ReactNode;
   description?: string;
-  image: string;
+  image?: string;
 }
 
 export function PageLayout({ eyebrow, title, description, image }: Props) {
@@ -13,7 +15,7 @@ export function PageLayout({ eyebrow, title, description, image }: Props) {
       <div
         className="pointer-events-none absolute inset-0 opacity-[.20]"
       >
-        <img src={image} alt="Background" className="h-full w-full object-cover" />
+        <img src={image ?? heroImage} alt="Background" className="h-full w-full object-cover" />
       </div>
       <div className="container relative mx-auto max-w-5xl px-6 text-center">
         <div className="RevealText inline-flex items-center gap-2 rounded-full border border-[#white]/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[white]">

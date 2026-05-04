@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
+import type { CSSProperties } from "react";
 import { SectionHeading } from "../../components/SectionHeading";
 import AberturahCasa from "../../assets/image.webp";
 
@@ -55,8 +56,8 @@ export function AboutPreview() {
                     backgroundImage: `url(${AberturahCasa})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    ["--range-lg" as any]: "entry 30% cover 50%"
-                  }}
+                    ["--range-lg"]: "entry 30% cover 50%",
+                  } as CSSProperties & Record<"--range-lg", string>}
                 />
             </div>
             <div

@@ -1,4 +1,5 @@
 import { MessageCircle, Instagram, Youtube } from "lucide-react";
+import { SITE_CONTACT, SITE_SOCIAL, WHATSAPP_URL } from "@/config/site";
 
 export function WhatsAppSection() {
   return (
@@ -46,7 +47,7 @@ export function WhatsAppSection() {
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
-                  href="https://wa.me/5500000000000"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="group inline-flex items-center gap-3 rounded-full px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] shadow-[var(--shadow-brand)] transition-transform hover:scale-105"
@@ -58,10 +59,10 @@ export function WhatsAppSection() {
               </div>
 
               <div className="mt-8 flex gap-3">
-                <a href="#" aria-label="Instagram" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">
+                <a href={SITE_SOCIAL.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">
                   <Instagram className="h-5 w-5" />
                 </a>
-                <a href="#" aria-label="YouTube" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">
+                <a href={SITE_SOCIAL.youtube} target="_blank" rel="noreferrer" aria-label="YouTube" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">
                   <Youtube className="h-5 w-5" />
                 </a>
               </div>
@@ -82,7 +83,7 @@ export function WhatsAppSection() {
                   <MessageCircle className="h-12 w-12 text-[color:var(--brand-foreground)]" strokeWidth={1.75} />
                 </div>
                 <p className="mt-8 font-serif text-3xl font-bold text-white">
-                  +55 11 4000-0000
+                  {SITE_CONTACT.phoneDisplay}
                 </p>
                 <p className="mt-3 text-sm uppercase tracking-widest text-[color:var(--steel-light)]">
                   WhatsApp comercial

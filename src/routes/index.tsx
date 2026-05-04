@@ -1,12 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { lazy, Suspense } from "react";
 import { Hero } from "../components/home/Hero";
-import { ProductsPreview } from "../components/home/ProductsPreview";
-import { WhyChooseUs } from "../components/WhyChooseUs";
-import { AboutPreview } from "../components/home/AboutPreview";
-import { Testimonials } from "../components/home/Testimonials";
-import { Process } from "../components/home/Process";
-import { FAQ } from "../components/home/FAQ";
-import { CTA } from "../components/home/CTA";
+
+const ProductsPreview = lazy(() =>
+  import("../components/home/ProductsPreview").then((module) => ({
+    default: module.ProductsPreview,
+  })),
+);
+const WhyChooseUs = lazy(() =>
+  import("../components/WhyChooseUs").then((module) => ({
+    default: module.WhyChooseUs,
+  })),
+);
+const AboutPreview = lazy(() =>
+  import("../components/home/AboutPreview").then((module) => ({
+    default: module.AboutPreview,
+  })),
+);
+const Testimonials = lazy(() =>
+  import("../components/home/Testimonials").then((module) => ({
+    default: module.Testimonials,
+  })),
+);
+const Process = lazy(() =>
+  import("../components/home/Process").then((module) => ({
+    default: module.Process,
+  })),
+);
+const FAQ = lazy(() =>
+  import("../components/home/FAQ").then((module) => ({
+    default: module.FAQ,
+  })),
+);
+const CTA = lazy(() =>
+  import("../components/home/CTA").then((module) => ({
+    default: module.CTA,
+  })),
+);
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -32,13 +62,15 @@ function Index() {
   return (
     <>
       <Hero />
-      <ProductsPreview />
-      <WhyChooseUs />
-      <AboutPreview />
-      <Testimonials />
-      <Process />
-      <FAQ />
-      <CTA />
+      <Suspense fallback={null}>
+        <ProductsPreview />
+        <WhyChooseUs />
+        <AboutPreview />
+        <Testimonials />
+        <Process />
+        <FAQ />
+        <CTA />
+      </Suspense>
     </>
   );
 }

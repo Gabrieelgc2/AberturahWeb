@@ -1,105 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-
-type Produto = {
-  id: string;
-  nome: string;
-  cat: string;
-  grad: string;
-  esp: string;
-};
-
-
-const categorias = ["Todos", "Brilhante", "Escovado", "Madeirado", "Especial"] as const;
-
-const produtos: Produto[] = [
-  {
-    id: "vermelho",
-    nome: "ACM Vermelho Cardinal",
-    cat: "Brilhante",
-    esp: "4mm",
-    grad: "linear-gradient(135deg, oklch(0.55 0.22 25), oklch(0.35 0.18 22))",
-  },
-  {
-    id: "branco",
-    nome: "ACM Branco Polar",
-    cat: "Brilhante",
-    esp: "4mm",
-    grad: "linear-gradient(135deg, oklch(0.95 0.005 250), oklch(0.78 0.01 250))",
-  },
-  {
-    id: "preto",
-    nome: "ACM Preto Onyx",
-    cat: "Brilhante",
-    esp: "4mm",
-    grad: "linear-gradient(135deg, oklch(0.18 0.015 250), oklch(0.05 0.005 250))",
-  },
-  {
-    id: "inox",
-    nome: "ACM Inox Escovado",
-    cat: "Escovado",
-    esp: "4mm",
-    grad: "linear-gradient(135deg, oklch(0.78 0.01 250), oklch(0.45 0.012 250))",
-  },
-  { 
-    id: "escovado",
-    nome: "ACM Champagne Escovado", 
-    cat: "Escovado", 
-    esp: "4mm", 
-    grad: "linear-gradient(135deg, oklch(0.82 0.06 80), oklch(0.55 0.08 70))",
-  },
-
-  { id: "cobre", nome: "ACM Cobre Escovado", 
-    cat: "Escovado", 
-    esp: "4mm", 
-    grad: "linear-gradient(135deg, oklch(0.68 0.14 40), oklch(0.42 0.12 35))" },
-
-  { id: "carvalho", 
-    nome: "ACM Carvalho", 
-    cat: "Madeirado", 
-    esp: "4mm", 
-    grad: "linear-gradient(135deg, oklch(0.62 0.08 60), oklch(0.38 0.06 50))" },
-
-  { id: "imbuia", nome: "ACM Imbuia", 
-    cat: "Madeirado", 
-    esp: "4mm", 
-    grad: "linear-gradient(135deg, oklch(0.42 0.07 45), oklch(0.22 0.05 35))" },
-
-  { id: "espelhado", 
-    nome: "ACM Espelhado", 
-    cat: "Especial", 
-    esp: "3mm", 
-    grad: "linear-gradient(135deg, oklch(0.92 0.01 220), oklch(0.65 0.02 220))" },
-
-  { id: "perfurado", 
-    nome: "ACM Perfurado", 
-    cat: "Especial", 
-    esp: "4mm", 
-    grad: "linear-gradient(135deg, oklch(0.45 0.04 280), oklch(0.22 0.03 280))" },
-
-  { id: "grafite", 
-    nome: "ACM Grafite Fosco", 
-    cat: "Especial", 
-    esp: "4mm", 
-    grad: "linear-gradient(135deg, oklch(0.32 0.01 240), oklch(0.18 0.005 240))" },
-
-  { id: "azul", 
-    nome: "ACM Azul Cobalto", 
-    cat: "Brilhante", 
-    esp: "4mm", 
-    grad: "linear-gradient(135deg, oklch(0.45 0.18 250), oklch(0.25 0.14 250))" },
-];
+import { CATEGORIAS, PRODUTOS, type Produto } from "./produtos.data";
+import { useProdutosFiltro } from "./useProdutosFiltro";
 
 
 export function ProdutosCatalogo() {
   const [selected, setSelected] = useState<Produto | null>(null);
-  const [filtro, setFiltro] = useState<(typeof categorias)[number]>("Todos");
-
-  const lista =
-    filtro === "Todos"
-      ? produtos
-      : produtos.filter((p) => p.cat === filtro);
+  const { categoriaSelecionada, setCategoriaSelecionada, produtosFiltrados } =
+    useProdutosFiltro(PRODUTOS);
 
   // ESC fecha modal
   useEffect(() => {
@@ -117,35 +25,35 @@ export function ProdutosCatalogo() {
 
           {/* FILTROS */}
           <div className="flex flex-wrap justify-center gap-3 mb-10">
-            {categorias.map((c) => (
+            {CATEGORIAS.map((categoria) => (
               <button
-                key={c}
-                onClick={() => setFiltro(c)}
-                className={`rounded-full border px-5 py-2.5 text-sm font-semibold transition-all ${filtro === c
+                key={categoria}
+                onClick={() => setCategoriaSelecionada(categoria)}
+                className={`rounded-full border px-5 py-2.5 text-sm font-semibold transition-all ${categoriaSelecionada === categoria
                   ? "border-foreground bg-foreground text-background"
                   : "border-[color:var(--steel-light)] text-[color:var(--steel)] hover:border-foreground hover:text-foreground"
                   }`}
               >
-                {c}
+                {categoria}
               </button>
             ))}
           </div>
 
           {/* GRID */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {lista.map((p) => (
+            {produtosFiltrados.map((produto) => (
               <motion.article
-                key={p.id}
-                layoutId={p.id}
-                onClick={() => setSelected(p)}
+                key={produto.id}
+                layoutId={produto.id}
+                onClick={() => setSelected(produto)}
                 className="cursor-pointer overflow-hidden rounded-3xl border bg-white"
               >
                 {/* IMAGEM */}
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <motion.div
-                    layoutId={`${p.id}-bg`}
+                    layoutId={`${produto.id}-bg`}
                     className="absolute inset-0 transition-transform duration-700 group-hover:scale-110"
-                    style={{ background: p.grad }}
+                    style={{ background: produto.gradiente }}
                   />
 
                   <div
@@ -157,14 +65,14 @@ export function ProdutosCatalogo() {
                   />
 
                   <span className="absolute right-4 top-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-foreground backdrop-blur">
-                    {p.cat}
+                    {produto.categoria}
                   </span>
                 </div>
 
                 {/* TEXTO */}
                 <div className="p-6">
 
-                    {p.nome}
+                    {produto.nome}
                 </div>
               </motion.article>
             ))}
@@ -198,7 +106,7 @@ export function ProdutosCatalogo() {
                       <motion.div
                         layoutId={`${selected.id}-bg`}
                         className="absolute inset-0"
-                        style={{ background: selected.grad }}
+                        style={{ background: selected.gradiente }}
                       />
                     </div>
 
@@ -213,7 +121,7 @@ export function ProdutosCatalogo() {
                       </motion.h3>
 
                       <p className="mt-2 text-sm text-[#404142]">
-                        Espessura: {selected.esp}
+                        Espessura: {selected.espessura}
                       </p>
 
                       {/* 🔥 ÁREA SCROLL */}
@@ -223,10 +131,7 @@ export function ProdutosCatalogo() {
                         className="mt-4 pt-4 border-t overflow-y-auto"
                       >
                         <p className="text-sm text-gray-500 leading-relaxed">
-                          lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
-                          voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Doloribus, voluptate? Lorem ipsum dolor sit amet consectetur
-                          adipisicing elit. Doloribus, voluptate?
+                          {selected.descricao}
                         </p>
                       </motion.div>
                     </div>

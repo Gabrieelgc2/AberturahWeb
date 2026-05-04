@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHero, PageLayout } from "../components/PageLayout";
+import { PageLayout } from "../components/PageLayout";
 import { InformacoesContato } from "../components/contato/InformacoesContato";
 import { WhatsAppSection } from "../components/contato/WhatsAppSection";
 

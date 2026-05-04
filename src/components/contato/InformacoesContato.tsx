@@ -1,11 +1,12 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Section } from "../ui/Section";
+import { SITE_CONTACT } from "@/config/site";
 
 const informacoes = [
-  { icon: MapPin, title: "Endereço", linhas: ["Av. Industrial, 1000", "São Paulo / SP — CEP 04000-000"] },
-  { icon: Phone, title: "Telefone", linhas: ["(11) 4000-0000", "(11) 4000-0001"] },
-  { icon: Mail, title: "E-mail", linhas: ["contato@aberturah.com.br", "comercial@aberturah.com.br"] },
-  { icon: Clock, title: "Horário", linhas: ["Segunda a Sexta", "8h às 18h"] },
+  { icon: MapPin, title: "Endereço", linhas: [SITE_CONTACT.addressLine1, SITE_CONTACT.addressLine2] },
+  { icon: Phone, title: "Telefone", linhas: [SITE_CONTACT.phoneDisplay] },
+  { icon: Mail, title: "E-mail", linhas: [SITE_CONTACT.email] },
+  { icon: Clock, title: "Horário", linhas: [SITE_CONTACT.businessHours] },
 ];
 
 export function InformacoesContato() {

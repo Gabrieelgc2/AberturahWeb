@@ -47,9 +47,11 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "ABERTURAH — Material ACM de Alta Performance" },
-      { name: "description", content: "Aberturah: Seu Parceiro ACM showcases Aberturah's ACM materials and company advantages." },
-      { property: "og:description", content: "Aberturah: Seu Parceiro ACM showcases Aberturah's ACM materials and company advantages." },
-      { name: "twitter:description", content: "Aberturah: Seu Parceiro ACM showcases Aberturah's ACM materials and company advantages." },
+      {
+        name: "twitter:description",
+        content:
+          "ABERTURAH: fabricação e beneficiamento de chapas ACM com qualidade certificada para fachadas em todo o Brasil.",
+      },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/565e9950-2f7a-42e9-98cd-92495f3220ce/id-preview-18345c1d--6f20dbc8-d541-4ab0-bf30-02ab67688ffb.lovable.app-1776640301043.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/565e9950-2f7a-42e9-98cd-92495f3220ce/id-preview-18345c1d--6f20dbc8-d541-4ab0-bf30-02ab67688ffb.lovable.app-1776640301043.png" },
     ],

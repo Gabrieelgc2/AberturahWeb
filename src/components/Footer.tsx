@@ -1,11 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import AberturahLogo from "@/assets/Aberturah.webp";
+import { NAV_ITEMS, SITE_CONTACT, SITE_SOCIAL } from "@/config/site";
 
 export function Footer() {
   return (
     <footer
-      className="RevealText relative text-[color:black)]"
+      className="RevealText relative text-black"
       style={{ background: "#D9D9D9" }}
     >
       <div
@@ -35,17 +36,11 @@ export function Footer() {
               Navegação
             </h4>
             <ul className="RevealText mt-5 space-y-3 text-md">
-              {[
-                { to: "/", label: "Home" },
-                { to: "/sobre", label: "Sobre Nós" },
-                { to: "/produtos", label: "Produtos" },
-                { to: "/noticias", label: "Notícias" },
-                { to: "/contato", label: "Contato" },
-              ].map((l) => (
+              {NAV_ITEMS.map((l) => (
                 <li key={l.to}>
                   <Link
                     to={l.to}
-                    className="transition-colors hover:text-[color:black)]"
+                    className="transition-colors hover:text-black/70"
                   >
                     {l.label}
                   </Link>
@@ -61,15 +56,15 @@ export function Footer() {
             <ul className="mt-5 space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[--brand]" />
-                <span>Rua Desembargador João Paes, 414 - Boa Viagem - Recife/PE</span>
+                <span>{SITE_CONTACT.addressLine1} - {SITE_CONTACT.addressLine2}</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[--brand]" />
-                <span>(81) 99984.0131</span>
+                <span>{SITE_CONTACT.phoneDisplay}</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[--brand]" />
-                <span>contato@aberturah.com.br</span>
+                <span>{SITE_CONTACT.email}</span>
               </li>
             </ul>
           </div>
@@ -78,16 +73,20 @@ export function Footer() {
             <h4 className="RevealText font-serif text-sm font-bold uppercase tracking-widest text-black">
               Siga-nos
             </h4>
-            <div className="RevealTextmt-5 flex gap-3">
+            <div className="RevealText mt-5 flex gap-3">
               <a
-                href="#"
+                href={SITE_SOCIAL.instagram}
+                target="_blank"
+                rel="noreferrer"
                 aria-label="Instagram"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
                 <Instagram className="RevealText h-5 w-5" />
               </a>
               <a
-                href="#"
+                href={SITE_SOCIAL.youtube}
+                target="_blank"
+                rel="noreferrer"
                 aria-label="YouTube"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
@@ -95,7 +94,7 @@ export function Footer() {
               </a>
             </div>
             <p className="RevealText mt-6 text-xs uppercase tracking-widest text-[(--steel)]">
-              Segunda a Sexta · 8h–18h
+              {SITE_CONTACT.businessHours}
             </p>
           </div>
         </div>

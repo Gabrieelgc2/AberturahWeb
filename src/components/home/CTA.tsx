@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { MessageCircle, ArrowRight } from "lucide-react";
+import { WHATSAPP_URL } from "@/config/site";
 
 export function CTA() {
   return (
@@ -30,12 +31,12 @@ export function CTA() {
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
               <a
-                href="https://wa.me/5500000000000"
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm font-semibold text-background transition-transform hover:scale-105"
               >
-                <MessageCircle className="RevealTexth-4 w-4" />
+                <MessageCircle className="h-4 w-4" />
                 WhatsApp
               </a>
               <Link

@@ -2,14 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Aberturah from "@/assets/Aberturah.webp";
-
-const navItems = [
-  { to: "/", label: "Home" },
-  { to: "/produtos", label: "Produtos" },
-  { to: "/sobre", label: "Sobre nós" },
-  { to: "/noticias", label: "Notícias" },
-  { to: "/contato", label: "Contato" },
-] as const;
+import { NAV_ITEMS } from "@/config/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -24,15 +17,11 @@ export function Header() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#D9D9D9]  shadow-md" : "bg-transparent"}`}>
       <div className="container mx-auto flex max-w-7xl items-center px-6 py-5">
-
-        {/* 1. LOGO (Esquerda) */}
         <div className="flex flex-1 justify-start">
           <img src={Aberturah} alt="Aberturah" className="RevealImage h-11 w-auto md:h-13 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
         </div>
-
-        {/* 2. MENU CENTRAL */}
         <nav className="hidden lg:flex items-center gap-10">
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <Link
               key={item.to}
               to={item.to}
@@ -49,11 +38,7 @@ export function Header() {
             </Link>
           ))}
         </nav>
-
-        {/* 3. IDIOMAS E MENU MOBILE*/}
         <div className="flex flex-1 justify-end items-center gap-6">
-          
-          {/* Seletor de Idiomas (Desktop) */}
           <div className="hidden md:flex items-center gap-3">
             <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
               <span className="text-[10px] font-bold text-white uppercase tracking-tighter">EN</span>
@@ -64,18 +49,14 @@ export function Header() {
               <span className="text-[10px] font-bold text-white uppercase tracking-tighter">PT</span>
             </button>
           </div>
-
-          {/* Botão Hamburger */}
           <button onClick={() => setOpen(!open)} className="text-white lg:hidden">
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
-
-      {/* Menu Mobile */}
       {open && (
         <nav className="fixed inset-0 top-[70px] flex flex-col bg-black/95 h-screen p-8 gap-6 lg:hidden animate-in slide-in-from-top duration-300">
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <Link
               key={item.to}
               to={item.to}
