@@ -18,7 +18,7 @@ export function Header() {
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#D9D9D9]  shadow-md" : "bg-transparent"}`}>
       <div className="container mx-auto flex max-w-7xl items-center px-6 py-5">
         <div className="flex flex-1 justify-start">
-          <img src={Aberturah} alt="Aberturah" className="RevealImage h-11 w-auto md:h-13 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
+          <img src={Aberturah} alt="Aberturah" className="h-11 w-auto md:h-13 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
         </div>
         <nav className="hidden lg:flex items-center gap-10">
           {NAV_ITEMS.map((item) => (
