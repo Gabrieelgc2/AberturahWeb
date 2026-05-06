@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     q: "Quais são os prazos de entrega?",
-    a: "Pedidos padrão saem em 5 a 10 dias úteis. Para projetos com beneficiamento complexo, o prazo é definido em conjunto após análise técnica. Mantemos estoque robusto para atender urgências.",
+    a: "O prazo de entrega é de 90 dias corridos, contados após a mediação. Qualquer outro prazo será definido após análise técnica e acordado entre as partes envolvidas.",
   },
   {
-    q: "Vocês entregam em todo o Brasil?",
-    a: "Sim. Trabalhamos com transportadoras especializadas em material plano, com embalagem técnica que garante a integridade das chapas até o destino final.",
+    q: "Vocês entregam em quais estados?",
+    a: "Atendemos todo Nordeste. Trabalhamos com transportadoras especializadas em material plano, com embalagem técnica que garante a integridade das chapas até o destino final."
   },
   {
     q: "Como funciona a garantia?",

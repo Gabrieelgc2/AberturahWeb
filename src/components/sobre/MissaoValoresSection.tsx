@@ -36,8 +36,7 @@ export function MissaoValoresSection() {
               </Text>
 
               <Text variant="cardDescription" className="RevealText mt-2 text-[#404142]/90 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Donec vel sapien eget nunc efficitur efficitur.
+              Transformar projetos arquitetônicos em realidade, criando soluções exclusivas com qualidade e criatividade
               </Text>
             </div>
 
