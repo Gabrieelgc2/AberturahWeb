@@ -4,7 +4,7 @@ import { CTA } from "@/components/home/CTA";
 import { HistoriaSection } from "@/components/sobre/HistoriaSection";
 import { MissaoValoresSection } from "@/components/sobre/MissaoValoresSection";
 import { DiferenciaisSection } from "@/components/sobre/DiferenciaisSection";
-import BackGroundSobre from "../assets/aboutbg.jpeg";
+import BackGroundSobre from "../assets/aboutbg.webp";
 
 export const Route = createFileRoute("/sobre")({
   component: SobrePage,

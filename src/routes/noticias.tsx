@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 import { CTA } from "@/components/home/CTA";
 import { NoticiasFeed } from "@/components/noticias/NoticiasFeed";
-import Noticias from "../assets/Noticia4.jpeg";
+import Noticias from "../assets/Noticias3.webp";
 
 export const Route = createFileRoute("/noticias")({
   component: NoticiasPage,

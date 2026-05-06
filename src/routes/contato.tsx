@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageLayout } from "../components/PageLayout";
 import { InformacoesContato } from "../components/contato/InformacoesContato";
 import { WhatsAppSection } from "../components/contato/WhatsAppSection";
+import contato from "../assets/contato.jpeg";
 
 export const Route = createFileRoute("/contato")({
   component: ContatoPage,
@@ -34,6 +35,7 @@ function ContatoPage() {
           </>
         }
         description="Estamos prontos para entender seu projeto e enviar uma proposta em até 24 horas."
+              image={contato}
       />
       <InformacoesContato />
       <WhatsAppSection />
