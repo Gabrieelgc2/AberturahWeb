@@ -16,12 +16,12 @@ export function InformacoesContato() {
         {informacoes.map((info) => {
           const Icon = info.icon;
           return (
-            <div key={info.title} className="rounded-3xl border border-[color:var(--steel-light)] bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]">
+            <div key={info.title} className="rounded-3xl border border-[color:#D9D9D9] bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]">
               <div
                 className="flex h-12 w-12 items-center justify-center rounded-2xl"
-                style={{ background: "var(--gradient-brand)" }}
+                style={{ background: "#D9D9D9" }}
               >
-                <Icon className="h-6 w-6 text-[color:var(--brand-foreground)]" strokeWidth={1.75} />
+                <Icon className="h-6 w-6 text-[color:#404142]" strokeWidth={1.75} />
               </div>
               <h3 className="mt-5 font-serif text-xl font-semibold text-foreground">{info.title}</h3>
               <div className="mt-3 space-y-1 text-sm text-[color:var(--steel)]">

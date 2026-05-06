@@ -30,7 +30,7 @@ function ContatoPage() {
         title={
           <>
             Fale com a<br />
-            <span className="italic">ABERTURAH.</span>
+            <span className="italic">ABERTURAh!</span>
           </>
         }
         description="Estamos prontos para entender seu projeto e enviar uma proposta em até 24 horas."
