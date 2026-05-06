@@ -55,7 +55,7 @@ export function Header() {
         </div>
       </div>
       {open && (
-        <nav className="fixed inset-0 top-[70px] flex flex-col bg-black/95 h-screen p-8 gap-6 lg:hidden animate-in slide-in-from-top duration-300">
+        <nav className="fixed inset-0 top-17.5 flex flex-col bg-[#404142] h-screen p-8 gap-6 lg:hidden animate-in slide-in-from-top duration-300">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.to}

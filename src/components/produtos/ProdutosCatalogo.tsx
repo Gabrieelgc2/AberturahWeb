@@ -52,8 +52,16 @@ export function ProdutosCatalogo() {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <motion.div
                     layoutId={`${produto.id}-bg`}
-                    className="absolute inset-0 transition-transform duration-700 group-hover:scale-110"
-                    style={{ background: produto.gradiente }}
+                    className="absolute inset-0 transition-transform duration-700 group-hover:scale-110
+                    "
+                    style={{ 
+                      
+                      backgroundImage: `
+                      linear-gradient(135deg, rgba(255,255,255,0.15), rgba(0,0,0,0.25)),
+                      url(${produto.gradiente})`, 
+                      backgroundSize: "cover", 
+                      backgroundPosition: "center"
+                    }}
                   />
 
                   <div
@@ -106,7 +114,12 @@ export function ProdutosCatalogo() {
                       <motion.div
                         layoutId={`${selected.id}-bg`}
                         className="absolute inset-0"
-                        style={{ background: selected.gradiente }}
+                        style={{  backgroundImage: `
+                      linear-gradient(to top, rgba(0,0,0,0.6), transparent 60%),
+                      url(${selected.gradiente})`, 
+                      backgroundSize: "cover", 
+                      backgroundPosition: "center"
+                    }}
                       />
                     </div>
 

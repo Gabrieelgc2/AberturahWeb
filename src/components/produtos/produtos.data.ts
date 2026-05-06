@@ -1,3 +1,5 @@
+import acm from "../../assets/ACM1.jpeg"
+
 export type ProdutoCategoria =
   | "Todos"
   | "Brilhante"
@@ -28,7 +30,7 @@ export const PRODUTOS: Produto[] = [
     nome: "ACM Vermelho Cardinal",
     categoria: "Brilhante",
     espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.55 0.22 25), oklch(0.35 0.18 22))",
+    gradiente: acm,
     descricao:
       "Chapa com brilho intenso para fachadas comerciais e comunicação visual de alto contraste.",
   },
