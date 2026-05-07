@@ -1,4 +1,11 @@
 import acm from "../../assets/ACM1.jpeg"
+import acm1 from "../../assets/ACM2.jpeg";
+import acm2 from "../../assets/ACM3.jpeg";
+import acm3 from "../../assets/ACM4.jpeg";
+import acm5 from "../../assets/ACM5.jpeg";
+import acm6 from "../../assets/ACM6.jpeg";
+import acm7 from "../../assets/ACM7.jpeg";
+import acm8 from "../../assets/ACM8.jpeg";
 
 export type ProdutoCategoria =
   | "Todos"
@@ -39,7 +46,7 @@ export const PRODUTOS: Produto[] = [
     nome: "ACM Branco Polar",
     categoria: "Brilhante",
     espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.95 0.005 250), oklch(0.78 0.01 250))",
+    gradiente: acm1,
     descricao:
       "Acabamento clean e versátil, indicado para projetos corporativos e residenciais.",
   },
@@ -48,7 +55,7 @@ export const PRODUTOS: Produto[] = [
     nome: "ACM Preto Onyx",
     categoria: "Brilhante",
     espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.18 0.015 250), oklch(0.05 0.005 250))",
+    gradiente: acm2,
     descricao:
       "Visual elegante com profundidade de cor, ideal para composições modernas e sóbrias.",
   },
@@ -57,7 +64,7 @@ export const PRODUTOS: Produto[] = [
     nome: "ACM Inox Escovado",
     categoria: "Escovado",
     espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.78 0.01 250), oklch(0.45 0.012 250))",
+    gradiente: acm3,
     descricao:
       "Textura metálica técnica para aplicações arquitetônicas de alta resistência visual.",
   },
@@ -66,7 +73,7 @@ export const PRODUTOS: Produto[] = [
     nome: "ACM Champagne Escovado",
     categoria: "Escovado",
     espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.82 0.06 80), oklch(0.55 0.08 70))",
+    gradiente: acm5,
     descricao:
       "Tom sofisticado para fachadas premium e painéis com estética contemporânea.",
   },
@@ -75,7 +82,7 @@ export const PRODUTOS: Produto[] = [
     nome: "ACM Cobre Escovado",
     categoria: "Escovado",
     espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.68 0.14 40), oklch(0.42 0.12 35))",
+    gradiente: acm6,
     descricao:
       "Efeito quente e nobre para projetos autorais com identidade marcante.",
   },
@@ -84,7 +91,7 @@ export const PRODUTOS: Produto[] = [
     nome: "ACM Carvalho",
     categoria: "Madeirado",
     espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.62 0.08 60), oklch(0.38 0.06 50))",
+    gradiente: acm7,
     descricao:
       "Textura amadeirada de alta durabilidade para unir aconchego e performance técnica.",
   },
@@ -93,7 +100,7 @@ export const PRODUTOS: Produto[] = [
     nome: "ACM Imbuia",
     categoria: "Madeirado",
     espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.42 0.07 45), oklch(0.22 0.05 35))",
+    gradiente: acm7,
     descricao:
       "Acabamento escuro amadeirado para composições elegantes em fachadas e interiores.",
   },
@@ -102,7 +109,7 @@ export const PRODUTOS: Produto[] = [
     nome: "ACM Espelhado",
     categoria: "Especial",
     espessura: "3mm",
-    gradiente: "linear-gradient(135deg, oklch(0.92 0.01 220), oklch(0.65 0.02 220))",
+    gradiente: acm8,
     descricao:
       "Superfície reflexiva para efeitos visuais impactantes e projetos diferenciados.",
   },
