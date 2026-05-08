@@ -21,7 +21,7 @@ export function HistoriaSection() {
           Com uma trajetória construída sobre confiança e compromisso, buscamos constantemente evoluir nossos processos e acompanhar as tendências do mercado. Nosso objetivo é proporcionar aos clientes não apenas um produto, mas uma experiência completa, com suporte técnico especializado e atenção em cada detalhe.
         </Text>
         <Text variant="normalDescription" className="RevealText mt-6 text-[#404142] leading-relaxed max-w-2xl">
-          Ao longo dos anos, consolidamos nossa presença no setor através de parcerias sólidas e projetos bem-sucedidos. Seguimos trabalhando com dedicação para transformar ideias em realidade, entregando qualidade que se destaca e agrega valor em cada aplicação.
+          Estamos consolidando nossa presença no setor através de parcerias sólidas e projetos bem-sucedidos. Seguimos trabalhando com dedicação para transformar ideias em realidade, entregando qualidade que se destaca e agrega valor em cada aplicação. 
         </Text>
       </div>
     </Section>
