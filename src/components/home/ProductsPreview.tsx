@@ -3,29 +3,29 @@ import { ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "../../components/SectionHeading";
 import foto1 from "../../assets/Foto1.webp";
 import foto2 from "../../assets/Foto2.webp";
-import foto3 from "../../assets/Foto3.webp";
-import foto4 from "../../assets/Foto4.webp";
+import foto3 from "../../assets/Porta fosca.jpeg";
+import foto4 from "../../assets/ACM acetinado.jpeg";
 
 
 const categories = [
   {
-    name: "ACM Brilhante",
+    name: "ACM Amadeirado",
     desc: "Cores sólidas com brilho intenso. Ideal para fachadas com identidade marcante.",
     grad: foto1,
   },
   {
-    name: "ACM Escovado",
+    name: "ACM Amadeirado",
     desc: "Acabamento metálico contemporâneo. Reflexos suaves e visual sofisticado.",
     grad: foto2,
   },
   {
-    name: "ACM Madeirado",
+    name: "ACM Fosco",
     desc: "Texturas que reproduzem madeiras nobres com a durabilidade do alumínio.",
     grad: foto3,
   },
   {
-    name: "ACM Especial",
-    desc: "Espelhado, perfurado e efeitos exclusivos para projetos autorais.",
+    name: "ACM Acetinado",
+    desc: "Texturas que reproduzem madeiras nobres com a durabilidade do alumínio.",
     grad: foto4,
   },
 ];
@@ -73,13 +73,6 @@ export function ProductsPreview() {
                 }}
               />
               
-              <div
-                className="absolute inset-0 opacity-30 mix-blend-overlay"
-                style={{
-                  backgroundImage:
-                    "repeating-linear-gradient(45deg, transparent, transparent 8px, oklch(1 0 0 / 0.15) 8px, oklch(1 0 0 / 0.15) 9px)",
-                }}
-              />
 
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-white">
