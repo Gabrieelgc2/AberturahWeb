@@ -7,21 +7,25 @@ const ProductsPreview = lazy(() =>
     default: module.ProductsPreview,
   })),
 );
+
 const WhyChooseUs = lazy(() =>
   import("../components/WhyChooseUs").then((module) => ({
     default: module.WhyChooseUs,
   })),
 );
+
 const AboutPreview = lazy(() =>
   import("../components/home/AboutPreview").then((module) => ({
     default: module.AboutPreview,
   })),
 );
+
 const Testimonials = lazy(() =>
   import("../components/home/Testimonials").then((module) => ({
     default: module.Testimonials,
   })),
 );
+
 const Process = lazy(() =>
   import("../components/home/Process").then((module) => ({
     default: module.Process,
@@ -61,14 +65,41 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
+      {/* 1. Hero: Carregamento imediato para garantir a animação fluida */}
       <Hero />
-      <Suspense fallback={null}>
+
+      {/* 2. ProductsPreview */}
+      <Suspense fallback={<div className="h-[2237px] lg:h-[1417px] bg-[#D9D9D9]/30 w-full" />}>
         <ProductsPreview />
+      </Suspense>
+
+      {/* 3. WhyChooseUs */}
+      <Suspense fallback={<div className="h-[2541px] lg:h-[1541px] bg-white w-full" />}>
         <WhyChooseUs />
+      </Suspense>
+
+      {/* 4. AboutUsPreview */}
+      <Suspense fallback={<div className="h-[999px] lg:h-[1367px] bg-[#414042] w-full" />}>
         <AboutPreview />
+      </Suspense>
+
+      {/* 5. Testimonials */}
+      <Suspense fallback={<div className="h-[1652px] lg:h-[1416px] bg-background w-full" />}>
         <Testimonials />
+      </Suspense>
+
+      {/* 6. HowWeWork (Process) */}
+      <Suspense fallback={<div className="h-[1755px] lg:h-[1990px] bg-white w-full" />}>
         <Process />
+      </Suspense>
+
+      {/* 7. FAQ */}
+      <Suspense fallback={<div className="h-[990px] lg:h-[996px] bg-background w-full" />}>
         <FAQ />
+      </Suspense>
+
+      {/* 8. CTA */}
+      <Suspense fallback={<div className="h-[588px] lg:h-[562px] bg-background w-full" />}>
         <CTA />
       </Suspense>
     </>

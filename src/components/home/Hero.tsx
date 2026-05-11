@@ -19,6 +19,7 @@ export function Hero() {
           backgroundPosition: "center",
         }}
       />
+      
       {/* Dark overlay for legibility */}
       <div
         aria-hidden
@@ -27,11 +28,6 @@ export function Hero() {
           background:
             "linear-gradient(180deg, oklch(0.12 0.01 50 / 0.75) 0%, oklch(0.12 0.01 50 / 0.55) 10%, oklch(0.12 0.01 50 / 0.85) 100%)",
         }}
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-32 left-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
-        style={{ background: "var(--gradient-brand)" }}
       />
 
       <div className="container relative mx-auto max-w-7xl px-6">
