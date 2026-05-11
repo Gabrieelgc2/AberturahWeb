@@ -65,41 +65,41 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
-      {/* 1. Hero: Carregamento imediato para garantir a animação fluida */}
+      {/* 1. Hero: Carregamento imediato */}
       <Hero />
 
       {/* 2. ProductsPreview */}
-      <Suspense fallback={<div className="h-[2237px] lg:h-[1417px] bg-[#D9D9D9]/30 w-full" />}>
+      <Suspense fallback={<div className="h-[2237px] md:h-[1417px] bg-[#D9D9D9]/30 w-full" />}>
         <ProductsPreview />
       </Suspense>
 
       {/* 3. WhyChooseUs */}
-      <Suspense fallback={<div className="h-[2541px] lg:h-[1541px] bg-white w-full" />}>
+      <Suspense fallback={<div className="h-[2541px] md:h-[1541px] bg-white w-full" />}>
         <WhyChooseUs />
       </Suspense>
 
-      {/* 4. AboutUsPreview */}
-      <Suspense fallback={<div className="h-[999px] lg:h-[1367px] bg-[#414042] w-full" />}>
+      {/* 4. AboutUsPreview (WhoWeAre) */}
+      <Suspense fallback={<div className="h-[1000px] md:h-[1370px] bg-[#414042] w-full" />}>
         <AboutPreview />
       </Suspense>
 
       {/* 5. Testimonials */}
-      <Suspense fallback={<div className="h-[1652px] lg:h-[1416px] bg-background w-full" />}>
+      <Suspense fallback={<div className="h-[1652px] md:h-[1416px] bg-background w-full" />}>
         <Testimonials />
       </Suspense>
 
       {/* 6. HowWeWork (Process) */}
-      <Suspense fallback={<div className="h-[1755px] lg:h-[1990px] bg-white w-full" />}>
+      <Suspense fallback={<div className="h-[1755px] md:h-[1954px] bg-white w-full" />}>
         <Process />
       </Suspense>
 
       {/* 7. FAQ */}
-      <Suspense fallback={<div className="h-[990px] lg:h-[996px] bg-background w-full" />}>
+      <Suspense fallback={<div className="h-[991px] md:h-[996px] bg-background w-full" />}>
         <FAQ />
       </Suspense>
 
       {/* 8. CTA */}
-      <Suspense fallback={<div className="h-[588px] lg:h-[562px] bg-background w-full" />}>
+      <Suspense fallback={<div className="h-[588px] md:h-[562px] bg-background w-full" />}>
         <CTA />
       </Suspense>
     </>
