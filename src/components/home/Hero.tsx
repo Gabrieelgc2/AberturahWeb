@@ -36,10 +36,11 @@ export function Hero() {
           >
 
           <h1 className="text-white font-serif text-4xl font-bold leading-[1.1] tracking-normal sm:text-7xl lg:text-7xl">
-          <SplittingText text="Projetos de alto" />
+          <SplittingText text="Projetos de alto"
+          delay={450}  />
           <br></br>
-          <SplittingText text="padrão em ACM" 
-          delay={720}
+          <SplittingText text="padrão em ACM"  
+          delay={1200}
           />
          </h1>
 

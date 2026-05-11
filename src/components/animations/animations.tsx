@@ -125,6 +125,7 @@ export const SplittingText: React.FC<SplittingTextProps> = ({
                 style={{
                   display: "inline-block",
                   whiteSpace: type === "chars" ? "pre" : Array.isArray(text) ? "normal" : "normal",
+                  willChange: "transform, opacity",
                 }}
                 variants={itemVariants}
               >
