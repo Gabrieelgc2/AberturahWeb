@@ -16,7 +16,7 @@ const steps = [
   },
   {
     n: "04",
-    title: "Entrega e suporte",
+    title: "Entrega e instalação",
     desc: "Logística especializada e acompanhamento técnico durante toda a instalação.",
   },
 ];
