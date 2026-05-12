@@ -8,16 +8,16 @@ export const Route = createFileRoute("/contato")({
   component: ContatoPage,
   head: () => ({
     meta: [
-      { title: "ABERTURAH | Contato" },
+      { title: "ABERTURAh! | Contato" },
       {
         name: "description",
         content:
-          "Fale com a ABERTURAH via WhatsApp, telefone ou e-mail. Atendimento técnico para projetos em todo o Brasil.",
+          "Fale com a ABERTURAh! via WhatsApp, telefone ou e-mail. Atendimento técnico para projetos em todo o Brasil.",
       },
-      { property: "og:title", content: "Contato — ABERTURAH" },
+      { property: "og:title", content: "Contato — ABERTURAh!" },
       {
         property: "og:description",
-        content: "WhatsApp, telefone, e-mail e endereço da ABERTURAH.",
+        content: "WhatsApp, telefone, e-mail e endereço da ABERTURAh!.",
       },
     ],
   }),

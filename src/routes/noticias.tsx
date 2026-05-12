@@ -8,16 +8,16 @@ export const Route = createFileRoute("/noticias")({
   component: NoticiasPage,
   head: () => ({
     meta: [
-      { title: "ABERTURAH | Notícias" },
+      { title: "ABERTURAh! | Notícias" },
       {
         name: "description",
         content:
-          "Acompanhe os bastidores, obras e novidades da ABERTURAH no Instagram e YouTube.",
+          "Acompanhe os bastidores, obras e novidades da ABERTURAh! no Instagram e YouTube.",
       },
-      { property: "og:title", content: "Notícias — ABERTURAH" },
+      { property: "og:title", content: "Notícias — ABERTURAh!" },
       {
         property: "og:description",
-        content: "Bastidores, obras e novidades da ABERTURAH.",
+        content: "Bastidores, obras e novidades da ABERTURAh!.",
       },
     ],
   }),

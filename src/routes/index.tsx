@@ -46,13 +46,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "ABERTURAH" },
+      { title: "ABERTURAh!" },
       {
         name: "description",
         content:
           "Fabricação e beneficiamento de chapas ACM premium para fachadas, revestimentos e projetos arquitetônicos em todo o Brasil.",
       }, // Texto que aparece nos resultados de busca do Google logo abaixo do título.
-      { property: "og:title", content: "ABERTURAH — Material ACM" },
+      { property: "og:title", content: "ABERTURAh! — Material ACM" },
       {
         property: "og:description",
         content: "Chapas ACM premium, beneficiamento CNC e suporte técnico em todo o Brasil.",

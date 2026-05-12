@@ -8,13 +8,13 @@ export const Route = createFileRoute("/produtos")({
   component: ProdutosPage,
   head: () => ({
     meta: [
-      { title: "ABERTURAH | Produtos" },
+      { title: "ABERTURAh! | Produtos" },
       {
         name: "description",
         content:
           "Linha completa de chapas ACM: brilhante, escovado, madeirado e acabamentos especiais. Mais de 40 cores disponíveis.",
       },
-      { property: "og:title", content: "Produtos ACM — ABERTURAH" },
+      { property: "og:title", content: "Produtos ACM — ABERTURAh!" },
       {
         property: "og:description",
         content: "Linha completa de chapas ACM com mais de 40 acabamentos.",

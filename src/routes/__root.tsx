@@ -32,25 +32,25 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ABERTURAH — Material ACM de Alta Performance" },
+      { title: "ABERTURAh! — Material ACM de Alta Performance" },
       {
         name: "description",
         content:
-          "ABERTURAH: fabricação e beneficiamento de chapas ACM com qualidade certificada para fachadas em todo o Brasil.",
+          "ABERTURAh!: fabricação e beneficiamento de chapas ACM com qualidade certificada para fachadas em todo o Brasil.",
       },
-      { name: "author", content: "ABERTURAH" },
-      { property: "og:title", content: "ABERTURAH — Material ACM de Alta Performance" },
+      { name: "author", content: "ABERTURAh!" },
+      { property: "og:title", content: "ABERTURAh! — Material ACM de Alta Performance" },
       {
         property: "og:description",
         content: "Chapas ACM, beneficiamento e suporte técnico para fachadas em todo o Brasil.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "ABERTURAH — Material ACM de Alta Performance" },
+      { name: "twitter:title", content: "ABERTURAh! — Material ACM de Alta Performance" },
       {
         name: "twitter:description",
         content:
-          "ABERTURAH: fabricação e beneficiamento de chapas ACM com qualidade certificada para fachadas em todo o Brasil.",
+          "ABERTURAh!: fabricação e beneficiamento de chapas ACM com qualidade certificada para fachadas em todo o Brasil.",
       },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/565e9950-2f7a-42e9-98cd-92495f3220ce/id-preview-18345c1d--6f20dbc8-d541-4ab0-bf30-02ab67688ffb.lovable.app-1776640301043.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/565e9950-2f7a-42e9-98cd-92495f3220ce/id-preview-18345c1d--6f20dbc8-d541-4ab0-bf30-02ab67688ffb.lovable.app-1776640301043.png" },
