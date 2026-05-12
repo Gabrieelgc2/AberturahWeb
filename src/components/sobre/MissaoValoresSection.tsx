@@ -49,8 +49,7 @@ export function MissaoValoresSection() {
               </Text>
 
               <Text variant="cardDescription" className="RevealText mt-2 text-[#404142]/90 leading-relaxed">
-                Ser a indústria mais respeitada do segmento de ACM até 2030,
-                reconhecida por qualidade e inovação.
+                Ser a indústria de inovação no segmento de ACM reconhecida por qualidade e eficiência.
               </Text>
             </div>
 
