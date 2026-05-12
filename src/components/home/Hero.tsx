@@ -35,7 +35,7 @@ export function Hero() {
           className="mx-auto max-w-4xl text-center"
           >
 
-          <h1 className="text-white font-serif text-4xl font-bold leading-[1.1] tracking-normal sm:text-7xl lg:text-7xl">
+          <h1 className="text-white font-serif text-4xl font-bold leading-[1.1] tracking-normal sm:text-7xl">
           <SplittingText text="Projetos de alto"
           delay={450}  />
           <br></br>
@@ -45,7 +45,8 @@ export function Hero() {
          </h1>
 
           <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-[color:white] sm:text-xl">
-          Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. Somos especializados em portas, revestimentos, brises e pergolados.
+          Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. 
+          Somos especializados em portas, revestimentos, brises e pergolados.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
