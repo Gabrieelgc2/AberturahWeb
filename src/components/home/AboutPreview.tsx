@@ -36,8 +36,8 @@ export function AboutPreview() {
             <p className="RevealText mt-6 text-lg leading-relaxed text-[#D9D9D9]">
               Fundada com a missão de elevar o padrão de revestimentos
               arquitetônicos no Brasil, a ABERTURAh! integra fabricação,
-              beneficiamento e logística. Cada chapa que sai
-              da nossa linha carrega o compromisso de durar décadas.
+              beneficiamento e logística. Cada projeto que sai
+              da nossa linha possui qualidade, desempenho e perfomance.
             </p>
             <Link
               to="/sobre"
