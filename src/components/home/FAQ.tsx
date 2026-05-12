@@ -12,6 +12,10 @@ const faqs = [
     a: "ACM (Aluminum Composite Material) é um painel composto por duas chapas de alumínio com núcleo de polietileno. É amplamente usado em fachadas ventiladas, revestimentos internos, totens, comunicação visual e mobiliário urbano por ser leve, plano e altamente durável.",
   },
   {
+    q: "Qual a diferença entre ACM poliéster e Kaynar?",
+    a: "O ACM poliéster é indicado para uso interno, com resistência moderada a intempéries. O ACM Kynar possui revestimento de fluoropolímero, oferecendo alta resistência a UV, corrosão e desgaste, sendo ideal para fachadas externas expostas a condições climáticas severas.",
+  },
+  {
     q: "Qual a espessura ideal para fachadas?",
     a: "Para fachadas externas recomendamos painéis de 4mm com lâmina de alumínio de 0,30mm a 0,50mm. Para uso interno ou comunicação visual, espessuras de 3mm já são suficientes. Nossa equipe técnica orienta a melhor especificação para cada caso.",
   },
