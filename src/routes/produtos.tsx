@@ -34,7 +34,7 @@ function ProdutosPage() {
             <span className="italic">de ACM premium.</span>
           </>
         }
-        description="Mais de 40 acabamentos certificados para qualquer projeto, do residencial ao corporativo."
+        description="Ofereçemos um leque de produtos para transformar a sua obra em um projeto de sucesso."
         image={BackGroundProduto}
       />
       <ProdutosCatalogo />

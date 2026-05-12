@@ -22,7 +22,7 @@ export function CTA() {
               <h2 className="RevealText font-serif text-4xl font-bold leading-[1.05] text-[color:var(--brand-foreground)] sm:text-5xl">
                 Vamos transformar
                 <br />
-                <span className="RevealText italic">seu projeto?</span>
+                <span className="RevealText italic">seu projeto em um sucesso?</span>
               </h2>
               <p className="RevealText mt-5 max-w-md text-lg leading-relaxed text-[color:var(--brand-foreground)]/85">
                 Fale com nosso time técnico e receba um orçamento personalizado

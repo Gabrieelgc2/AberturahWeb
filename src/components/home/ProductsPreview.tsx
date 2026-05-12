@@ -9,12 +9,12 @@ import foto4 from "../../assets/ACM acetinado.jpeg";
 
 const categories = [
   {
-    name: "ACM Amadeirado",
+    name: "ACM Madeirado",
     desc: "Cores sólidas com brilho intenso. Ideal para fachadas com identidade marcante.",
     grad: foto1,
   },
   {
-    name: "ACM Amadeirado",
+    name: "ACM Madeirado",
     desc: "Acabamento metálico contemporâneo. Reflexos suaves e visual sofisticado.",
     grad: foto2,
   },
@@ -42,7 +42,7 @@ export function ProductsPreview() {
               <>
                 Material ACM<br />
                 <span className="italic font-normal text-(--steel)">
-                  para cada visão.
+                  para cada estilo.
                 </span>
               </>
             }

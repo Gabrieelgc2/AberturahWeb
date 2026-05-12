@@ -6,19 +6,19 @@ const reasons = [
     icon: ShieldCheck,
     title: "Qualidade Certificada",
     description:
-      "Trabalhamos exclusivamente com chapas de ACM de primeira linha, garantindo durabilidade superior, resistência a intempéries e acabamento impecável em cada projeto.",
+      "Trabalhamos exclusivamente com chapas de ACM de primeira linha(Kynar), garantindo durabilidade superior, resistência a intempéries e acabamento impecável em cada projeto.",
   },
   {
     icon: Layers,
     title: "Variedade de Acabamentos",
     description:
-      "Mais de 40 cores e texturas disponíveis — do escovado ao brilhante, passando pelo acabamento amadeirado e efeitos metálicos. Sua fachada com a identidade que ela merece.",
+      "Mais de 40 cores e texturas disponíveis — do escovado ao brilhante, passando pelo acabamento fosco e efeitos metálicos. Sua fachada com a identidade que ela merece.",
   },
   {
     icon: Hammer,
     title: "Beneficiamento Próprio",
     description:
-      "Corte CNC, dobra e usinagem realizados em nossa fábrica. Precisão milimétrica para fachadas ventiladas, portas, brises, pergolados e revestimentos sob medida.",
+      "Corte CNC, dobra, equipamentos de última geração e usinagem realizados em nossa fábrica. Precisão milimétrica para fachadas ventiladas, portas, brises, pergolados e revestimentos sob medida.",
   },
   {
     icon: Zap,
@@ -30,7 +30,7 @@ const reasons = [
     icon: Truck,
     title: "Logística Eficiente",
     description:
-      "Logística estruturada para atender todo Nordeste. Suas chapas e portas chegam devidamente protegidas, prontas para inicio das etapas de instalação. ",
+      "Logística estruturada para atender seu projeto em qualquer localidade. Suas chapas e portas chegam devidamente protegidas, prontas para inicio das etapas de instalação. ",
   },
   {
     icon: Award,

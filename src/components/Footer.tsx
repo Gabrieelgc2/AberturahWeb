@@ -26,8 +26,8 @@ export function Footer() {
               </span>
             </div>
             <p className="RevealText mt-5 text-sm leading-relaxed">
-              Fabricação e beneficiamento de chapas ACM para fachadas,
-              revestimentos e projetos arquitetônicos em todo o Nordeste.
+              Fabricação e beneficiamento de chapas ACM para fachadas, portas de entradas, portas internas, ripados, brises, pergolados e
+              revestimentos.
             </p>
           </div>
 
