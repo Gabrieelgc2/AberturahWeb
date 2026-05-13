@@ -10,7 +10,7 @@ interface SectionHeadingProps {
 const testimonials = [
   {
     quote:
-      "A ABERTURAH entregou nossa fachada com precisão milimétrica e prazo cumprido à risca. Recomendo para qualquer obra de alto padrão.",
+      "A ABERTURAh! entregou nossa fachada com precisão milimétrica e prazo cumprido à risca. Recomendo para qualquer obra de alto padrão.",
     name: "Rafael Monteiro",
     role: "Arquiteto, MR Studio",
   },

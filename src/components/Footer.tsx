@@ -101,7 +101,7 @@ export function Footer() {
 
         <div className="RevealText mt-16 flex flex-col items-center justify-between gap-4 border-t border-black pt-8 text-xs text-[black] sm:flex-row">
           <span>
-            © {new Date().getFullYear()} ABERTURAH. Todos os direitos reservados.
+            © {new Date().getFullYear()} ABERTURAh! Todos os direitos reservados.
           </span>
         </div>
       </div>
