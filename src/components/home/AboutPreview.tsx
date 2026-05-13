@@ -24,16 +24,17 @@ export function AboutPreview() {
             <SectionHeading
               align="left"
               eyebrow="Quem somos"
+              eyebrowClassName="text-[#D9D9D9]"
               title={
                 <>
-                <span className="text-[#D9D9D9]">
+                <span className="text-[#D9D9D9] font-serif">
                   Indústria,
                   </span><br />
-                  <span className="italic text-[#D9D9D9]">precisão e design.</span>
+                  <span className="italic text-[#D9D9D9] font-serif">precisão e design.</span>
                 </>
               }
             />
-            <p className="RevealText mt-6 text-lg leading-relaxed text-[#D9D9D9]">
+            <p className="RevealText mt-6 text-lg leading-relaxed text-[#D9D9D9] font-sans">
               Fundada com a missão de elevar o padrão de revestimentos
               arquitetônicos no Brasil, a ABERTURAh! integra fabricação,
               beneficiamento e logística. Cada projeto que sai
@@ -41,7 +42,7 @@ export function AboutPreview() {
             </p>
             <Link
               to="/sobre"
-              className="RevealText mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[color:#D9D9D9] underline-offset-4 hover:underline"
+              className="RevealText mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[color:#D9D9D9] underline-offset-4 hover:underline font-sans"
             >
               Conheça nossa história
               <ArrowRight className="h-4 w-4" />
@@ -64,7 +65,7 @@ export function AboutPreview() {
               className="absolute -bottom-6 -right-6 max-w-[260px] rounded-2xl bg-background p-6 shadow-[var(--shadow-card)]"
             >
               <div
-                className="RevealText font-serif text-5xl font-bold leading-none"
+                className="RevealText font-sans text-5xl font-bold leading-none"
                 style={{
                   background: "var(--gradient-brand)",
                   WebkitBackgroundClip: "text",
@@ -73,7 +74,7 @@ export function AboutPreview() {
               >
                 100%
               </div>
-              <p className="RevealText mt-2 text-sm text-[color:var(--steel)]">
+              <p className="RevealText mt-2 text-sm text-[#404142] font-sans">
                 Beneficiamento próprio com tecnologia CNC.
               </p>
             </div>

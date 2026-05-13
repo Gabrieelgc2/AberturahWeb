@@ -40,8 +40,8 @@ export function ProductsPreview() {
             eyebrow="Linha de produtos"
             title={
               <>
-                Material ACM<br />
-                <span className="italic font-normal text-(--steel)">
+                <span className="font-serif">Material ACM</span><br />
+                <span className="italic font-normal text-(--steel) font-serif">
                   para cada estilo.
                 </span>
               </>
@@ -49,7 +49,7 @@ export function ProductsPreview() {
           />
           <Link
             to="/produtos"
-            className="RevealText -ml-10 active:scale-95 active:bg-foreground active:text-background group inline-flex items-center gap-2 rounded-full border border-foreground px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-background"
+            className="font-sans RevealText -ml-10 active:scale-95 active:bg-foreground active:text-background group inline-flex items-center gap-2 rounded-full border border-foreground px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
             Ver linha completa
             <ArrowUpRight className="RevealText h-4 w-4 transition-transform group-hover:rotate-45" />
@@ -77,8 +77,8 @@ export function ProductsPreview() {
               <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-white">
                 <h3 className="font-serif text-2xl font-bold">{c.name}</h3>
-                <p className="mt-2 text-sm text-white/80">{c.desc}</p>
-                <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-(--brand)">
+                <p className="mt-2 text-sm text-[#D9D9D9] font-sans">{c.desc}</p>
+                <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-(--brand) font-sans">
                   Explorar
                   <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </div>

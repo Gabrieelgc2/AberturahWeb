@@ -71,16 +71,16 @@ export function WhyChooseUs() {
         <div className="mx-auto max-w-3xl text-center">
           <div className="RevealText mb-6 inline-flex items-center gap-2 
           rounded-full border border-(--steel-light)
-          bg-background px-4 py-1.5 text-xs font-semibold uppercase 
+          bg-background px-4 py-1.5 text-xs font-bold 
           tracking-widest text-(--steel)"
           style={{"--delay": "0ms"} as React.CSSProperties}>
             <span
               className="h-1.5 w-1.5 rounded-full"
               style={{ background: "var(--brand)" }}
             />
-            ABERTURAH · Material ACM
+            ABERTURAh! · MATERIAL ACM
           </div>
-          <h2 className="RevealText font-serif text-5xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl"
+          <h2 className="RevealText font-serif text-5xl font-bold leading-[1.05] tracking-tight text-[foreground] sm:text-6xl lg:text-7xl"
             style={{"--delay": "150ms"} as React.CSSProperties}>
             Por que nos
             <br />
@@ -93,14 +93,14 @@ export function WhyChooseUs() {
               escolher?
             </span>
           </h2>
-          <p className="RevealText mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-(--steel)">
-            A ABERTURAh! Chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos em todo Nordeste.
+          <p className="RevealText font-sans mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#404142]">
+            A ABERTURAh! Chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos.
              Combinamos matéria-prima premium, tecnologia de beneficiamento e atendimento próximo para entregar resultados que valorizam cada obra.
           </p>
         </div>
 
         <div 
-        className="RevealText mt-20 grid gap-px rounded-3xl border border-steel-light bg-(--steel-light) sm:grid-cols-2 lg:grid-cols-2"
+        className="RevealText mt-20 grid gap-px rounded-3xl border border-steel-light bg-(--steel-light) sm:grid-cols-2"
         >
           {reasons.map((reason) => {
             const Icon = reason.icon;
@@ -115,10 +115,10 @@ export function WhyChooseUs() {
                 >
                   <Icon className="h-7 w-7 text-shadow-black" strokeWidth={1.75} />
                 </div>
-                <h3 className="RevealText font-serif text-2xl font-semibold text-foreground transition-colors group-hover:text-[color:var(--brand-foreground)]">
+                <h3 className="RevealText font-serif text-2xl font-bold text-foreground transition-colors group-hover:text-[color:var(--brand-foreground)]">
                   {reason.title}
                 </h3>
-                <p className="RevealText mt-3 text-[15px] leading-relaxed text-[color:var(--steel)] transition-colors group-hover:text-[color:var(--steel-light)]">
+                <p className="RevealText font-sans mt-3 text-[15px] leading-relaxed text-[color:var(--steel)] transition-colors group-hover:text-[color:var(--steel-light)]">
                   {reason.description}
                 </p>
                 <div

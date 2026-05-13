@@ -18,7 +18,7 @@ export function PageLayout({ eyebrow, title, description, image }: Props) {
         <img src={image ?? heroImage} alt="Background" className="h-full w-full object-cover" />
       </div>
       <div className="container relative mx-auto max-w-5xl px-6 text-center">
-        <div className="RevealText inline-flex items-center gap-2 rounded-full border border-[#white]/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[white]">
+        <div className="RevealText inline-flex items-center gap-2 rounded-full border border-[#white]/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[white] font-sans">
           <span
             className="h-1.5 w-1.5 rounded-full"
             style={{ background: "white" }}
@@ -29,7 +29,7 @@ export function PageLayout({ eyebrow, title, description, image }: Props) {
           {title}
         </h1>
         {description && (
-          <p className="RevealText mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[white]">
+          <p className="RevealText mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[white] font-sans">
             {description}
           </p>
         )}

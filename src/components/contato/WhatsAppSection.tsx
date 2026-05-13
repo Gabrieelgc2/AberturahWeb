@@ -21,10 +21,10 @@ export function WhatsAppSection() {
           <div className="relative grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#D9D9D9]">
-                <MessageCircle className="h-3.5 w-3.5 text-[#D9D9D9] RevealText" />
+                <MessageCircle className="h-3.5 w-3.5 text-[#D9D9D9] RevealText font-sans" />
                 Atendimento direto
               </div>
-              <h2 className="mt-6 font-serif text-5xl font-bold leading-[1.05] text-white sm:text-6xl RevealText">
+              <h2 className="mt-6 font-sans text-5xl font-semibold leading-[1.05] text-white sm:text-6xl RevealText">
                 Resposta em<br />
                 <span
                   className="italic"
@@ -36,7 +36,7 @@ export function WhatsAppSection() {
                   minutos.
                 </span>
               </h2>
-              <p className="mt-6 max-w-md text-lg leading-relaxed text-[#D9D9D9] RevealText">
+              <p className="mt-6 max-w-md text-lg font-sans leading-relaxed text-[#D9D9D9] RevealText">
                 Nosso time comercial atende pelo WhatsApp em horário comercial. Envie o briefing do seu projeto e receba orçamento personalizado.
               </p>
 
@@ -49,7 +49,7 @@ export function WhatsAppSection() {
                   style={{ background: "var(--gradient-brand)" }}
                 >
                   <MessageCircle className="h-5 w-5 RevealText" />
-                  <span className="RevealText">Conversar no WhatsApp</span>
+                  <span className="RevealText font-sans">Conversar no WhatsApp</span>
                 </a>
               </div>
 
@@ -77,13 +77,13 @@ export function WhatsAppSection() {
                 >
                   <MessageCircle className="h-8 w-8 text-[#D9D9D9] RevealText" strokeWidth={1.75}/>
                 </div>
-                <p className="mt-4 font-serif text-2xl font-bold text-[#404142] sm:text-3xl RevealText">
+                <p className="mt-4 font-sans text-2xl font-bold text-[#404142] sm:text-3xl RevealText">
                   {SITE_CONTACT.phoneDisplay}
                 </p>
-                <p className="mt-4 text-sm uppercase tracking-widest text-[#404142] RevealText">
+                <p className="mt-4 font-sans text-sm uppercase tracking-widest text-[#404142] RevealText">
                   WhatsApp comercial
                 </p>
-                <p className="mt-4 max-w-xs text-sm text-[#404142] RevealText">
+                <p className="mt-4 max-w-xs text-sm text-[#404142] font-sans RevealText">
                   Envie fotos, plantas ou descrições. Quanto mais detalhes, mais precisa será nossa proposta.
                 </p>
               </div>

@@ -2,7 +2,7 @@ const steps = [
   {
     n: "01",
     title: "Briefing técnico",
-    desc: "Entendemos o projeto, prazos e especificações. Visita técnica quando necessário.",
+    desc: "Entendemos o projeto, prazos e especificações.",
   },
   {
     n: "02",
@@ -51,7 +51,7 @@ export function Process() {
             Do esboço à fachada,
             <br />
             <span
-              className="italic"
+              className="italic font-serif"
               style={{
                 background: "var(--gradient-brand)",
                 WebkitBackgroundClip: "text",
@@ -91,10 +91,10 @@ export function Process() {
                     >
                       {s.n}
                     </div>
-                    <h3 className="mt-4 font-serif text-3xl font-semibold text-white tracking-tight">
+                    <h3 className="mt-4 font-sans text-3xl font-bold text-white tracking-tight">
                       {s.title}
                     </h3>
-                    <p className="mt-4 text-base leading-relaxed text-[#D9D9D9]">
+                    <p className="mt-4 text-base leading-relaxed text-[#D9D9D9] font-sans">
                       {s.desc}
                     </p>
                   </div>

@@ -31,11 +31,11 @@ export function MissaoValoresSection() {
             <div className="rounded-3xl bg-[#D9D9D9] p-8 transition hover:-translate-y-2 hover:shadow-xl">
               <img src={MissionPhoto} alt="Missão" className=" w-8 h-8 mb-6 text-[#404142] sm:w-10 sm:h-10" />
 
-              <Text variant="cardTitle" className="RevealText font-serif font-semibold text-[#404142]">
+              <Text variant="cardTitle" className="RevealText font-sans text-[#404142]">
                 Missão
               </Text>
 
-              <Text variant="cardDescription" className="RevealText mt-2 text-[#404142]/90 leading-relaxed">
+              <Text variant="cardDescription" className="RevealText mt-2 font-sans text-[#404142]/90 leading-relaxed">
               Transformar projetos arquitetônicos em realidade, criando soluções exclusivas com qualidade e criatividade
               </Text>
             </div>
@@ -44,11 +44,11 @@ export function MissaoValoresSection() {
             <div className="rounded-3xl bg-[#D9D9D9] p-8 transition hover:-translate-y-2 hover:shadow-xl">
               <img src={Visao} alt="Visao" className="w-8 h-8 mb-6 text-[#404142] sm:w-10 sm:h-10" />
 
-              <Text variant="cardTitle" className="RevealText font-serif font-semibold text-[#404142]">
+              <Text variant="cardTitle" className="RevealText font-sans text-[#404142]">
                 Visão
               </Text>
 
-              <Text variant="cardDescription" className="RevealText mt-2 text-[#404142]/90 leading-relaxed">
+              <Text variant="cardDescription" className="RevealText mt-2 font-sans text-[#404142]/90 leading-relaxed">
                 Ser a indústria de inovação no segmento de ACM reconhecida por qualidade e eficiência.
               </Text>
             </div>
@@ -57,11 +57,11 @@ export function MissaoValoresSection() {
             <div className="rounded-3xl bg-[#D9D9D9] p-8 transition hover:-translate-y-2 hover:shadow-xl">
               <img src={teste} alt="Valores" className="w-8 h-8 mb-6 text-[#404142] lg:relative top-1.5 sm:w-10 sm:h-10" />
 
-              <Text variant="cardTitle" className="RevealText font-serif font-semibold text-[#404142]">
+              <Text variant="cardTitle" className="RevealText font-sans text-[#404142]">
                 Valores
               </Text>
 
-              <Text variant="cardDescription" className="RevealText mt-2 text-[#404142]/90 leading-relaxed">
+              <Text variant="cardDescription" className="RevealText mt-2 font-sans text-[#404142]/90 leading-relaxed">
                 Compromisso, transparência, precisão técnica e parceria de longo prazo com cada cliente.
               </Text>
             </div>

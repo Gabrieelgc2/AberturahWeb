@@ -22,9 +22,9 @@ export function CTA() {
               <h2 className="RevealText font-serif text-4xl font-bold leading-[1.05] text-[color:var(--brand-foreground)] sm:text-5xl">
                 Vamos transformar
                 <br />
-                <span className="RevealText italic">seu projeto em um sucesso?</span>
+                <span className="font-serif RevealText italic">seu projeto em um sucesso?</span>
               </h2>
-              <p className="RevealText mt-5 max-w-md text-lg leading-relaxed text-[color:var(--brand-foreground)]/85">
+              <p className="font-sans RevealText mt-5 max-w-md text-lg leading-relaxed text-[#D9D9D9]">
                 Fale com nosso time técnico e receba um orçamento personalizado
                 em até 48 horas.
               </p>
@@ -34,14 +34,14 @@ export function CTA() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm font-semibold text-background transition-transform hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm font-semibold text-background transition-transform hover:scale-105 text-sans"
               >
                 <MessageCircle className="h-4 w-4" />
                 WhatsApp
               </a>
               <Link
                 to="/contato"
-                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[color:var(--brand-foreground)] px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] transition-colors hover:bg-[color:var(--brand-foreground)] hover:text-[color:var(--brand)]"
+                className="text-sans inline-flex items-center justify-center gap-2 rounded-full border-2 border-[color:var(--brand-foreground)] px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] transition-colors hover:bg-[color:var(--brand-foreground)] hover:text-[color:var(--brand)]"
               >
                 Página de contato
                 <ArrowRight className="RevealText h-4 w-4" />

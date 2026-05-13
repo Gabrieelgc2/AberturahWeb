@@ -17,11 +17,11 @@ export function DiferenciaisSection() {
     <Section size="default">
 
         <div className="text-center max-w-2xl mx-auto">
-          <Text variant="Title" className="RevealText uppercase tracking-widest text-[#404142]">
+          <Text variant="Title" className="RevealText uppercase tracking-widest text-[#404142] font-serif">
             Diferenciais
           </Text>
 
-          <Text variant="Subtitle" className="RevealText mt-4 font-serif font-bold">
+          <Text variant="Subtitle" className="RevealText mt-4 font-sans font-bold">
             O que nos torna <span className="italic">referência.</span>
           </Text>
         </div>
@@ -48,11 +48,11 @@ export function DiferenciaisSection() {
                   style={{ color: "var(--brand)" }}
                 />
 
-                <Text variant="cardTitle" className="RevealText font-serif font-semibold">
+                <Text variant="cardTitle" className="RevealText font-sans font-normal">
                   {d.title}
                 </Text>
 
-                <Text variant="cardDescription" className="RevealText mt-2 text-[color:var(--steel)] leading-relaxed">
+                <Text variant="cardDescription" className="RevealText mt-2 text-[#404142] leading-relaxed font-sans">
                   {d.desc}
                 </Text>
               </div>

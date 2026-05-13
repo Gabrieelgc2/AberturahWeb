@@ -34,7 +34,7 @@ function ContatoPage() {
             <span className="italic">ABERTURAh!</span>
           </>
         }
-        description="Estamos prontos para entender seu projeto e enviar uma proposta em até 24 horas."
+        description="Estamos prontos para entender seu projeto e enviar uma proposta em até 48 horas."
               image={contato}
       />
       <InformacoesContato />

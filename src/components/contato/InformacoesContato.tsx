@@ -23,8 +23,8 @@ export function InformacoesContato() {
               >
                 <Icon className="h-6 w-6 text-[color:#404142] RevealText" strokeWidth={1.75} />
               </div>
-              <h3 className="mt-5 font-serif text-xl font-semibold text-foreground RevealText">{info.title}</h3>
-              <div className="mt-3 space-y-1 text-sm text-[color:var(--steel)] RevealText">
+              <h3 className="mt-5 font-sans text-xl font-normal text-foreground RevealText">{info.title}</h3>
+              <div className="mt-3 space-y-1 text-sm text-[#404142] font-sans RevealText">
                 {info.linhas.map((l) => (
                   <p key={l}>{l}</p>
                 ))}

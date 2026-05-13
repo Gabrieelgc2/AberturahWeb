@@ -37,9 +37,9 @@ export function Testimonials() {
           eyebrowClassName="RevealText"
           title={
             <>
-              Vozes de quem
+              <span className="font-serif">Vozes de quem</span>
               <br />
-              <span className="italic">construiu com a gente.</span>
+              <span className="italic font-serif">construiu com a gente.</span>
             </>
           }
         />
@@ -61,7 +61,7 @@ export function Testimonials() {
                 style={{ color: i === 1 ? "var(--brand)" : "var(--brand)" }}
               />
               <p
-                className={`RevealText mt-6 flex-1 font-serif text-xl leading-relaxed ${
+                className={`RevealText mt-6 flex-1 font-sans text-xl leading-relaxed ${
                   i === 1 ? "text-white" : "text-foreground"
                 }`}
               >
@@ -73,14 +73,14 @@ export function Testimonials() {
                 }`}
               >
                 <div
-                  className={`RevealText font-semibold ${
+                  className={`RevealText font-semibold font-sans ${
                     i === 1 ? "text-white" : "text-foreground"
                   }`}
                 >
                   {t.name}
                 </div>
                 <div
-                  className={`RevealText mt-1 text-sm ${
+                  className={`RevealText mt-1 text-sm font-sans ${
                     i === 1
                       ? "text-[color:var(--steel-light)]"
                       : "text-[color:var(--steel)]"

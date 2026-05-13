@@ -46,9 +46,9 @@ export function FAQ() {
           eyebrowClassName="RevealText"
           title={
             <>
-              Tire suas dúvidas
+              <span className="font-serif">Tire suas dúvidas</span>
               <br />
-              <span className="italic">sobre ACM.</span>
+              <span className="italic font-serif">sobre ACM.</span>
             </>
           }
         />
@@ -60,10 +60,10 @@ export function FAQ() {
               value={`item-${i}`}
               className="RevealText rounded-2xl border border-[color:var(--steel-light)] bg-background px-6 transition-colors data-[state=open]:bg-[color:var(--steel-light)]/40"
             >
-              <AccordionTrigger className="py-6 text-left font-serif text-lg font-semibold text-foreground hover:no-underline sm:text-xl">
+              <AccordionTrigger className="py-6 text-left font-sans text-lg font-medium text-foreground hover:no-underline sm:text-xl">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="pb-6 text-base leading-relaxed text-[color:var(--steel)]">
+              <AccordionContent className="pb-6 text-base leading-relaxed text-[#404142] font-sans">
                 {f.a}
               </AccordionContent>
             </AccordionItem>

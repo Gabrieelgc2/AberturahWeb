@@ -44,7 +44,7 @@ export function Hero() {
           />
          </h1>
 
-          <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-[color:white] sm:text-xl">
+          <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-[color:white] sm:text-xl font-serif">
           Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. 
           Somos especializados em portas, revestimentos, brises e pergolados.
           </p>
@@ -54,7 +54,7 @@ export function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] shadow-[var(--shadow-brand)] transition-transform hover:scale-105"
+              className="group inline-flex items-center gap-2 rounded-full px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] shadow-[var(--shadow-brand)] transition-transform hover:scale-105 font-sans"
               style={{ background: "var(--gradient-brand)" }}
             >
               Solicitar orçamento
