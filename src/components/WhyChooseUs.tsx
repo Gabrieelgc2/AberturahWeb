@@ -1,10 +1,10 @@
-import { ShieldCheck, Layers, Zap, Award, Truck, Hammer } from "lucide-react";
+import { ShieldCheck, Layers, Zap, Award, Truck, Hammer, Icon, Pickaxe, Home, CircleCheckBig, BadgeCheck } from "lucide-react";
 import React from "react";
 
 const reasons = [
   {
     icon: ShieldCheck,
-    title: "Qualidade Certificada",
+    title: "Qualidade",
     description:
       "Trabalhamos exclusivamente com chapas de ACM de primeira linha(Kynar), garantindo durabilidade superior, resistência a intempéries e acabamento impecável em cada projeto.",
   },
@@ -13,6 +13,11 @@ const reasons = [
     title: "Variedade de Acabamentos",
     description:
       "Mais de 40 cores e texturas disponíveis — do escovado ao brilhante, passando pelo acabamento fosco e efeitos metálicos. Sua fachada com a identidade que ela merece.",
+  },
+  {
+    icon: Home,
+    title: "Instalação",
+    description: "Equipe própria capacitada para trabalhos em altura seguindo as normas brasileiras"
   },
   {
     icon: Hammer,
@@ -38,6 +43,11 @@ const reasons = [
     description:
       "Equipe técnica à disposição para dimensionamento, especificação de subestrutura e acompanhamento de obra do início ao fim.",
   },
+  {
+    icon: BadgeCheck,
+    title: "Garantia",
+    description: "Nossos produtos possuem garantia de 10 anos de acordo com as especificações técnicas e Manual do Cliente."
+  }
 ];
 
 export function WhyChooseUs() {
@@ -90,7 +100,7 @@ export function WhyChooseUs() {
         </div>
 
         <div 
-        className="RevealText mt-20 grid gap-px rounded-3xl border border-steel-light bg-(--steel-light) sm:grid-cols-2 lg:grid-cols-3"
+        className="RevealText mt-20 grid gap-px rounded-3xl border border-steel-light bg-(--steel-light) sm:grid-cols-2 lg:grid-cols-2"
         >
           {reasons.map((reason) => {
             const Icon = reason.icon;
