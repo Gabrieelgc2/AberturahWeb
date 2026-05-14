@@ -15,7 +15,7 @@ const categories = [
   },
   {
     name: "ACM Madeirado",
-    desc: "Acabamento metálico contemporâneo. Reflexos suaves e visual sofisticado.",
+    desc: "Texturas que reproduzem madeiras nobres com a durabilidade do alumínio.",
     grad: foto2,
   },
   {
@@ -25,7 +25,7 @@ const categories = [
   },
   {
     name: "ACM Acetinado",
-    desc: "Texturas que reproduzem madeiras nobres com a durabilidade do alumínio.",
+    desc: "Acabamento metálico contemporâneo. Reflexos suaves e visual sofisticado.",
     grad: foto4,
   },
 ];

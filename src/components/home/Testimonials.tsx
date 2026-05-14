@@ -1,12 +1,6 @@
 import { Quote } from "lucide-react";
 import { SectionHeading } from "../../components/SectionHeading";
 
-interface SectionHeadingProps {
-  eyebrow: string;
-  title: React.ReactNode;
-  eyebrowClassName?: string;
-}
-
 const testimonials = [
   {
     quote:
