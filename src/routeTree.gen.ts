@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SobreRouteImport } from './routes/sobre'
 import { Route as ProdutosRouteImport } from './routes/produtos'
+import { Route as ObrasRouteImport } from './routes/obras'
 import { Route as NoticiasRouteImport } from './routes/noticias'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
@@ -23,6 +24,11 @@ const SobreRoute = SobreRouteImport.update({
 const ProdutosRoute = ProdutosRouteImport.update({
   id: '/produtos',
   path: '/produtos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ObrasRoute = ObrasRouteImport.update({
+  id: '/obras',
+  path: '/obras',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NoticiasRoute = NoticiasRouteImport.update({
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
   '/noticias': typeof NoticiasRoute
+  '/obras': typeof ObrasRoute
   '/produtos': typeof ProdutosRoute
   '/sobre': typeof SobreRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
   '/noticias': typeof NoticiasRoute
+  '/obras': typeof ObrasRoute
   '/produtos': typeof ProdutosRoute
   '/sobre': typeof SobreRoute
 }
@@ -60,21 +68,30 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
   '/noticias': typeof NoticiasRoute
+  '/obras': typeof ObrasRoute
   '/produtos': typeof ProdutosRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contato' | '/noticias' | '/produtos' | '/sobre'
+  fullPaths: '/' | '/contato' | '/noticias' | '/obras' | '/produtos' | '/sobre'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contato' | '/noticias' | '/produtos' | '/sobre'
-  id: '__root__' | '/' | '/contato' | '/noticias' | '/produtos' | '/sobre'
+  to: '/' | '/contato' | '/noticias' | '/obras' | '/produtos' | '/sobre'
+  id:
+    | '__root__'
+    | '/'
+    | '/contato'
+    | '/noticias'
+    | '/obras'
+    | '/produtos'
+    | '/sobre'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContatoRoute: typeof ContatoRoute
   NoticiasRoute: typeof NoticiasRoute
+  ObrasRoute: typeof ObrasRoute
   ProdutosRoute: typeof ProdutosRoute
   SobreRoute: typeof SobreRoute
 }
@@ -93,6 +110,13 @@ declare module '@tanstack/react-router' {
       path: '/produtos'
       fullPath: '/produtos'
       preLoaderRoute: typeof ProdutosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/obras': {
+      id: '/obras'
+      path: '/obras'
+      fullPath: '/obras'
+      preLoaderRoute: typeof ObrasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/noticias': {
@@ -123,6 +147,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContatoRoute: ContatoRoute,
   NoticiasRoute: NoticiasRoute,
+  ObrasRoute: ObrasRoute,
   ProdutosRoute: ProdutosRoute,
   SobreRoute: SobreRoute,
 }
