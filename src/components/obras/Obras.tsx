@@ -189,7 +189,7 @@ export function Obras(){
               transition={{ duration: 0.3 }}
               className="fixed inset-0 bg-black z-50 flex items-center justify-center p-4"
             >
-              <div className="relative bg-slate-900 rounded-xl overflow-hidden max-w-6xl w-full">
+              <div className="relative bg-[#404142] rounded-xl overflow-hidden max-w-6xl w-full">
                 <button
                   className="absolute top-4 right-4 z-10 bg-slate-800 hover:bg-slate-700 text-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
                   onClick={closeLightbox}
@@ -204,7 +204,7 @@ export function Obras(){
                       alt={selectedImage.title}
                     />
                   </div>
-                  <div className="md:w-96 bg-slate-800 p-6 text-white flex flex-col">
+                  <div className="md:w-96 bg-[#404142] p-6 text-white flex flex-col">
                     <h2 className="text-2xl font-bold mb-2">
                       {selectedImage.title}
                     </h2>
