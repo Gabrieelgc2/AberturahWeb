@@ -1,27 +1,25 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
 import pt from "./locales/pt.json";
 import en from "./locales/en.json";
 
-i18n.use(initReactI18next).init({
-  resources: {
-    pt: {
-      translation: pt,
-    },
-    en: {
-      translation: en,
-    },
-  },
-
-  lng: localStorage.getItem("lang") || "pt",
-
-  fallbackLng: "pt",
-
-  interpolation: {
-    escapeValue: false,
-  },
-});
-console.log('I18N initialized')
+export async function initI18n() {
+  if (!i18n.isInitialized) {
+    await i18n
+      .use(initReactI18next)
+      .init({
+        resources: {
+          pt: { translation: pt },
+          en: { translation: en },
+        },
+        lng: typeof window !== "undefined"
+          ? localStorage.getItem("lang") || "pt"
+          : "pt",
+        fallbackLng: "pt",
+        interpolation: { escapeValue: false },
+      });
+    console.log("I18N initialized");
+  }
+}
 
 export default i18n;
