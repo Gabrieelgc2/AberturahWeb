@@ -11,7 +11,6 @@ export function Hero() {
     <section
       className="relative isolate overflow-hidden pb-20 pt-60 sm:pb-40 sm:pt-48"
     >
-      {/* Parallax background image */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"

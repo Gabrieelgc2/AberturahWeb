@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 
 export function Testimonials() {
   const { t } = useTranslation();
-  const testimonials = t("testimonials.items", { returnObjects: true }) as Array<{ quote: string; name: string; role: string }>;
+const testimonialsRaw = t("testimonials.items", { returnObjects: true, defaultValue: [], }); 
+const testimonials = Array.isArray(testimonialsRaw) ? testimonialsRaw : [];
   return (
     <section className="bg-background py-24 sm:py-32">
       <div className="container mx-auto max-w-7xl px-6">
