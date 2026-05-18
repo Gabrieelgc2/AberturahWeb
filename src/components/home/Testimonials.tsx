@@ -3,7 +3,7 @@ import { SectionHeading } from "../../components/SectionHeading";
 import { useTranslation } from "react-i18next";
 
 export function Testimonials() {
-  const { t } = useTranslation();
+const { t } = useTranslation();
 const testimonialsRaw = t("testimonials.items", { returnObjects: true, defaultValue: [], }); 
 const testimonials = Array.isArray(testimonialsRaw) ? testimonialsRaw : [];
   return (

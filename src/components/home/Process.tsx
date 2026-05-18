@@ -2,7 +2,8 @@ import { useTranslation } from "react-i18next";
 
 export function Process() {
   const { t } = useTranslation();
-  const steps = t("process.steps", { returnObjects: true }) as Array<{ number: string; title: string; description: string }>;
+  const stepsRaw = t("process.steps", { returnObjects: true, defaultValue: [], })
+  const steps = Array.isArray(stepsRaw) ? stepsRaw : []
   return (
     <section
       className="relative py-24 sm:py-32"
