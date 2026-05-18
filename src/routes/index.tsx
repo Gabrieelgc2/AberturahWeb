@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
 import { Hero } from "../components/home/Hero";
+import "../i18n";
 
 const ProductsPreview = lazy(() =>
   import("../components/home/ProductsPreview").then((module) => ({
