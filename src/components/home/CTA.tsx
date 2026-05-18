@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { MessageCircle, ArrowRight } from "lucide-react";
 import { WHATSAPP_URL } from "@/config/site";
+import { useTranslation } from "react-i18next";
 
 export function CTA() {
+  const { t } = useTranslation();
   return (
     <section className="bg-background pb-24 pt-8 sm:pb-32">
       <div className="container mx-auto max-w-7xl px-6">
@@ -20,13 +22,12 @@ export function CTA() {
           <div className="relative grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
               <h2 className="RevealText font-serif text-4xl font-bold leading-[1.05] text-[color:var(--brand-foreground)] sm:text-5xl">
-                Vamos transformar
+                {t("cta.title.line1")}
                 <br />
-                <span className="font-serif RevealText italic">seu projeto em um sucesso?</span>
+                <span className="font-serif RevealText italic">{t("cta.title.line2")}</span>
               </h2>
               <p className="font-sans RevealText mt-5 max-w-md text-lg leading-relaxed text-[#D9D9D9]">
-                Fale com nosso time técnico e receba um orçamento personalizado
-                em até 48 horas.
+                {t("cta.description")}
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
@@ -37,13 +38,13 @@ export function CTA() {
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm font-semibold text-background transition-transform hover:scale-105 text-sans"
               >
                 <MessageCircle className="h-4 w-4" />
-                WhatsApp
+                {t("cta.whatsapp")}
               </a>
               <Link
                 to="/contato"
                 className="text-sans inline-flex items-center justify-center gap-2 rounded-full border-2 border-[color:var(--brand-foreground)] px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] transition-colors hover:bg-[color:var(--brand-foreground)] hover:text-[color:var(--brand)]"
               >
-                Página de contato
+                {t("cta.contactPage")}
                 <ArrowRight className="RevealText h-4 w-4" />
               </Link>
             </div>

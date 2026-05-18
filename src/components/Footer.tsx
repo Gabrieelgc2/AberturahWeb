@@ -2,8 +2,10 @@ import { Link } from "@tanstack/react-router";
 import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import AberturahLogo from "@/assets/Aberturah.webp";
 import { NAV_ITEMS, SITE_CONTACT, SITE_SOCIAL } from "@/config/site";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+  const { t } = useTranslation();
   return (
     <footer
       className="RevealText relative text-black"
@@ -22,18 +24,17 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
               <span className="font-serif text-2xl font-bold tracking-tight text-white">
-               <img src={AberturahLogo} alt="Aberturah" className="RevealText h-13 w-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]" />
+               <img src={AberturahLogo} alt={t("footer.logoAlt")} className="RevealText h-13 w-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]" />
               </span>
             </div>
             <p className="RevealText mt-5 text-sm leading-relaxed">
-              Fabricação e beneficiamento de chapas ACM para fachadas, portas de entradas, portas internas, ripados, brises, pergolados e
-              revestimentos.
+              {t("footer.description")}
             </p>
           </div>
 
           <div>
             <h4 className="RevealText font-serif text-sm font-bold uppercase tracking-widest text-[black]">
-              Navegação
+              {t("footer.navigation")}
             </h4>
             <ul className="RevealText mt-5 space-y-3 text-md">
               {NAV_ITEMS.map((l) => (
@@ -42,7 +43,7 @@ export function Footer() {
                     to={l.to}
                     className="transition-colors hover:text-black/70"
                   >
-                    {l.label}
+                    {t(l.label)}
                   </Link>
                 </li>
               ))}
@@ -51,7 +52,7 @@ export function Footer() {
 
           <div>
             <h4 className="RevealText font-serif text-sm font-bold uppercase tracking-widest text-black">
-              Contato
+              {t("footer.contact")}
             </h4>
             <ul className="mt-5 space-y-3 text-sm">
               <li className="flex items-start gap-3">
@@ -71,14 +72,14 @@ export function Footer() {
 
           <div>
             <h4 className="RevealText font-serif text-sm font-bold uppercase tracking-widest text-black">
-              Siga-nos
+              {t("footer.followUs")}
             </h4>
             <div className="RevealText mt-5 flex gap-3">
               <a
                 href={SITE_SOCIAL.instagram}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Instagram"
+                aria-label={t("footer.ariaLabels.instagram")}
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
                 <Instagram className="RevealText h-5 w-5" />
@@ -87,7 +88,7 @@ export function Footer() {
                 href={SITE_SOCIAL.youtube}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="YouTube"
+                aria-label={t("footer.ariaLabels.youtube")}
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
                 <Youtube className="h-5 w-5" />
@@ -101,7 +102,7 @@ export function Footer() {
 
         <div className="RevealText mt-16 flex flex-col items-center justify-between gap-4 border-t border-black pt-8 text-xs text-[black] sm:flex-row">
           <span>
-            © {new Date().getFullYear()} ABERTURAh! Todos os direitos reservados.
+            © {new Date().getFullYear()} ABERTURAh! {t("footer.rights")}
           </span>
         </div>
       </div>

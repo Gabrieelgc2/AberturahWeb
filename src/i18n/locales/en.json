@@ -1,0 +1,326 @@
+{
+  "hero": {
+    "title": {
+      "line1": "High-standard",
+      "line2": "ACM projects"
+    },
+    "description": "We deliver custom ACM projects for those seeking design, precision, and flawless execution. We specialize in doors, cladding, brise-soleils, and pergolas.",
+    "button": "Request a quote"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "projects": "Projects",
+    "about": "About",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "footer": {
+    "description": "Manufacturing and processing of ACM panels for façades, entrance doors, interior doors, slatted panels, brise-soleils, pergolas, and cladding.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "followUs": "Follow us",
+    "rights": "All rights reserved.",
+    "logoAlt": "Aberturah",
+    "ariaLabels": {
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "pageLayout": {
+    "backgroundAlt": "Background"
+  },
+  "whyChooseUs": {
+    "badge": "ABERTURAh! · ACM MATERIAL",
+    "title": {
+      "line1": "Why choose",
+      "line2": "us?"
+    },
+    "description": "ABERTURAh! was created to deliver integrated architectural solutions and transform façades, cladding, and architectural projects. We combine premium raw materials, advanced manufacturing technology, and close customer support to deliver outstanding results for every project.",
+    "items": {
+      "quality": {
+        "title": "Quality",
+        "description": "We work exclusively with premium ACM panels (Kynar), ensuring superior durability, weather resistance, and flawless finishing in every project."
+      },
+      "finishes": {
+        "title": "Wide Range of Finishes",
+        "description": "More than 40 colors and textures available — from brushed and glossy finishes to matte and metallic effects. Your façade with the identity it deserves."
+      },
+      "installation": {
+        "title": "Installation",
+        "description": "In-house team trained for high-rise installation work according to Brazilian standards."
+      },
+      "manufacturing": {
+        "title": "In-House Manufacturing",
+        "description": "CNC cutting, bending, state-of-the-art machinery, and machining performed in our own factory. Millimeter precision for ventilated façades, doors, brise-soleils, pergolas, and custom cladding."
+      },
+      "deadline": {
+        "title": "On-Time Delivery",
+        "description": "Optimized production line for delivery and installation according to the established schedule."
+      },
+      "logistics": {
+        "title": "Efficient Logistics",
+        "description": "Structured logistics to serve your project anywhere. Your panels and doors arrive fully protected and ready for installation."
+      },
+      "support": {
+        "title": "Complete Technical Support",
+        "description": "Technical team available for sizing, substructure specification, and project monitoring from start to finish."
+      },
+      "warranty": {
+        "title": "Warranty",
+        "description": "Our products include a 10-year warranty according to technical specifications and the Customer Manual."
+      }
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "ABERTURAh! | Contact",
+      "description": "Get in touch with ABERTURAh! via WhatsApp, phone, or email. Technical support for projects throughout Brazil.",
+      "ogTitle": "Contact — ABERTURAh!",
+      "ogDescription": "WhatsApp, phone, email, and address of ABERTURAh!."
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours"
+    },
+    "whatsapp": {
+      "badge": "Direct support",
+      "title": {
+        "line1": "Response within",
+        "line2": "minutes."
+      },
+      "description": "Our commercial team is available via WhatsApp during business hours. Send your project briefing and receive a personalized quote.",
+      "button": "Chat on WhatsApp",
+      "commercial": "Business WhatsApp",
+      "helper": "Send photos, plans, or descriptions. The more details you provide, the more accurate our proposal will be."
+    }
+  },
+  "aboutPreview": {
+    "badge": "Who we are",
+    "title": {
+      "line1": "Industry,",
+      "line2": "precision and design."
+    },
+    "description": "Founded with the mission of raising the standard of architectural cladding in Brazil, ABERTURAh! integrates manufacturing, processing, and logistics. Every project from our production line delivers quality, performance, and reliability.",
+    "button": "Learn about our story",
+    "highlight": {
+      "title": "100%",
+      "description": "In-house manufacturing with CNC technology."
+    }
+  },
+  "cta": {
+    "title": {
+      "line1": "Shall we transform",
+      "line2": "your project into a success?"
+    },
+    "description": "Talk to our technical team and receive a personalized quote within 48 hours.",
+    "whatsapp": "WhatsApp",
+    "contactPage": "Contact page"
+  },
+  "faq": {
+    "badge": "Frequently asked questions",
+    "title": {
+      "line1": "Clear your doubts",
+      "line2": "about ACM."
+    },
+    "items": [
+      {
+        "question": "What is ACM and where can it be used?",
+        "answer": "ACM (Aluminum Composite Material) is a panel composed of two aluminum sheets with a polyethylene core. It is widely used in ventilated façades, interior cladding, signage, visual communication, and urban furniture due to its lightweight, flatness, and durability."
+      },
+      {
+        "question": "What is the difference between polyester ACM and Kynar ACM?",
+        "answer": "Polyester ACM is recommended for indoor use with moderate weather resistance. Kynar ACM features a fluoropolymer coating with high UV, corrosion, and wear resistance, making it ideal for exterior façades exposed to harsh weather conditions."
+      },
+      {
+        "question": "What is the ideal thickness for façades?",
+        "answer": "For exterior façades, we recommend 4mm panels with aluminum layers from 0.30mm to 0.50mm. For indoor use or visual communication, 3mm thickness is sufficient. Our technical team can recommend the best specification for each project."
+      },
+      {
+        "question": "Do you process the ACM panels in-house?",
+        "answer": "Yes. We perform CNC cutting, bending, milling, machining, and tray preparation in our own factory. This guarantees millimeter precision and faster installation on site."
+      },
+      {
+        "question": "What are the delivery deadlines?",
+        "answer": "The delivery period is 90 calendar days after final measurements. Any different deadline will be defined after technical analysis and agreed upon by all parties involved."
+      },
+      {
+        "question": "Which states do you serve?",
+        "answer": "We serve the entire Northeast region of Brazil. We work with carriers specialized in flat materials, using technical packaging to ensure panel integrity until final delivery."
+      },
+      {
+        "question": "How does the warranty work?",
+        "answer": "Our panels come with up to a 10-year warranty for architectural projects, depending on the chosen finish. We provide complete technical documentation and after-sales support."
+      }
+    ]
+  },
+  "process": {
+    "badge": "How we work",
+    "title": {
+      "line1": "From sketch to façade,",
+      "line2": "in 4 steps."
+    },
+    "steps": [
+      {
+        "number": "01",
+        "title": "Technical briefing",
+        "description": "We understand the project, deadlines, and specifications."
+      },
+      {
+        "number": "02",
+        "title": "Design and quotation",
+        "description": "Sizing, finish selection, and detailed proposal with timelines."
+      },
+      {
+        "number": "03",
+        "title": "Manufacturing",
+        "description": "CNC cutting, bending, and part preparation with millimeter precision in our factory."
+      },
+      {
+        "number": "04",
+        "title": "Delivery and installation",
+        "description": "Specialized logistics and technical support throughout the installation."
+      }
+    ]
+  },
+  "productsPreview": {
+    "badge": "Product line",
+    "title": {
+      "line1": "ACM materials",
+      "line2": "for every style."
+    },
+    "button": "View full line",
+    "explore": "Explore",
+    "categories": {
+      "solid": {
+        "name": "Glossy ACM",
+        "description": "Solid colors with intense shine. Ideal for façades with a striking identity."
+      },
+      "wood": {
+        "name": "Wood Finish ACM",
+        "description": "Textures that reproduce noble woods with the durability of aluminum."
+      },
+      "matte": {
+        "name": "Matte ACM",
+        "description": "Discreet and sophisticated finish for contemporary projects."
+      },
+      "satin": {
+        "name": "Satin ACM",
+        "description": "Contemporary metallic finish. Soft reflections and sophisticated aesthetics."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Trusted by",
+    "title": {
+      "line1": "Voices of those who",
+      "line2": "built with us."
+    },
+    "items": [
+      {
+        "quote": "ABERTURAh! delivered our façade with millimeter precision and impeccable deadlines. I recommend them for any high-end project.",
+        "name": "Rafael Monteiro",
+        "role": "Architect, MR Studio"
+      },
+      {
+        "quote": "The technical support made all the difference. We had assistance from sizing to installation. A true partnership.",
+        "name": "Camila Duarte",
+        "role": "Engineer, Vértice Construction"
+      },
+      {
+        "quote": "Impressive variety of finishes and flawless quality. The panels arrived packaged like works of art.",
+        "name": "Lucas Andrade",
+        "role": "Director, Andrade Façades"
+      }
+    ]
+  },
+  "newsFeed": {
+    "filters": {
+      "all": "All",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    },
+    "viewPost": "View post",
+    "loadMore": "Load more posts"
+  },
+  "projects": {
+    "title": "Premium ACM projects",
+    "description": "Click on the images to view additional details",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "products": {
+    "categories": {
+      "all": "All",
+      "glossy": "Glossy",
+      "brushed": "Brushed",
+      "wood": "Wood Finish",
+      "special": "Special"
+    },
+    "modal": {
+      "description": "Description",
+      "technicalInfo": "Technical Information",
+      "thickness": "Thickness",
+      "category": "Category",
+      "requestQuote": "Request a quote"
+    }
+  },
+  "about": {
+    "history": {
+      "title": "OUR BRAND",
+      "subtitle": "Bringing quality ACM",
+      "paragraph1": "From the beginning, our mission has always been to raise the standard of architectural cladding, offering ACM solutions that combine durability, aesthetics, and innovation. We operate with a focus on excellence, from material selection to final delivery, ensuring results that enhance every project.",
+      "paragraph2": "With a trajectory built on trust and commitment, we constantly seek to evolve our processes and keep up with market trends. Our goal is to provide customers not just a product, but a complete experience, with specialized technical support and attention to every detail.",
+      "paragraph3": "We are consolidating our presence in the sector through solid partnerships and successful projects. We continue to work with dedication to transform ideas into reality, delivering quality that stands out and adds value in every application."
+    },
+    "missionValues": {
+      "title": "Solid foundation for",
+      "titleItalic": "consistent growth.",
+      "mission": {
+        "title": "Mission",
+        "description": "Transform architectural projects into reality, creating exclusive solutions with quality and creativity"
+      },
+      "vision": {
+        "title": "Vision",
+        "description": "To be the innovation industry in the ACM segment recognized for quality and efficiency."
+      },
+      "values": {
+        "title": "Values",
+        "description": "Commitment, transparency, technical precision, and long-term partnership with each client."
+      }
+    },
+    "differentials": {
+      "title": "Differentials",
+      "subtitle": "What makes us a",
+      "subtitleItalic": "reference.",
+      "items": [
+        {
+          "title": "Certified quality",
+          "description": "Only premium panels with certificate of origin."
+        },
+        {
+          "title": "+40 finishes",
+          "description": "Largest variety of colors and textures in the market."
+        },
+        {
+          "title": "CNC processing",
+          "description": "Millimeter precision in our own factory."
+        },
+        {
+          "title": "Extended warranty",
+          "description": "Up to 10 years for architectural projects."
+        },
+        {
+          "title": "Technical support",
+          "description": "Technical team available at all stages."
+        },
+        {
+          "title": "On-time delivery",
+          "description": "Robust inventory to meet urgent needs."
+        }
+      ]
+    }
+  }
+}

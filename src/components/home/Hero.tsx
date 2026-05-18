@@ -2,8 +2,10 @@ import { ArrowRight } from "lucide-react";
 import heroImage from "../../assets/hero-facade.webp";
 import { WHATSAPP_URL } from "@/config/site";
 import SplittingText from "../animations/animations";
+import { useTranslation } from "react-i18next";
 
 export function Hero() {
+  const { t } = useTranslation();
 
   return (
     <section
@@ -36,17 +38,16 @@ export function Hero() {
           >
 
           <h1 className="text-white font-serif text-4xl font-bold leading-[1.1] tracking-normal sm:text-7xl">
-          <SplittingText text="Projetos de alto"
+          <SplittingText text={t("hero.title.line1")}
           delay={450}  />
           <br></br>
-          <SplittingText text="padrão em ACM"  
+          <SplittingText text={t("hero.title.line2")}  
           delay={1200}
           />
          </h1>
 
           <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-[color:white] sm:text-xl font-serif">
-          Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. 
-          Somos especializados em portas, revestimentos, brises e pergolados.
+          {t("hero.description")}
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -57,7 +58,7 @@ export function Hero() {
               className="group inline-flex items-center gap-2 rounded-full px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] shadow-[var(--shadow-brand)] transition-transform hover:scale-105 font-sans"
               style={{ background: "var(--gradient-brand)" }}
             >
-              Solicitar orçamento
+              {t("hero.button")}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </div>

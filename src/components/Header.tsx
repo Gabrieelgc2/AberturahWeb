@@ -3,10 +3,14 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Aberturah from "@/assets/Aberturah.webp";
 import { NAV_ITEMS } from "@/config/site";
+import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/hooks/useLanguage";
 
 export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useTranslation();
+  const { changeLanguage } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -34,18 +38,22 @@ export function Header() {
                  bg-[length:0%_2px] bg-left-bottom bg-no-repeat 
                  hover:bg-[length:100%_2px] transition-[background-size] duration-300 ease-out"
             >
-              {item.label}
+              {t(item.label)}
             </Link>
           ))}
         </nav>
         <div className="flex flex-1 justify-end items-center gap-6">
           <div className="hidden md:flex items-center gap-3">
-            <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
+            <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+             onClick={() => changeLanguage("en")}
+            >
               <span className="text-[10px] font-bold text-white uppercase tracking-tighter">EN</span>
-              <img src="https://flagcdn.com/w20/us.png" alt="USA" className="RevealImage w-4 h-3 object-cover" />
+              <img src="https://flagcdn.com/w20/us.png" alt="USA" className="w-4 h-3 object-cover" />
             </button>
-            <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity border-l border-white/20 pl-3">
-              <img src="https://flagcdn.com/w20/br.png" alt="Brasil" className="RevealImage w-4 h-3 object-cover" />
+            <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity border-l border-white/20 pl-3 cursor-pointer"
+            onClick={() => changeLanguage("pt")}
+            >
+              <img src="https://flagcdn.com/w20/br.png" alt="Brasil" className="w-4 h-3 object-cover" />
               <span className="text-[10px] font-bold text-white uppercase tracking-tighter">PT</span>
             </button>
           </div>
@@ -63,7 +71,7 @@ export function Header() {
               className="text-white text-xl uppercase tracking-widest font-light border-b border-white/10 pb-4"
               onClick={() => setOpen(false)}
             >
-              {item.label}
+              {t(item.label)}
             </Link>
           ))}
           <div className="flex gap-6 mt-4">

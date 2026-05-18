@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Instagram, Youtube, Heart, Play } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-type Source = "Todos" | "Instagram" | "YouTube";
+type Source = "all" | "instagram" | "youtube";
 
 const posts = [
   { source: "Instagram", title: "Fachada concluída em SP — ACM Cobre Escovado", date: "12 abr 2026", grad: "linear-gradient(135deg, oklch(0.62 0.18 35), oklch(0.42 0.14 30))" },
@@ -17,18 +18,19 @@ const posts = [
 ] as const;
 
 export function NoticiasFeed() {
-  const [filtro, setFiltro] = useState<Source>("Todos");
+  const { t } = useTranslation();
+  const [filtro, setFiltro] = useState<Source>("all");
   const [visiveis, setVisiveis] = useState(6);
 
-  const filtrados = filtro === "Todos" ? posts : posts.filter((p) => p.source === filtro);
+  const filtrados = filtro === "all" ? posts : posts.filter((p) => p.source.toLowerCase() === filtro);
   const exibir = filtrados.slice(0, visiveis);
 
   return (
     <section className="bg-background py-20">
       <div className="container mx-auto max-w-7xl px-6">
         <div className="flex flex-wrap items-center justify-center gap-3">
-          {(["Todos", "Instagram", "YouTube"] as const).map((s) => {
-            const Icon = s === "Instagram" ? Instagram : s === "YouTube" ? Youtube : null;
+          {(["all", "instagram", "youtube"] as const).map((s) => {
+            const Icon = s === "instagram" ? Instagram : s === "youtube" ? Youtube : null;
             return (
               <button
                 key={s}
@@ -43,7 +45,7 @@ export function NoticiasFeed() {
                 }`}
               >
                 {Icon && <Icon className="h-4 w-4" />}
-                {s}
+                {t(`newsFeed.filters.${s}`)}
               </button>
             );
           })}
@@ -74,7 +76,7 @@ export function NoticiasFeed() {
                   <h3 className="mt-3 font-serif text-lg font-semibold leading-snug text-foreground">{p.title}</h3>
                   <div className="mt-4 inline-flex items-center gap-1.5 text-xs text-[color:var(--steel)]">
                     <Heart className="h-3.5 w-3.5" />
-                    Ver publicação
+                    {t("newsFeed.viewPost")}
                   </div>
                 </div>
               </article>
@@ -88,7 +90,7 @@ export function NoticiasFeed() {
               onClick={() => setVisiveis((v) => v + 3)}
               className="rounded-full border-2 border-foreground px-7 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-foreground hover:text-background"
             >
-              Carregar mais publicações
+              {t("newsFeed.loadMore")}
             </button>
           </div>
         )}

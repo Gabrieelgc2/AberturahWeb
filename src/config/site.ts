@@ -13,12 +13,12 @@ export const SITE_SOCIAL = {
 } as const;
 
 export const NAV_ITEMS = [
-  { to: "/", label: "Home" },
-  { to: "/produtos", label: "Produtos" },
-  { to: "/obras", label: "Obras"},
-  { to: "/sobre", label: "Sobre nós" },
-  { to: "/noticias", label: "Notícias" },
-  { to: "/contato", label: "Contato" },
+  { to: "/", label: "nav.home" },
+  { to: "/produtos", label: "nav.products" },
+  { to: "/obras", label: "nav.projects" },
+  { to: "/sobre", label: "nav.about" },
+  { to: "/noticias", label: "nav.news" },
+  { to: "/contato", label: "nav.contact" },
 ] as const;
 
 export const WHATSAPP_URL = `https://wa.me/${SITE_CONTACT.whatsappNumber}`;

@@ -35,7 +35,7 @@ function ContatoPage() {
           </>
         }
         description="Estamos prontos para entender seu projeto e enviar uma proposta em até 48 horas."
-              image={contato}
+        image={contato}
       />
       <InformacoesContato />
       <WhatsAppSection />

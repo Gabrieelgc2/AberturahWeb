@@ -1,27 +1,8 @@
-const steps = [
-  {
-    n: "01",
-    title: "Briefing técnico",
-    desc: "Entendemos o projeto, prazos e especificações.",
-  },
-  {
-    n: "02",
-    title: "Projeto e cotação",
-    desc: "Dimensionamento, escolha de acabamentos e proposta detalhada com prazos.",
-  },
-  {
-    n: "03",
-    title: "Beneficiamento",
-    desc: "Corte CNC, dobra e preparo das peças com precisão milimétrica em nossa fábrica.",
-  },
-  {
-    n: "04",
-    title: "Entrega e instalação",
-    desc: "Logística especializada e acompanhamento técnico durante toda a instalação.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export function Process() {
+  const { t } = useTranslation();
+  const steps = t("process.steps", { returnObjects: true }) as Array<{ number: string; title: string; description: string }>;
   return (
     <section
       className="relative py-24 sm:py-32"
@@ -45,10 +26,10 @@ export function Process() {
               className="h-1.5 w-1.5 rounded-full"
               style={{ background: "var(--brand)" }}
             />
-            Como trabalhamos
+            {t("process.badge")}
           </div>
           <h2 className="RevealText mx-auto mt-6 max-w-3xl font-serif text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
-            Do esboço à fachada,
+            {t("process.title.line1")}
             <br />
             <span
               className="italic font-serif"
@@ -58,7 +39,7 @@ export function Process() {
                 WebkitTextFillColor: "grey",
               }}
             >
-              em 4 etapas.
+              {t("process.title.line2")}
             </span>
           </h2>
         </div>
@@ -71,7 +52,7 @@ export function Process() {
           <div className="flex flex-col gap-16 md:gap-24">
             {steps.map((s, i) => (
               <div
-                key={s.n}
+                key={s.number}
                 className={`RevealText flex flex-col md:flex-row items-center w-full ${i % 2 !== 0 ? "md:flex-row-reverse" : ""
                   }`}
               >
@@ -89,13 +70,13 @@ export function Process() {
                         WebkitTextFillColor: "#D9D9D9",
                       }}
                     >
-                      {s.n}
+                      {s.number}
                     </div>
                     <h3 className="mt-4 font-sans text-3xl font-bold text-white tracking-tight">
                       {s.title}
                     </h3>
                     <p className="mt-4 text-base leading-relaxed text-[#D9D9D9] font-sans">
-                      {s.desc}
+                      {s.description}
                     </p>
                   </div>
                 </div>

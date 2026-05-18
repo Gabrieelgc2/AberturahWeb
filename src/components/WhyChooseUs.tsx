@@ -1,56 +1,44 @@
-import { ShieldCheck, Layers, Zap, Award, Truck, Hammer, Icon, Pickaxe, Home, CircleCheckBig, BadgeCheck } from "lucide-react";
+import { ShieldCheck, Layers, Zap, Award, Truck, Hammer, Home, BadgeCheck } from "lucide-react";
 import React from "react";
-
-const reasons = [
-  {
-    icon: ShieldCheck,
-    title: "Qualidade",
-    description:
-      "Trabalhamos exclusivamente com chapas de ACM de primeira linha(Kynar), garantindo durabilidade superior, resistência a intempéries e acabamento impecável em cada projeto.",
-  },
-  {
-    icon: Layers,
-    title: "Variedade de Acabamentos",
-    description:
-      "Mais de 40 cores e texturas disponíveis — do escovado ao brilhante, passando pelo acabamento fosco e efeitos metálicos. Sua fachada com a identidade que ela merece.",
-  },
-  {
-    icon: Home,
-    title: "Instalação",
-    description: "Equipe própria capacitada para trabalhos em altura seguindo as normas brasileiras"
-  },
-  {
-    icon: Hammer,
-    title: "Beneficiamento Próprio",
-    description:
-      "Corte CNC, dobra, equipamentos de última geração e usinagem realizados em nossa fábrica. Precisão milimétrica para fachadas ventiladas, portas, brises, pergolados e revestimentos sob medida.",
-  },
-  {
-    icon: Zap,
-    title: "Prazo Cumprido",
-    description:
-      "Linha de produção otimizada para entrega e instalação de acordo com os cronogramas estabelecidos. ",
-  },
-  {
-    icon: Truck,
-    title: "Logística Eficiente",
-    description:
-      "Logística estruturada para atender seu projeto em qualquer localidade. Suas chapas e portas chegam devidamente protegidas, prontas para inicio das etapas de instalação. ",
-  },
-  {
-    icon: Award,
-    title: "Suporte Técnico Completo",
-    description:
-      "Equipe técnica à disposição para dimensionamento, especificação de subestrutura e acompanhamento de obra do início ao fim.",
-  },
-  {
-    icon: BadgeCheck,
-    title: "Garantia",
-    description: "Nossos produtos possuem garantia de 10 anos de acordo com as especificações técnicas e Manual do Cliente."
-  }
-];
+import { useTranslation } from "react-i18next";
 
 export function WhyChooseUs() {
+  const { t } = useTranslation();
+
+  const reasons = [
+    {
+      icon: ShieldCheck,
+      key: "quality",
+    },
+    {
+      icon: Layers,
+      key: "finishes",
+    },
+    {
+      icon: Home,
+      key: "installation",
+    },
+    {
+      icon: Hammer,
+      key: "manufacturing",
+    },
+    {
+      icon: Zap,
+      key: "deadline",
+    },
+    {
+      icon: Truck,
+      key: "logistics",
+    },
+    {
+      icon: Award,
+      key: "support",
+    },
+    {
+      icon: BadgeCheck,
+      key: "warranty",
+    }
+  ];
   return (
     <section 
     className="relative bg-white py-24 sm:py-32">
@@ -78,11 +66,11 @@ export function WhyChooseUs() {
               className="h-1.5 w-1.5 rounded-full"
               style={{ background: "var(--brand)" }}
             />
-            ABERTURAh! · MATERIAL ACM
+            {t("whyChooseUs.badge")}
           </div>
           <h2 className="RevealText font-serif text-5xl font-bold leading-[1.05] tracking-tight text-[foreground] sm:text-6xl lg:text-7xl"
             style={{"--delay": "150ms"} as React.CSSProperties}>
-            Por que nos
+            {t("whyChooseUs.title.line1")}
             <br />
             <span
               className="italic"
@@ -90,12 +78,11 @@ export function WhyChooseUs() {
                 WebkitTextFillColor: "#404142",
               }}
             >
-              escolher?
+              {t("whyChooseUs.title.line2")}
             </span>
           </h2>
           <p className="RevealText font-sans mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#404142]">
-            A ABERTURAh! Chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos.
-             Combinamos matéria-prima premium, tecnologia de beneficiamento e atendimento próximo para entregar resultados que valorizam cada obra.
+            {t("whyChooseUs.description")}
           </p>
         </div>
 
@@ -106,7 +93,7 @@ export function WhyChooseUs() {
             const Icon = reason.icon;
             return (
               <article
-                key={reason.title}
+                key={reason.key}
                 className="group relative bg-background p-8 transition-colors duration-300 hover:bg-(--brand-deep)"
               >
                 <div
@@ -116,10 +103,10 @@ export function WhyChooseUs() {
                   <Icon className="h-7 w-7 text-shadow-black" strokeWidth={1.75} />
                 </div>
                 <h3 className="RevealText font-serif text-2xl font-bold text-foreground transition-colors group-hover:text-[color:var(--brand-foreground)]">
-                  {reason.title}
+                  {t(`whyChooseUs.items.${reason.key}.title`)}
                 </h3>
                 <p className="RevealText font-sans mt-3 text-[15px] leading-relaxed text-[color:var(--steel)] transition-colors group-hover:text-[color:var(--steel-light)]">
-                  {reason.description}
+                  {t(`whyChooseUs.items.${reason.key}.description`)}
                 </p>
                 <div
                   className="absolute bottom-0 left-8 right-8 h-px origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"

@@ -1,47 +1,29 @@
 import { Quote } from "lucide-react";
 import { SectionHeading } from "../../components/SectionHeading";
-
-const testimonials = [
-  {
-    quote:
-      "A ABERTURAh! entregou nossa fachada com precisão milimétrica e prazo cumprido à risca. Recomendo para qualquer obra de alto padrão.",
-    name: "Rafael Monteiro",
-    role: "Arquiteto, MR Studio",
-  },
-  {
-    quote:
-      "O suporte técnico fez toda a diferença. Tivemos acompanhamento desde o dimensionamento até a instalação. Parceria de verdade.",
-    name: "Camila Duarte",
-    role: "Engenheira, Construtora Vértice",
-  },
-  {
-    quote:
-      "Variedade de acabamentos impressionante e qualidade impecável. As chapas chegaram embaladas como obra-prima.",
-    name: "Lucas Andrade",
-    role: "Diretor, Andrade Fachadas",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export function Testimonials() {
+  const { t } = useTranslation();
+  const testimonials = t("testimonials.items", { returnObjects: true }) as Array<{ quote: string; name: string; role: string }>;
   return (
     <section className="bg-background py-24 sm:py-32">
       <div className="container mx-auto max-w-7xl px-6">
         <SectionHeading
-          eyebrow="Quem confia"
+          eyebrow={t("testimonials.badge")}
           eyebrowClassName="RevealText"
           title={
             <>
-              <span className="font-serif">Vozes de quem</span>
+              <span className="font-serif">{t("testimonials.title.line1")}</span>
               <br />
-              <span className="italic font-serif">construiu com a gente.</span>
+              <span className="italic font-serif">{t("testimonials.title.line2")}</span>
             </>
           }
         />
 
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
-          {testimonials.map((t, i) => (
+          {testimonials.map((testimonial, i) => (
             <article
-              key={t.name}
+              key={testimonial.name}
               className="RevealText group relative flex flex-col rounded-3xl border border-[color:var(--steel-light)] bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
               style={{
                 background:
@@ -59,7 +41,7 @@ export function Testimonials() {
                   i === 1 ? "text-white" : "text-foreground"
                 }`}
               >
-                "{t.quote}"
+                "{testimonial.quote}"
               </p>
               <div
                 className={`mt-8 border-t pt-6 ${
@@ -71,7 +53,7 @@ export function Testimonials() {
                     i === 1 ? "text-white" : "text-foreground"
                   }`}
                 >
-                  {t.name}
+                  {testimonial.name}
                 </div>
                 <div
                   className={`RevealText mt-1 text-sm font-sans ${
@@ -80,7 +62,7 @@ export function Testimonials() {
                       : "text-[color:var(--steel)]"
                   }`}
                 >
-                  {t.role}
+                  {testimonial.role}
                 </div>
               </div>
             </article>

@@ -4,8 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CATEGORIAS, PRODUTOS, type Produto } from "./produtos.data";
 import { useProdutosFiltro } from "./useProdutosFiltro";
 import { TiltCard } from "../animations/TiltCard";
+import { useTranslation } from "react-i18next";
 
 export function ProdutosCatalogo() {
+  const { t } = useTranslation();
   const [selected, setSelected] = useState<Produto | null>(null);
 
   const {
@@ -373,7 +375,7 @@ export function ProdutosCatalogo() {
                             text-foreground
                           "
                         >
-                          Descrição
+                          {t("products.modal.description")}
                         </h3>
 
                         <p
@@ -408,14 +410,14 @@ export function ProdutosCatalogo() {
                             text-neutral-500
                           "
                         >
-                          Informações Técnicas
+                          {t("products.modal.technicalInfo")}
                         </h4>
 
                         <div className="mt-4 space-y-3">
 
                           <div className="flex justify-between">
                             <span className="text-neutral-500">
-                              Espessura
+                              {t("products.modal.thickness")}
                             </span>
 
                             <span className="font-medium">
@@ -425,7 +427,7 @@ export function ProdutosCatalogo() {
 
                           <div className="flex justify-between">
                             <span className="text-neutral-500">
-                              Categoria
+                              {t("products.modal.category")}
                             </span>
 
                             <span className="font-medium">
@@ -456,7 +458,7 @@ export function ProdutosCatalogo() {
                           hover:scale-[1.02]
                         "
                       >
-                        Solicitar orçamento
+                        {t("products.modal.requestQuote")}
                       </button>
 
                     </div>

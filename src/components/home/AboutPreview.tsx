@@ -3,8 +3,10 @@ import { ArrowRight } from "lucide-react";
 import type { CSSProperties } from "react";
 import { SectionHeading } from "../../components/SectionHeading";
 import AberturahCasa from "../../assets/image.webp";
+import { useTranslation } from "react-i18next";
 
 export function AboutPreview() {
+  const { t } = useTranslation();
   return (
     <section
       className="relative py-24 sm:py-32"
@@ -23,28 +25,25 @@ export function AboutPreview() {
           <div>
             <SectionHeading
               align="left"
-              eyebrow="Quem somos"
+              eyebrow={t("aboutPreview.badge")}
               eyebrowClassName="text-[#D9D9D9]"
               title={
                 <>
                 <span className="text-[#D9D9D9] font-serif">
-                  Indústria,
+                  {t("aboutPreview.title.line1")}
                   </span><br />
-                  <span className="italic text-[#D9D9D9] font-serif">precisão e design.</span>
+                  <span className="italic text-[#D9D9D9] font-serif">{t("aboutPreview.title.line2")}</span>
                 </>
               }
             />
             <p className="RevealText mt-6 text-lg leading-relaxed text-[#D9D9D9] font-sans">
-              Fundada com a missão de elevar o padrão de revestimentos
-              arquitetônicos no Brasil, a ABERTURAh! integra fabricação,
-              beneficiamento e logística. Cada projeto que sai
-              da nossa linha possui qualidade, desempenho e perfomance.
+              {t("aboutPreview.description")}
             </p>
             <Link
               to="/sobre"
               className="RevealText mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[color:#D9D9D9] underline-offset-4 hover:underline font-sans"
             >
-              Conheça nossa história
+              {t("aboutPreview.button")}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -75,7 +74,7 @@ export function AboutPreview() {
                 100%
               </div>
               <p className="RevealText mt-2 text-sm text-[#404142] font-sans">
-                Beneficiamento próprio com tecnologia CNC.
+                {t("aboutPreview.highlight.description")}
               </p>
             </div>
           </div>

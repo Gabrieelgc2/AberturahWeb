@@ -1,0 +1,326 @@
+{
+  "hero": {
+    "title": {
+      "line1": "Projetos de alto",
+      "line2": "padrão em ACM"
+    },
+    "description": "Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. Somos especializados em portas, revestimentos, brises e pergolados.",
+    "button": "Solicitar orçamento"
+  },
+  "nav": {
+    "home": "Início",
+    "products": "Produtos",
+    "projects": "Obras",
+    "about": "Sobre",
+    "news": "Notícias",
+    "contact": "Contato"
+  },
+  "footer": {
+    "description": "Fabricação e beneficiamento de chapas ACM para fachadas, portas de entradas, portas internas, ripados, brises, pergolados e revestimentos.",
+    "navigation": "Navegação",
+    "contact": "Contato",
+    "followUs": "Siga-nos",
+    "rights": "Todos os direitos reservados.",
+    "logoAlt": "Aberturah",
+    "ariaLabels": {
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "pageLayout": {
+    "backgroundAlt": "Background"
+  },
+  "whyChooseUs": {
+    "badge": "ABERTURAh! · MATERIAL ACM",
+    "title": {
+      "line1": "Por que nos",
+      "line2": "escolher?"
+    },
+    "description": "A ABERTURAh! chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos. Combinamos matéria-prima premium, tecnologia de beneficiamento e atendimento próximo para entregar resultados que valorizam cada obra.",
+    "items": {
+      "quality": {
+        "title": "Qualidade",
+        "description": "Trabalhamos exclusivamente com chapas de ACM de primeira linha (Kynar), garantindo durabilidade superior, resistência a intempéries e acabamento impecável em cada projeto."
+      },
+      "finishes": {
+        "title": "Variedade de Acabamentos",
+        "description": "Mais de 40 cores e texturas disponíveis — do escovado ao brilhante, passando pelo acabamento fosco e efeitos metálicos. Sua fachada com a identidade que ela merece."
+      },
+      "installation": {
+        "title": "Instalação",
+        "description": "Equipe própria capacitada para trabalhos em altura seguindo as normas brasileiras."
+      },
+      "manufacturing": {
+        "title": "Beneficiamento Próprio",
+        "description": "Corte CNC, dobra, equipamentos de última geração e usinagem realizados em nossa fábrica. Precisão milimétrica para fachadas ventiladas, portas, brises, pergolados e revestimentos sob medida."
+      },
+      "deadline": {
+        "title": "Prazo Cumprido",
+        "description": "Linha de produção otimizada para entrega e instalação de acordo com os cronogramas estabelecidos."
+      },
+      "logistics": {
+        "title": "Logística Eficiente",
+        "description": "Logística estruturada para atender seu projeto em qualquer localidade. Suas chapas e portas chegam devidamente protegidas, prontas para início das etapas de instalação."
+      },
+      "support": {
+        "title": "Suporte Técnico Completo",
+        "description": "Equipe técnica à disposição para dimensionamento, especificação de subestrutura e acompanhamento de obra do início ao fim."
+      },
+      "warranty": {
+        "title": "Garantia",
+        "description": "Nossos produtos possuem garantia de 10 anos de acordo com as especificações técnicas e Manual do Cliente."
+      }
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "ABERTURAh! | Contato",
+      "description": "Fale com a ABERTURAh! via WhatsApp, telefone ou e-mail. Atendimento técnico para projetos em todo o Brasil.",
+      "ogTitle": "Contato — ABERTURAh!",
+      "ogDescription": "WhatsApp, telefone, e-mail e endereço da ABERTURAh!."
+    },
+    "info": {
+      "address": "Endereço",
+      "phone": "Telefone",
+      "email": "E-mail",
+      "hours": "Horário"
+    },
+    "whatsapp": {
+      "badge": "Atendimento direto",
+      "title": {
+        "line1": "Resposta em",
+        "line2": "minutos."
+      },
+      "description": "Nosso time comercial atende pelo WhatsApp em horário comercial. Envie o briefing do seu projeto e receba orçamento personalizado.",
+      "button": "Conversar no WhatsApp",
+      "commercial": "WhatsApp comercial",
+      "helper": "Envie fotos, plantas ou descrições. Quanto mais detalhes, mais precisa será nossa proposta."
+    }
+  },
+  "aboutPreview": {
+    "badge": "Quem somos",
+    "title": {
+      "line1": "Indústria,",
+      "line2": "precisão e design."
+    },
+    "description": "Fundada com a missão de elevar o padrão de revestimentos arquitetônicos no Brasil, a ABERTURAh! integra fabricação, beneficiamento e logística. Cada projeto que sai da nossa linha possui qualidade, desempenho e performance.",
+    "button": "Conheça nossa história",
+    "highlight": {
+      "title": "100%",
+      "description": "Beneficiamento próprio com tecnologia CNC."
+    }
+  },
+  "cta": {
+    "title": {
+      "line1": "Vamos transformar",
+      "line2": "seu projeto em um sucesso?"
+    },
+    "description": "Fale com nosso time técnico e receba um orçamento personalizado em até 48 horas.",
+    "whatsapp": "WhatsApp",
+    "contactPage": "Página de contato"
+  },
+  "faq": {
+    "badge": "Perguntas frequentes",
+    "title": {
+      "line1": "Tire suas dúvidas",
+      "line2": "sobre ACM."
+    },
+    "items": [
+      {
+        "question": "O que é ACM e onde pode ser aplicado?",
+        "answer": "ACM (Aluminum Composite Material) é um painel composto por duas chapas de alumínio com núcleo de polietileno. É amplamente usado em fachadas ventiladas, revestimentos internos, totens, comunicação visual e mobiliário urbano por ser leve, plano e altamente durável."
+      },
+      {
+        "question": "Qual a diferença entre ACM poliéster e Kynar?",
+        "answer": "O ACM poliéster é indicado para uso interno, com resistência moderada a intempéries. O ACM Kynar possui revestimento de fluoropolímero, oferecendo alta resistência a UV, corrosão e desgaste, sendo ideal para fachadas externas expostas a condições climáticas severas."
+      },
+      {
+        "question": "Qual a espessura ideal para fachadas?",
+        "answer": "Para fachadas externas recomendamos painéis de 4mm com lâmina de alumínio de 0,30mm a 0,50mm. Para uso interno ou comunicação visual, espessuras de 3mm já são suficientes. Nossa equipe técnica orienta a melhor especificação para cada caso."
+      },
+      {
+        "question": "Vocês fazem o beneficiamento das chapas?",
+        "answer": "Sim. Realizamos corte CNC, dobra, fresagem, usinagem e preparação de bandejas em nossa própria fábrica. Isso garante precisão milimétrica e otimiza o tempo de instalação na obra."
+      },
+      {
+        "question": "Quais são os prazos de entrega?",
+        "answer": "O prazo de entrega é de 90 dias corridos, contados após a medição. Qualquer outro prazo será definido após análise técnica e acordado entre as partes envolvidas."
+      },
+      {
+        "question": "Vocês entregam em quais estados?",
+        "answer": "Atendemos todo o Nordeste. Trabalhamos com transportadoras especializadas em material plano, com embalagem técnica que garante a integridade das chapas até o destino final."
+      },
+      {
+        "question": "Como funciona a garantia?",
+        "answer": "Nossas chapas têm garantia de até 10 anos para projetos arquitetônicos, dependendo do acabamento escolhido. Fornecemos toda a documentação técnica e suporte pós-venda."
+      }
+    ]
+  },
+  "process": {
+    "badge": "Como trabalhamos",
+    "title": {
+      "line1": "Do esboço à fachada,",
+      "line2": "em 4 etapas."
+    },
+    "steps": [
+      {
+        "number": "01",
+        "title": "Briefing técnico",
+        "description": "Entendemos o projeto, prazos e especificações."
+      },
+      {
+        "number": "02",
+        "title": "Projeto e cotação",
+        "description": "Dimensionamento, escolha de acabamentos e proposta detalhada com prazos."
+      },
+      {
+        "number": "03",
+        "title": "Beneficiamento",
+        "description": "Corte CNC, dobra e preparo das peças com precisão milimétrica em nossa fábrica."
+      },
+      {
+        "number": "04",
+        "title": "Entrega e instalação",
+        "description": "Logística especializada e acompanhamento técnico durante toda a instalação."
+      }
+    ]
+  },
+  "productsPreview": {
+    "badge": "Linha de produtos",
+    "title": {
+      "line1": "Material ACM",
+      "line2": "para cada estilo."
+    },
+    "button": "Ver linha completa",
+    "explore": "Explorar",
+    "categories": {
+      "solid": {
+        "name": "ACM Brilhante",
+        "description": "Cores sólidas com brilho intenso. Ideal para fachadas com identidade marcante."
+      },
+      "wood": {
+        "name": "ACM Madeirado",
+        "description": "Texturas que reproduzem madeiras nobres com a durabilidade do alumínio."
+      },
+      "matte": {
+        "name": "ACM Fosco",
+        "description": "Acabamento discreto e sofisticado para projetos contemporâneos."
+      },
+      "satin": {
+        "name": "ACM Acetinado",
+        "description": "Acabamento metálico contemporâneo. Reflexos suaves e visual sofisticado."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Quem confia",
+    "title": {
+      "line1": "Vozes de quem",
+      "line2": "construiu com a gente."
+    },
+    "items": [
+      {
+        "quote": "A ABERTURAh! entregou nossa fachada com precisão milimétrica e prazo cumprido à risca. Recomendo para qualquer obra de alto padrão.",
+        "name": "Rafael Monteiro",
+        "role": "Arquiteto, MR Studio"
+      },
+      {
+        "quote": "O suporte técnico fez toda a diferença. Tivemos acompanhamento desde o dimensionamento até a instalação. Parceria de verdade.",
+        "name": "Camila Duarte",
+        "role": "Engenheira, Construtora Vértice"
+      },
+      {
+        "quote": "Variedade de acabamentos impressionante e qualidade impecável. As chapas chegaram embaladas como obra-prima.",
+        "name": "Lucas Andrade",
+        "role": "Diretor, Andrade Fachadas"
+      }
+    ]
+  },
+  "newsFeed": {
+    "filters": {
+      "all": "Todos",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    },
+    "viewPost": "Ver publicação",
+    "loadMore": "Carregar mais publicações"
+  },
+  "projects": {
+    "title": "Obras em ACM premium",
+    "description": "Clique nas imagens para ver detalhes adicionais",
+    "previous": "Anterior",
+    "next": "Próximo"
+  },
+  "products": {
+    "categories": {
+      "all": "Todos",
+      "glossy": "Brilhante",
+      "brushed": "Escovado",
+      "wood": "Madeirado",
+      "special": "Especial"
+    },
+    "modal": {
+      "description": "Descrição",
+      "technicalInfo": "Informações Técnicas",
+      "thickness": "Espessura",
+      "category": "Categoria",
+      "requestQuote": "Solicitar orçamento"
+    }
+  },
+  "about": {
+    "history": {
+      "title": "NOSSA MARCA",
+      "subtitle": "Trazendo ACM de qualidade",
+      "paragraph1": "Desde o início, nossa missão sempre foi elevar o padrão dos revestimentos arquitetônicos, oferecendo soluções em ACM que unem durabilidade, estética e inovação. Atuamos com foco na excelência, desde a escolha dos materiais até a entrega final, garantindo resultados que valorizam cada projeto.",
+      "paragraph2": "Com uma trajetória construída sobre confiança e compromisso, buscamos constantemente evoluir nossos processos e acompanhar as tendências do mercado. Nosso objetivo é proporcionar aos clientes não apenas um produto, mas uma experiência completa, com suporte técnico especializado e atenção em cada detalhe.",
+      "paragraph3": "Estamos consolidando nossa presença no setor através de parcerias sólidas e projetos bem-sucedidos. Seguimos trabalhando com dedicação para transformar ideias em realidade, entregando qualidade que se destaca e agrega valor em cada aplicação."
+    },
+    "missionValues": {
+      "title": "Base sólida para",
+      "titleItalic": "crescimento consistente.",
+      "mission": {
+        "title": "Missão",
+        "description": "Transformar projetos arquitetônicos em realidade, criando soluções exclusivas com qualidade e criatividade"
+      },
+      "vision": {
+        "title": "Visão",
+        "description": "Ser a indústria de inovação no segmento de ACM reconhecida por qualidade e eficiência."
+      },
+      "values": {
+        "title": "Valores",
+        "description": "Compromisso, transparência, precisão técnica e parceria de longo prazo com cada cliente."
+      }
+    },
+    "differentials": {
+      "title": "Diferenciais",
+      "subtitle": "O que nos torna",
+      "subtitleItalic": "referência.",
+      "items": [
+        {
+          "title": "Qualidade certificada",
+          "description": "Apenas chapas premium com selo de procedência."
+        },
+        {
+          "title": "+40 acabamentos",
+          "description": "Maior variedade de cores e texturas do mercado."
+        },
+        {
+          "title": "Beneficiamento CNC",
+          "description": "Precisão milimétrica em fábrica própria."
+        },
+        {
+          "title": "Garantia estendida",
+          "description": "Até 10 anos para projetos arquitetônicos."
+        },
+        {
+          "title": "Suporte técnico",
+          "description": "Equipe técnica à disposição em todas as fases."
+        },
+        {
+          "title": "Prazo cumprido",
+          "description": "Estoque robusto para atender urgências."
+        }
+      ]
+    }
+  }
+}
