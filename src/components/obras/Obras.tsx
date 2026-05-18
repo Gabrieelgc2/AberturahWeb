@@ -116,7 +116,7 @@ export function Obras() {
                 }
               `}
             >
-              {categoria}
+              {t(`ACMProjectsButton.Buttons.${categoria}`)}
             </button>
           ))}
         </div>

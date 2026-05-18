@@ -2,9 +2,10 @@ export const SITE_CONTACT = {
   whatsappNumber: "5581999840131",
   phoneDisplay: "(81) 99984-0131",
   email: "contato@aberturah.com.br",
-  addressLine1: "Rua Desembargador João Paes, 414",
-  addressLine2: "Boa Viagem - Recife/PE",
-  businessHours: "Segunda a Sexta - 8h às 18h",
+    address: {
+    line1: "Rua Desembargador João Paes, 414",
+    line2: "Boa Viagem - Recife/PE, Brazil",
+  },
 } as const;
 
 export const SITE_SOCIAL = {

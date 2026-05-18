@@ -5,6 +5,7 @@ import { HistoriaSection } from "@/components/sobre/HistoriaSection";
 import { MissaoValoresSection } from "@/components/sobre/MissaoValoresSection";
 import { DiferenciaisSection } from "@/components/sobre/DiferenciaisSection";
 import BackGroundSobre from "../assets/aboutbg.webp";
+import {useTranslation} from "react-i18next";
 
 export const Route = createFileRoute("/sobre")({
   component: SobrePage,
@@ -26,17 +27,18 @@ export const Route = createFileRoute("/sobre")({
 });
 
 function SobrePage() {
+  const { t } = useTranslation(); 
   return (
     <>
       <PageLayout
-        eyebrow="Sobre Nós"
+        eyebrow={t("PageLayout.eyebrow3")}
         title={
           <>
-            Indústria,<br />
-            <span className="italic">precisão e design.</span>
+            {t("PageLayout.title3.line1")}<br />
+            <span className="italic">{t("PageLayout.title3.line2")}</span>
           </>
         }
-        description="Transformando especificações técnicas em soluções eficientes para cada projeto."
+        description={t("PageLayout.description3")}
         image={BackGroundSobre}
       />
       <HistoriaSection />

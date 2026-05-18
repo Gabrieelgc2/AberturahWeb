@@ -1,6 +1,7 @@
 import { Obras } from "@/components/obras/Obras";
 import { PageLayout } from "@/components/PageLayout";
 import { createFileRoute } from "@tanstack/react-router";
+import { useTranslation } from "react-i18next";
 
 export const Route = createFileRoute("/obras")({
   component: Obra,
@@ -23,17 +24,18 @@ export const Route = createFileRoute("/obras")({
 
 
 function Obra() {
+  const { t } = useTranslation();
   return (
     <>
       <PageLayout
-            eyebrow="Obras"
+            eyebrow={t("PageLayout.eyebrow2")}
             title={
               <>
-                Obras que transformam <br />
-                <span className="italic">cada projeto</span>
+                {t("PageLayout.title2.line1")} <br />
+                <span className="italic">{t("PageLayout.title2.line2")}</span>
               </>
             }
-            description="A solução completa em ACM para projetos modernos e sofisticados."
+            description={t("PageLayout.description2")}
             />
     <Obras />
     </>

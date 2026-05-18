@@ -31,7 +31,7 @@ export const Obras: Obra[] = [
  {
     categoria: "Pergolados",
     img: pergolado,
-    title: "Forest Pathway",
+    title: "Pergolado",
     descricao: "Serene forest path during autumn",
   },
   {

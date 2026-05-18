@@ -3,6 +3,7 @@ import { PageLayout } from "@/components/PageLayout";
 import { CTA } from "@/components/home/CTA";
 import { NoticiasFeed } from "@/components/noticias/NoticiasFeed";
 import Noticias from "../assets/Noticias3.webp";
+import { useTranslation } from "react-i18next";
 
 export const Route = createFileRoute("/noticias")({
   component: NoticiasPage,
@@ -24,17 +25,18 @@ export const Route = createFileRoute("/noticias")({
 });
 
 function NoticiasPage() {
+  const {t} = useTranslation();
   return (
     <>
       <PageLayout
-        eyebrow="Notícias"
+        eyebrow={t("PageLayout.eyebrow4")}
         title={
           <>
-            Bastidores e<br />
-            <span className="italic">novas obras.</span>
+            {t("PageLayout.title4.line1")}<br />
+            <span className="italic">{t("PageLayout.title4.line2")}</span>
           </>
         }
-        description="Acompanhe nossos projetos, processo produtivo e novidades publicadas no Instagram e YouTube."
+        description={t("PageLayout.description4")}
         image={Noticias}
       />
       <NoticiasFeed />

@@ -57,7 +57,7 @@ export function Footer() {
             <ul className="mt-5 space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[--brand]" />
-                <span>{SITE_CONTACT.addressLine1} - {SITE_CONTACT.addressLine2}</span>
+                <span>{SITE_CONTACT.address.line1} - {SITE_CONTACT.address.line2}</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[--brand]" />
@@ -95,7 +95,7 @@ export function Footer() {
               </a>
             </div>
             <p className="RevealText mt-6 text-xs uppercase tracking-widest text-[(--steel)]">
-              {SITE_CONTACT.businessHours}
+              {t("Contact.businessHours")}
             </p>
           </div>
         </div>

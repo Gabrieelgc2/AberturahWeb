@@ -27,9 +27,6 @@
       "youtube": "YouTube"
     }
   },
-  "pageLayout": {
-    "backgroundAlt": "Background"
-  },
   "whyChooseUs": {
     "badge": "ABERTURAh! · MATERIAL ACM",
     "title": {
@@ -212,6 +209,51 @@
       }
     }
   },
+  "PageLayout": {
+    "eyebrow1": "Produtos",
+    "eyebrow2": "Obras",
+    "eyebrow3": "Sobre nós",
+    "eyebrow4": "Notícias",
+    "eyebrow5": "Contato",
+    "title1": {
+      "line1": "Linha completa",
+      "line2": "de ACM premium"
+    },
+    "title2":{
+      "line1": "Obras que transformam",
+      "line2": "cada projeto"
+    },
+    "title3":{
+      "line1": "Indústria,",
+      "line2": "precisão e design."
+    },
+    "title4": {
+      "line1": "Bastidores e",
+      "line2": "novas obras"
+    },
+    "title5":{
+      "line1": "Fale com a",
+      "line2": "ABERTURAh!"
+    },
+    "description1": "Ofereçemos um leque de produtos para transformar a sua obra em um projeto de sucesso",
+    "description2": "A solução completa em ACM para projetos modernos e sofisticados.",
+    "description3": "Transformando especificações técnicas em soluções eficientes para cada projeto.",
+    "description4": "Acompanhe nossos projetos, processo produtivo e novidades publicadas no Instagram e YouTube.",
+    "description5": "Estamos prontos para entender seu projeto e enviar uma proposta em até 48 horas."
+  },
+    "Contact":{
+    "businessHours": "Segunda a Sexta - 8h às 18h"
+  },
+    "ACMProjectsButton":{
+    "Buttons":{
+      "Todos": "Todos",
+      "Portas": "Portas",
+      "Brises": "Brises",
+      "Revestimentos": "Revestimentos",
+      "Pergolados": "Pergolados",
+      "Ripados": "Ripados"
+    }
+  },
   "testimonials": {
     "badge": "Quem confia",
     "title": {
@@ -250,6 +292,15 @@
     "description": "Clique nas imagens para ver detalhes adicionais",
     "previous": "Anterior",
     "next": "Próximo"
+  },
+  "ProductsButton": {
+    "Buttons": {
+      "Todos": "Todos",
+      "Brilhante": "Brilhante",
+      "Escovado": "Escovado",
+      "Madeirado": "Madeirado",
+      "Especial": "Especial"
+    }
   },
   "products": {
     "categories": {

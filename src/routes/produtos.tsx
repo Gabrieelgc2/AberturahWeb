@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CTA } from "@/components/home/CTA";
-import {ProdutosCatalogo} from "@/components/produtos/ProdutosCatalogo";
+import { ProdutosCatalogo } from "@/components/produtos/ProdutosCatalogo";
 import BackGroundProduto from "../assets/image-casa-aberturah.webp";
 import { PageLayout } from "@/components/PageLayout";
+import { useTranslation } from "react-i18next";
 
 export const Route = createFileRoute("/produtos")({
   component: ProdutosPage,
@@ -24,17 +25,20 @@ export const Route = createFileRoute("/produtos")({
 });
 
 function ProdutosPage() {
+  const { t } = useTranslation();
   return (
     <>
       <PageLayout
-        eyebrow="Produtos"
+        eyebrow={t("PageLayout.eyebrow1")}
         title={
           <>
-            Linha completa<br />
-            <span className="italic">de ACM premium.</span>
+            {t("PageLayout.title1.line1")} <br />
+            <span className="italic">
+              {t("PageLayout.title1.line2")}
+            </span>
           </>
         }
-        description="Ofereçemos um leque de produtos para transformar a sua obra em um projeto de sucesso."
+        description={t("PageLayout.description1")}
         image={BackGroundProduto}
       />
       <ProdutosCatalogo />

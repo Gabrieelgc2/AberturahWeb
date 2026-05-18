@@ -3,6 +3,7 @@ import { PageLayout } from "../components/PageLayout";
 import { InformacoesContato } from "../components/contato/InformacoesContato";
 import { WhatsAppSection } from "../components/contato/WhatsAppSection";
 import contato from "../assets/contato.jpeg";
+import { useTranslation } from "react-i18next";
 
 export const Route = createFileRoute("/contato")({
   component: ContatoPage,
@@ -24,17 +25,18 @@ export const Route = createFileRoute("/contato")({
 });
 
 function ContatoPage() {
+const {t} = useTranslation();
   return (
     <>
       <PageLayout
-        eyebrow="Contato"
+        eyebrow={t("PageLayout.eyebrow5")}
         title={
           <>
-            Fale com a<br />
-            <span className="italic">ABERTURAh!</span>
+            {t("PageLayout.title5.line1")}<br />
+            <span className="italic">{t("PageLayout.title5.line2")}</span>
           </>
         }
-        description="Estamos prontos para entender seu projeto e enviar uma proposta em até 48 horas."
+        description={t("PageLayout.description5")}
         image={contato}
       />
       <InformacoesContato />

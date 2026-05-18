@@ -64,7 +64,7 @@ export function ProdutosCatalogo() {
                 }
               `}
             >
-              {categoria}
+               {t(`ProductsButton.Buttons.${categoria}`)}
             </button>
           ))}
         </div>
