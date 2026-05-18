@@ -9,7 +9,9 @@ import { useTranslation } from "react-i18next";
 
 export function FAQ() {
   const { t } = useTranslation();
-  const faqItems = t("faq.items", { returnObjects: true }) as Array<{ question: string; answer: string }>;
+  const faqItemsRaw = t("faq.items", { returnObjects: true, defaultValue: [], })
+  const faqItems = Array.isArray(faqItemsRaw) ? faqItemsRaw : []
+
   return (
     <section className="bg-background py-24 sm:py-32">
       <div className="container mx-auto max-w-4xl px-6">
