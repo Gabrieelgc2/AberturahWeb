@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider } from "@tanstack/react-router";
 import { getRouter } from "./router";
 import "./styles.css";
-import { initI18n } from "./i18n"; // Importa a função, não como side-effect
+import { initI18n } from "./i18n"; 
 
 const router = getRouter();
 
