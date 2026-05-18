@@ -22,5 +22,6 @@ i18n.use(initReactI18next).init({
     escapeValue: false,
   },
 });
+console.log('I18N initialized')
 
 export default i18n;
