@@ -36,43 +36,22 @@ export function Process() {
           </h2>
         </div>
 
-        {/* Timeline Estrutura */}
-        <div className="relative">
-          {/* Linha Central Vertical (Desktop) */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-white -translate-x-1/2 hidden md:block" />
-
-          <div className="flex flex-col gap-16 md:gap-24">
-            {steps.map((s, i) => (
+<div className="mt-20 grid gap-6 rounded-3xl sm:grid-cols-2 lg:grid-cols-4 RevealText">
+            {steps.map((s) => (
               <div
                 key={s.number}
-                className={`RevealText flex flex-col md:flex-row items-center w-full ${i % 2 !== 0 ? "md:flex-row-reverse" : ""
-                  }`}
+                className={`relative bg-[#5DADEC] p-8 md:p-10 rounded-[1.0rem] transition-colors transition-all hover:bg-[oklch(0.18_0.015_55)] hover:-translate-y-2 shadow-2xl hover:shadow-[var(--shadow-card)] w-full max-w-[480px]`}
               >
-                {/* LADO DO CONTEÚDO (CARD) */}
-                <div className="w-full md:w-1/2 flex justify-center md:justify-end in-even:md:justify-start px-4 md:px-8">
-                  <div
-                    className={`relative bg-[#5DADEC] p-8 md:p-10 rounded-[1.0rem] border border-[#D9D9D9]/65 transition-colors hover:bg-[oklch(0.18_0.015_55)] shadow-2xl w-full max-w-[480px]
-          ${i % 2 === 0 ? "md:text-right" : "md:text-left text-left"}`}
-                  >
-                    <h3 className="mt-4 font-sans text-3xl text-white tracking-tight">
+                    <h3 className="mt-4 font-sans text-3xl text-white tracking-tight RevealText">
                       {s.title}
                     </h3>
-                    <p className="mt-4 text-base leading-relaxed text-[#404142] font-sans">
+                    <p className="mt-4 text-base leading-relaxed text-[#404142] font-sans RevealText">
                       {s.description}
                     </p>
-                  </div>
-                </div>
-
-                {/* MARCADOR CENTRAL */}
-                <div className="absolute left-1/2 -translate-x-1/2 w-3 h-3 bg-white/40 rounded-full border-2 border-[#414042] hidden md:block z-10" />
-
-                {/* ESPAÇO VAZIO (OPCIONAL) */}
-                <div className="hidden md:block md:w-1/2" />
               </div>
             ))}
           </div>
         </div>
-      </div>
     </section>
   );
 }
