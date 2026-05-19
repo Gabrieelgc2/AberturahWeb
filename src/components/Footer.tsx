@@ -80,7 +80,7 @@ export function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={t("footer.ariaLabels.instagram")}
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
+                className="flex h-11 w-11 items-center justify-center transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
                 <Instagram className="RevealText h-5 w-5" />
               </a>
@@ -89,7 +89,7 @@ export function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={t("footer.ariaLabels.youtube")}
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
+                className="flex h-12.5 w-11 sm:h-11 items-center justify-center transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
                 <Youtube className="h-5 w-5" />
               </a>
