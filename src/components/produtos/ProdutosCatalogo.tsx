@@ -247,7 +247,6 @@ export function ProdutosCatalogo() {
                     w-full
                     max-w-5xl
                     h-[70vh]
-                    md:h-[80vh]
                     overflow-hidden
                     rounded-[32px]
                     bg-white
