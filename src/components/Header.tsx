@@ -47,14 +47,14 @@ export function Header() {
             <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
              onClick={() => changeLanguage("en")}
             >
-              <span className="text-[10px] font-bold text-white uppercase tracking-tighter">EN</span>
+              <span className="text-[10px] text-white uppercase tracking-tighter">EN</span>
               <img src="https://flagcdn.com/w20/us.png" alt="USA" className="w-4 h-3 object-cover" />
             </button>
             <button className="flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity border-l border-white/20 pl-3 cursor-pointer"
             onClick={() => changeLanguage("pt")}
             >
               <img src="https://flagcdn.com/w20/br.png" alt="Brasil" className="w-4 h-3 object-cover" />
-              <span className="text-[10px] font-bold text-white uppercase tracking-tighter">PT</span>
+              <span className="text-[10px] text-white uppercase tracking-tighter">PT</span>
             </button>
           </div>
           <button onClick={() => setOpen(!open)} className="text-white lg:hidden">

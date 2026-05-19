@@ -53,7 +53,6 @@ export function ProdutosCatalogo() {
                 px-5
                 py-2.5
                 text-sm
-                font-semibold
                 transition-all
                 duration-300
 
@@ -160,7 +159,6 @@ export function ProdutosCatalogo() {
                       px-3
                       py-1
                       text-[10px]
-                      font-bold
                       uppercase
                       tracking-[0.2em]
                       text-black
@@ -180,7 +178,6 @@ export function ProdutosCatalogo() {
                       layoutId={`${produto.id}-title`}
                       className="
                         text-2xl
-                        font-semibold
                         text-white
                       "
                     >
@@ -309,7 +306,6 @@ export function ProdutosCatalogo() {
                         layoutId={`${selected.id}-title`}
                         className="
                           text-4xl
-                          font-bold
                           text-white
                         "
                       >
@@ -347,7 +343,6 @@ export function ProdutosCatalogo() {
                           px-4
                           py-2
                           text-xs
-                          font-bold
                           uppercase
                           tracking-[0.2em]
                           text-white
@@ -367,7 +362,6 @@ export function ProdutosCatalogo() {
                         <h3
                           className="
                             text-lg
-                            font-semibold
                             text-foreground
                           "
                         >
@@ -400,7 +394,6 @@ export function ProdutosCatalogo() {
                         <h4
                           className="
                             text-sm
-                            font-bold
                             uppercase
                             tracking-[0.15em]
                             text-neutral-500
@@ -447,7 +440,6 @@ export function ProdutosCatalogo() {
                           px-6
                           py-4
                           text-sm
-                          font-semibold
                           text-white
                           transition-all
                           duration-300

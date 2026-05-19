@@ -59,7 +59,7 @@ export function WhyChooseUs() {
         <div className="mx-auto max-w-3xl text-center">
           <div className="RevealText mb-6 inline-flex items-center gap-2 
           rounded-full border border-(--steel-light)
-          bg-background px-4 py-1.5 text-xs font-bold 
+          bg-background px-4 py-1.5 text-xs
           tracking-widest text-(--steel)"
           style={{"--delay": "0ms"} as React.CSSProperties}>
             <span
@@ -68,12 +68,11 @@ export function WhyChooseUs() {
             />
             {t("whyChooseUs.badge")}
           </div>
-          <h2 className="RevealText font-serif text-5xl font-bold leading-[1.05] tracking-tight text-[foreground] sm:text-6xl lg:text-7xl"
+          <h2 className="RevealText font-serif text-5xl leading-[1.05] tracking-tight text-[foreground] sm:text-6xl lg:text-7xl"
             style={{"--delay": "150ms"} as React.CSSProperties}>
             {t("whyChooseUs.title.line1")}
             <br />
             <span
-              className="italic"
               style={{
                 WebkitTextFillColor: "#404142",
               }}
@@ -102,7 +101,7 @@ export function WhyChooseUs() {
                 >
                   <Icon className="h-7 w-7 text-shadow-black" strokeWidth={1.75} />
                 </div>
-                <h3 className="RevealText font-serif text-2xl font-bold text-foreground transition-colors group-hover:text-[color:var(--brand-foreground)]">
+                <h3 className="RevealText font-serif text-2xl text-foreground transition-colors group-hover:text-[color:var(--brand-foreground)]">
                   {t(`whyChooseUs.items.${reason.key}.title`)}
                 </h3>
                 <p className="RevealText font-sans mt-3 text-[15px] leading-relaxed text-[color:var(--steel)] transition-colors group-hover:text-[color:var(--steel-light)]">

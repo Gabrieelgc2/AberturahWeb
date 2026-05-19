@@ -23,8 +23,8 @@ export function DiferenciaisSection() {
             {t("about.differentials.title")}
           </Text>
 
-          <Text variant="Subtitle" className="RevealText mt-4 font-sans font-bold">
-            {t("about.differentials.subtitle")} <span className="italic">{t("about.differentials.subtitleItalic")}</span>
+          <Text variant="Subtitle" className="RevealText mt-4 font-sans">
+            {t("about.differentials.subtitle")} <span>{t("about.differentials.subtitleItalic")}</span>
           </Text>
         </div>
 

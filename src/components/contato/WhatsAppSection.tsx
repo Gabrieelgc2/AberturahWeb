@@ -22,14 +22,13 @@ export function WhatsAppSection() {
 
           <div className="relative grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#D9D9D9]">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-1.5 text-xs  uppercase tracking-widest text-[#D9D9D9]">
                 <MessageCircle className="h-3.5 w-3.5 text-[#D9D9D9] RevealText font-sans" />
                 {t("contactPage.whatsapp.badge")}
               </div>
-              <h2 className="mt-6 font-sans text-5xl font-semibold leading-[1.05] text-white sm:text-6xl RevealText">
+              <h2 className="mt-6 font-sans text-5xl leading-[1.05] text-white sm:text-6xl RevealText">
                 {t("contactPage.whatsapp.title.line1")}<br />
                 <span
-                  className="italic"
                   style={{
                     background: "#D9D9D9",
                     WebkitBackgroundClip: "text",
@@ -47,7 +46,7 @@ export function WhatsAppSection() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noreferrer"
-                  className="group inline-flex items-center gap-3 rounded-full px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] shadow-[var(--shadow-brand)] transition-transform hover:scale-105"
+                  className="group inline-flex items-center gap-3 rounded-full px-7 py-4 text-sm text-[color:var(--brand-foreground)] shadow-[var(--shadow-brand)] transition-transform hover:scale-105"
                   style={{ background: "var(--gradient-brand)" }}
                 >
                   <MessageCircle className="h-5 w-5 RevealText" />
@@ -79,7 +78,7 @@ export function WhatsAppSection() {
                 >
                   <MessageCircle className="h-8 w-8 text-[#D9D9D9] RevealText" strokeWidth={1.75}/>
                 </div>
-                <p className="mt-4 font-sans text-2xl font-bold text-[#404142] sm:text-3xl RevealText">
+                <p className="mt-4 font-sans text-2xl text-[#404142] sm:text-3xl RevealText">
                   {SITE_CONTACT.phoneDisplay}
                 </p>
                 <p className="mt-4 font-sans text-sm uppercase tracking-widest text-[#404142] RevealText">

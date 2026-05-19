@@ -14,9 +14,9 @@ export function MissaoValoresSection() {
         {/* HEADER */}
         <div className="max-w-xl mb-16">
 
-          <Text variant="Title" className="RevealText mt-4 font-serif font-bold leading-tight">
+          <Text variant="Title" className="RevealText mt-4 font-serif leading-tight">
             {t("about.missionValues.title")}
-            <span className="italic block RevealText">{t("about.missionValues.titleItalic")}</span>
+            <span className="block RevealText">{t("about.missionValues.titleItalic")}</span>
           </Text>
         </div>
 

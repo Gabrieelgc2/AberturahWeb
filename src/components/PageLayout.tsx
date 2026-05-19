@@ -20,7 +20,7 @@ export function PageLayout({ eyebrow, title, description, image }: Props) {
         <img src={image ?? heroImage} alt={t("pageLayout.backgroundAlt")} className="h-full w-full object-cover" />
       </div>
       <div className="container relative mx-auto max-w-5xl px-6 text-center">
-        <div className="RevealText inline-flex items-center gap-2 rounded-full border border-[#white]/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[white] font-sans">
+        <div className="RevealText inline-flex items-center gap-2 rounded-full border border-[#white]/30 px-4 py-1.5 text-xs uppercase tracking-widest text-[white] font-sans">
           <span
             className="h-1.5 w-1.5 rounded-full"
             style={{ background: "white" }}

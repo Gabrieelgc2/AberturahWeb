@@ -50,7 +50,7 @@ const testimonials = Array.isArray(testimonialsRaw) ? testimonialsRaw : [];
                 }`}
               >
                 <div
-                  className={`RevealText font-semibold font-sans ${
+                  className={`RevealText font-sans ${
                     i === 1 ? "text-white" : "text-foreground"
                   }`}
                 >

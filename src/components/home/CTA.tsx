@@ -17,10 +17,10 @@ export function CTA() {
           />
           <div className="relative grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="RevealText font-serif text-4xl font-bold leading-[1.05] text-[color:var(--brand-foreground)] sm:text-5xl">
+              <h2 className="RevealText font-serif text-4xl leading-[1.05] text-[color:var(--brand-foreground)] sm:text-5xl">
                 {t("cta.title.line1")}
                 <br />
-                <span className="font-serif RevealText italic">{t("cta.title.line2")}</span>
+                <span className="font-serif RevealText">{t("cta.title.line2")}</span>
               </h2>
               <p className="font-sans RevealText mt-5 max-w-md text-lg leading-relaxed text-[#D9D9D9]">
                 {t("cta.description")}
@@ -31,14 +31,14 @@ export function CTA() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm font-semibold text-background transition-transform hover:scale-105 text-sans"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm text-background transition-transform hover:scale-105 text-sans"
               >
                 <MessageCircle className="h-4 w-4" />
                 {t("cta.whatsapp")}
               </a>
               <Link
                 to="/contato"
-                className="text-sans inline-flex items-center justify-center gap-2 rounded-full border-2 border-[color:var(--brand-foreground)] px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] transition-colors hover:bg-[color:var(--brand-foreground)] hover:text-[color:var(--brand)]"
+                className="text-sans inline-flex items-center justify-center gap-2 rounded-full border-2 border-[color:var(--brand-foreground)] px-7 py-4 text-sm text-[color:var(--brand-foreground)] transition-colors hover:bg-[color:var(--brand-foreground)] hover:text-[color:var(--brand)]"
               >
                 {t("cta.contactPage")}
                 <ArrowRight className="RevealText h-4 w-4" />

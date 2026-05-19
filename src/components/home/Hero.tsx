@@ -36,7 +36,7 @@ export function Hero() {
           className="mx-auto max-w-4xl text-center"
           >
 
-          <h1 className="text-white font-serif text-4xl font-bold leading-[1.1] tracking-normal sm:text-7xl">
+          <h1 className="text-white font-serif text-4xl leading-[1.1] tracking-normal sm:text-7xl">
           <SplittingText text={t("hero.title.line1")}
           delay={450}  />
           <br></br>
@@ -54,7 +54,7 @@ export function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full px-7 py-4 text-sm font-semibold text-[color:var(--brand-foreground)] shadow-[var(--shadow-brand)] transition-transform hover:scale-105 font-sans"
+              className="group inline-flex items-center gap-2 rounded-full px-7 py-4 text-sm text-[color:var(--brand-foreground)] shadow-[var(--shadow-brand)] transition-transform hover:scale-105 font-sans"
               style={{ background: "var(--gradient-brand)" }}
             >
               {t("hero.button")}

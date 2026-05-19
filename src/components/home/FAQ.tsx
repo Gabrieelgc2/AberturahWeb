@@ -22,7 +22,7 @@ export function FAQ() {
             <>
               <span className="font-serif">{t("faq.title.line1")}</span>
               <br />
-              <span className="italic font-serif">{t("faq.title.line2")}</span>
+              <span className="font-serif">{t("faq.title.line2")}</span>
             </>
           }
         />

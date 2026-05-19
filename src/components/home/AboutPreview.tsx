@@ -32,7 +32,7 @@ export function AboutPreview() {
                 <span className="text-[#D9D9D9] font-serif">
                   {t("aboutPreview.title.line1")}
                   </span><br />
-                  <span className="italic text-[#D9D9D9] font-serif">{t("aboutPreview.title.line2")}</span>
+                  <span className="text-[#D9D9D9] font-serif">{t("aboutPreview.title.line2")}</span>
                 </>
               }
             />
@@ -41,7 +41,7 @@ export function AboutPreview() {
             </p>
             <Link
               to="/sobre"
-              className="RevealText mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[color:#D9D9D9] underline-offset-4 hover:underline font-sans"
+              className="RevealText mt-8 inline-flex items-center gap-2 text-sm text-[color:#D9D9D9] underline-offset-4 hover:underline font-sans"
             >
               {t("aboutPreview.button")}
               <ArrowRight className="h-4 w-4" />
@@ -64,7 +64,7 @@ export function AboutPreview() {
               className="absolute -bottom-6 -right-6 max-w-[260px] rounded-2xl bg-background p-6 shadow-[var(--shadow-card)]"
             >
               <div
-                className="RevealText font-sans text-5xl font-bold leading-none"
+                className="RevealText font-sans text-5xl leading-none"
                 style={{
                   background: "var(--gradient-brand)",
                   WebkitBackgroundClip: "text",

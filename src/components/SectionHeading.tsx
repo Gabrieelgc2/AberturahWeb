@@ -18,7 +18,7 @@ export function SectionHeading({
     <div className={`max-w-3xl ${alignClass}`}>
       {eyebrow && (
         <div
-          className={`${eyebrowClassName || "RevealText"} mb-5 inline-flex items-center gap-2 rounded-full border border-[color:var(--steel-light)] bg-background px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[color:var(--steel)]`}
+          className={`${eyebrowClassName || "RevealText"} mb-5 inline-flex items-center gap-2 rounded-full border border-[color:var(--steel-light)] bg-background px-4 py-1.5 text-xs uppercase tracking-widest text-[color:var(--steel)]`}
         >
           <span
             className="h-1.5 w-1.5 rounded-full"
