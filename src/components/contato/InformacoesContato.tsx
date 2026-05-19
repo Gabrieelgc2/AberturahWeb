@@ -7,10 +7,10 @@ export function InformacoesContato() {
   const { t } = useTranslation();
 
   const informacoes = [
-    { icon: MapPin, key: "address", linhas: [SITE_CONTACT.addressLine1, SITE_CONTACT.addressLine2] },
+    { icon: MapPin, key: "address", linhas: [SITE_CONTACT.address.line1, SITE_CONTACT.address.line2] },
     { icon: Phone, key: "phone", linhas: [SITE_CONTACT.phoneDisplay] },
     { icon: Mail, key: "email", linhas: [SITE_CONTACT.email] },
-    { icon: Clock, key: "hours", linhas: [SITE_CONTACT.businessHours] },
+    { icon: Clock, key: "hours", linhas: [t("Contact.businessHours")] },
   ];
   return (
     <Section>
