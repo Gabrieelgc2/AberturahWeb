@@ -32,7 +32,7 @@ function Obra() {
             title={
               <>
                 {t("PageLayout.title2.line1")} <br />
-                <span className="italic">{t("PageLayout.title2.line2")}</span>
+                <span>{t("PageLayout.title2.line2")}</span>
               </>
             }
             description={t("PageLayout.description2")}

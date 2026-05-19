@@ -16,7 +16,6 @@ export const SITE_SOCIAL = {
 export const NAV_ITEMS = [
   { to: "/", label: "nav.home" },
   { to: "/produtos", label: "nav.products" },
-  { to: "/obras", label: "nav.projects" },
   { to: "/sobre", label: "nav.about" },
   { to: "/noticias", label: "nav.news" },
   { to: "/contato", label: "nav.contact" },

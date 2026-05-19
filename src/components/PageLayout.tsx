@@ -27,7 +27,7 @@ export function PageLayout({ eyebrow, title, description, image }: Props) {
           />
           {eyebrow}
         </div>
-        <h1 className="RevealText mt-6 font-serif text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+        <h1 className="RevealText mt-6 font-serif text-5xl leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
           {title}
         </h1>
         {description && (

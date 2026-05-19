@@ -35,7 +35,7 @@ function SobrePage() {
         title={
           <>
             {t("PageLayout.title3.line1")}<br />
-            <span className="italic">{t("PageLayout.title3.line2")}</span>
+            <span>{t("PageLayout.title3.line2")}</span>
           </>
         }
         description={t("PageLayout.description3")}

@@ -33,7 +33,7 @@ function NoticiasPage() {
         title={
           <>
             {t("PageLayout.title4.line1")}<br />
-            <span className="italic">{t("PageLayout.title4.line2")}</span>
+            <span>{t("PageLayout.title4.line2")}</span>
           </>
         }
         description={t("PageLayout.description4")}

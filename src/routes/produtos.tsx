@@ -33,7 +33,7 @@ function ProdutosPage() {
         title={
           <>
             {t("PageLayout.title1.line1")} <br />
-            <span className="italic">
+            <span>
               {t("PageLayout.title1.line2")}
             </span>
           </>

@@ -39,7 +39,7 @@ export function ProductsPreview() {
             title={
               <>
                 <span className="font-serif">{t("productsPreview.title.line1")}</span><br />
-                <span className="italic font-normal text-(--steel) font-serif">
+                <span className="font-normal text-[#404142] font-serif">
                   {t("productsPreview.title.line2")}
                 </span>
               </>

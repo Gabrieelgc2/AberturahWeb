@@ -14,10 +14,6 @@ export function CTA() {
         >
           <div
             className="absolute inset-0 opacity-15"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(45deg, transparent, transparent 24px, oklch(1 0 0 / 0.4) 24px, oklch(1 0 0 / 0.4) 25px)",
-            }}
           />
           <div className="relative grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
