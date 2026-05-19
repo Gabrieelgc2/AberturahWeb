@@ -75,8 +75,12 @@ export function Header() {
             </Link>
           ))}
           <div className="flex gap-6 mt-4">
-             <span className="text-white text-sm">PT</span>
-             <span className="text-white/50 text-sm">EN</span>
+             <button className="text-white text-sm cursor-pointer"
+             onClick={() => changeLanguage("pt")}
+             >PT</button>
+             <button className="text-white/50 text-sm cursor-pointer"
+             onClick={() => changeLanguage("en")}
+             >EN</button>
           </div>
         </nav>
       )}
