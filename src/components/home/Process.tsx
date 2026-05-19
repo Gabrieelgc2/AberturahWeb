@@ -51,23 +51,13 @@ export function Process() {
                 {/* LADO DO CONTEÚDO (CARD) */}
                 <div className="w-full md:w-1/2 flex justify-center md:justify-end in-even:md:justify-start px-4 md:px-8">
                   <div
-                    className={`relative bg-[#404142] p-8 md:p-10 rounded-[1.0rem] border border-[#D9D9D9]/65 transition-colors hover:bg-[oklch(0.18_0.015_55)] shadow-2xl w-full max-w-[480px]
+                    className={`relative bg-[#5DADEC] p-8 md:p-10 rounded-[1.0rem] border border-[#D9D9D9]/65 transition-colors hover:bg-[oklch(0.18_0.015_55)] shadow-2xl w-full max-w-[480px]
           ${i % 2 === 0 ? "md:text-right" : "md:text-left text-left"}`}
                   >
-                    <div
-                      className="font-serif text-6xl  leading-none opacity-100"
-                      style={{
-                        background: "var(--gradient-brand)",
-                        WebkitBackgroundClip: "text",
-                        WebkitTextFillColor: "#D9D9D9",
-                      }}
-                    >
-                      {s.number}
-                    </div>
                     <h3 className="mt-4 font-sans text-3xl text-white tracking-tight">
                       {s.title}
                     </h3>
-                    <p className="mt-4 text-base leading-relaxed text-[#D9D9D9] font-sans">
+                    <p className="mt-4 text-base leading-relaxed text-[#404142] font-sans">
                       {s.description}
                     </p>
                   </div>
