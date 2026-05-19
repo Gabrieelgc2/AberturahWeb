@@ -96,10 +96,7 @@ export function ProdutosCatalogo() {
                   cursor-pointer
                   overflow-hidden
                   rounded-[30px]
-                  border
-                  border-black/5
                   bg-white
-                  shadow-[0_10px_40px_rgba(0,0,0,0.08)]
                 "
               >
 
@@ -107,7 +104,7 @@ export function ProdutosCatalogo() {
                     IMAGEM
                 ========================================================= */}
 
-                <div className="relative aspect-[4/5] overflow-hidden">
+                <div className="relative aspect-[5/5] overflow-hidden rounded-[30px]">
 
                   <motion.div
                     layoutId={`${produto.id}-bg`}
@@ -249,7 +246,7 @@ export function ProdutosCatalogo() {
                   className="
                     w-full
                     max-w-5xl
-                    h-[90vh]
+                    h-[70vh]
                     md:h-[80vh]
                     overflow-hidden
                     rounded-[32px]
@@ -267,7 +264,7 @@ export function ProdutosCatalogo() {
                   <div
                     className="
                       relative
-                      h-[320px]
+                      h-[260px]
                       md:h-full
                       overflow-hidden
                     "
