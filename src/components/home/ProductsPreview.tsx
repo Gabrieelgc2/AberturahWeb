@@ -4,10 +4,10 @@ import { SectionHeading } from "../../components/SectionHeading";
 import { useTranslation } from "react-i18next";
 import { useRef } from "react";
 
-import portavideo from "../../assets/portavideo.mp4";
-import revestimento from "../../assets/revestimento.mp4";
-import brises from "../../assets/brises.mp4";
-import pergolados from "../../assets/pergolados.mp4";
+import portavideo from "../../assets/portavideo.webm";
+import revestimento from "../../assets/revestimento.webm";
+import brises from "../../assets/brises.webm";
+import pergolados from "../../assets/pergolados.webm";
 
 export function ProductsPreview() {
   const { t } = useTranslation();
