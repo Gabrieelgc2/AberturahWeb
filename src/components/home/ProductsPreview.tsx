@@ -170,9 +170,10 @@ function ProductCard({
           h-full
           w-full
           object-cover
+          object-[center_80%]
           transition-transform
           duration-700
-          group-hover:scale-110
+          group-hover:scale-120
         "
       />
 
