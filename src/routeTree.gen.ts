@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SobreRouteImport } from './routes/sobre'
 import { Route as ProdutosRouteImport } from './routes/produtos'
 import { Route as ObrasRouteImport } from './routes/obras'
-import { Route as NoticiasRouteImport } from './routes/noticias'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -31,11 +30,6 @@ const ObrasRoute = ObrasRouteImport.update({
   path: '/obras',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NoticiasRoute = NoticiasRouteImport.update({
-  id: '/noticias',
-  path: '/noticias',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ContatoRoute = ContatoRouteImport.update({
   id: '/contato',
   path: '/contato',
@@ -50,7 +44,6 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
-  '/noticias': typeof NoticiasRoute
   '/obras': typeof ObrasRoute
   '/produtos': typeof ProdutosRoute
   '/sobre': typeof SobreRoute
@@ -58,7 +51,6 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
-  '/noticias': typeof NoticiasRoute
   '/obras': typeof ObrasRoute
   '/produtos': typeof ProdutosRoute
   '/sobre': typeof SobreRoute
@@ -67,23 +59,16 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
-  '/noticias': typeof NoticiasRoute
   '/obras': typeof ObrasRoute
   '/produtos': typeof ProdutosRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contato'  | '/obras' | '/produtos' | '/sobre'
+  fullPaths: '/' | '/contato' | '/obras' | '/produtos' | '/sobre'
   fileRoutesByTo: FileRoutesByTo
   to: '/' | '/contato' | '/obras' | '/produtos' | '/sobre'
-  id:
-    | '__root__'
-    | '/'
-    | '/contato'
-    | '/obras'
-    | '/produtos'
-    | '/sobre'
+  id: '__root__' | '/' | '/contato' | '/obras' | '/produtos' | '/sobre'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {

@@ -2,8 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import heroVideoDesktop from "../../assets/videos/hero-video.webm";
-import heroVideoMobile from "../../assets/videos/Hero-Video-Mobile.mp4";
+import heroVideo from "../../assets/videos/Hero-Video-Compressaos.webm";
 
 import { WHATSAPP_URL } from "@/config/site";
 import SplittingText from "../animations/animations";
@@ -98,7 +97,7 @@ export function Hero() {
       >
         {/* MOBILE VIDEO MAIS LEVE */}
         <source
-          src={isMobile ? heroVideoMobile : heroVideoDesktop}
+          src={heroVideo}
           type="video/webm"
         />
       </video>
