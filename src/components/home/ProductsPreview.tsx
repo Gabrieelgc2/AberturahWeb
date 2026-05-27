@@ -9,11 +9,6 @@ import revestimento from "../../assets/videos/revestimento.webm";
 import brises from "../../assets/videos/brises.webm";
 import pergolados from "../../assets/videos/pergolados.webm";
 
-import portaThumb from "../../assets/thumbs/porta.webp";
-import revestimentoThumb from "../../assets/thumbs/revestimentos.webp";
-import brisesThumb from "../../assets/thumbs/brises.webp";
-import pergoladosThumb from "../../assets/thumbs/pergolados.webp";
-
 export function ProductsPreview() {
   const { t } = useTranslation();
 
@@ -21,22 +16,18 @@ export function ProductsPreview() {
     {
       key: "solid",
       video: portavideo,
-      thumb: portaThumb,
     },
     {
       key: "wood",
       video: revestimento,
-      thumb: revestimentoThumb,
     },
     {
       key: "matte",
       video: brises,
-      thumb: brisesThumb,
     },
     {
       key: "satin",
       video: pergolados,
-      thumb: pergoladosThumb,
     },
   ];
 
@@ -45,7 +36,18 @@ export function ProductsPreview() {
       <div className="container mx-auto max-w-7xl px-10">
 
         {/* HEADER */}
-        <div className="RevealText flex flex-col items-start gap-8 sm:flex-row sm:items-end sm:justify-between">
+        <div
+          className="
+            RevealText
+            flex
+            flex-col
+            items-start
+            gap-8
+            sm:flex-row
+            sm:items-end
+            sm:justify-between
+          "
+        >
           <SectionHeading
             align="left"
             eyebrow={t("productsPreview.badge")}
@@ -88,7 +90,6 @@ export function ProductsPreview() {
 
             <ArrowUpRight
               className="
-                RevealText
                 h-4
                 w-4
                 transition-transform
@@ -104,7 +105,6 @@ export function ProductsPreview() {
             <ProductCard
               key={c.key}
               video={c.video}
-              thumb={c.thumb}
               title={t(`productsPreview.categories.${c.key}.name`)}
               description={t(`productsPreview.categories.${c.key}.description`)}
               explore={t("productsPreview.explore")}
@@ -118,7 +118,6 @@ export function ProductsPreview() {
 
 type ProductCardProps = {
   video: string;
-  thumb: string;
   title: string;
   description: string;
   explore: string;
@@ -126,11 +125,11 @@ type ProductCardProps = {
 
 function ProductCard({
   video,
-  thumb,
   title,
   description,
   explore,
 }: ProductCardProps) {
+  const cardRef = useRef<HTMLAnchorElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const [isMobile, setIsMobile] = useState(false);
@@ -156,7 +155,41 @@ function ProductCard({
 
   /*
   ========================================
-  VIDEO HOVER DESKTOP
+  MOBILE:
+  PLAY QUANDO APARECE
+  ========================================
+  */
+  useEffect(() => {
+    if (!isMobile) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!videoRef.current) return;
+
+        if (entry.isIntersecting) {
+          videoRef.current.play().catch(() => {});
+        } else {
+          videoRef.current.pause();
+          videoRef.current.currentTime = 0;
+        }
+      },
+      {
+        threshold: 0.6,
+      }
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [isMobile]);
+
+  /*
+  ========================================
+  DESKTOP HOVER
   ========================================
   */
   const handleEnter = async () => {
@@ -170,7 +203,7 @@ function ProductCard({
   };
 
   const handleLeave = () => {
-    if (!videoRef.current) return;
+    if (!videoRef.current || isMobile) return;
 
     videoRef.current.pause();
     videoRef.current.currentTime = 0;
@@ -178,6 +211,7 @@ function ProductCard({
 
   return (
     <Link
+      ref={cardRef}
       to="/produtos"
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
@@ -189,42 +223,27 @@ function ProductCard({
         rounded-3xl
       "
     >
-      {/* MOBILE = IMAGEM */}
-      {isMobile ? (
-        <img
-          src={thumb}
-          alt={title}
-          className="
-            absolute
-            inset-0
-            h-full
-            w-full
-            object-cover
-            object-[center_80%]
-          "
-        />
-      ) : (
-        /* DESKTOP = VIDEO */
-        <video
-          ref={videoRef}
-          src={video}
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="
-            absolute
-            inset-0
-            h-full
-            w-full
-            object-cover
-            object-[center_80%]
-            transition-transform
-            duration-700
-            group-hover:scale-110
-          "
-        />
-      )}
+      {/* VIDEO */}
+      <video
+        ref={videoRef}
+        src={video}
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster=""
+        className="
+          absolute
+          inset-0
+          h-full
+          w-full
+          object-cover
+          object-[center_80%]
+          transition-transform
+          duration-700
+          group-hover:scale-110
+        "
+      />
 
       {/* OVERLAY */}
       <div
@@ -239,12 +258,20 @@ function ProductCard({
       />
 
       {/* CONTENT */}
-      <div className="absolute inset-x-0 bottom-0 p-6 text-white">
+      <div className="absolute inset-x-0 bottom-0 z-10 p-6 text-white">
         <h3 className="font-serif text-2xl">
           {title}
         </h3>
 
-        <p className="mt-2 text-sm text-[#D9D9D9] font-sans leading-relaxed">
+        <p
+          className="
+            mt-2
+            text-sm
+            text-[#D9D9D9]
+            font-sans
+            leading-relaxed
+          "
+        >
           {description}
         </p>
 
