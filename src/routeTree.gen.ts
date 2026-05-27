@@ -74,14 +74,13 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contato' | '/noticias' | '/obras' | '/produtos' | '/sobre'
+  fullPaths: '/' | '/contato'  | '/obras' | '/produtos' | '/sobre'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contato' | '/noticias' | '/obras' | '/produtos' | '/sobre'
+  to: '/' | '/contato' | '/obras' | '/produtos' | '/sobre'
   id:
     | '__root__'
     | '/'
     | '/contato'
-    | '/noticias'
     | '/obras'
     | '/produtos'
     | '/sobre'
@@ -90,7 +89,6 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContatoRoute: typeof ContatoRoute
-  NoticiasRoute: typeof NoticiasRoute
   ObrasRoute: typeof ObrasRoute
   ProdutosRoute: typeof ProdutosRoute
   SobreRoute: typeof SobreRoute
@@ -119,13 +117,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ObrasRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/noticias': {
-      id: '/noticias'
-      path: '/noticias'
-      fullPath: '/noticias'
-      preLoaderRoute: typeof NoticiasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contato': {
       id: '/contato'
       path: '/contato'
@@ -146,7 +137,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContatoRoute: ContatoRoute,
-  NoticiasRoute: NoticiasRoute,
   ObrasRoute: ObrasRoute,
   ProdutosRoute: ProdutosRoute,
   SobreRoute: SobreRoute,
