@@ -2,12 +2,17 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "../../components/SectionHeading";
 import { useTranslation } from "react-i18next";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
-import portavideo from "../../assets/portavideo.webm";
-import revestimento from "../../assets/revestimento.webm";
-import brises from "../../assets/brises.webm";
-import pergolados from "../../assets/pergolados.webm";
+import portavideo from "../../assets/videos/portavideo.webm";
+import revestimento from "../../assets/videos/revestimento.webm";
+import brises from "../../assets/videos/brises.webm";
+import pergolados from "../../assets/videos/pergolados.webm";
+
+import portaThumb from "../../assets/thumbs/porta.webp";
+import revestimentoThumb from "../../assets/thumbs/revestimentos.webp";
+import brisesThumb from "../../assets/thumbs/brises.webp";
+import pergoladosThumb from "../../assets/thumbs/pergolados.webp";
 
 export function ProductsPreview() {
   const { t } = useTranslation();
@@ -16,18 +21,22 @@ export function ProductsPreview() {
     {
       key: "solid",
       video: portavideo,
+      thumb: portaThumb,
     },
     {
       key: "wood",
       video: revestimento,
+      thumb: revestimentoThumb,
     },
     {
       key: "matte",
       video: brises,
+      thumb: brisesThumb,
     },
     {
       key: "satin",
       video: pergolados,
+      thumb: pergoladosThumb,
     },
   ];
 
@@ -36,7 +45,7 @@ export function ProductsPreview() {
       <div className="container mx-auto max-w-7xl px-10">
 
         {/* HEADER */}
-        <div className="RevealText flex flex-col items-center gap-8 sm:flex-row justify-between sm:items-end">
+        <div className="RevealText flex flex-col items-start gap-8 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
             align="left"
             eyebrow={t("productsPreview.badge")}
@@ -60,11 +69,6 @@ export function ProductsPreview() {
             className="
               font-sans
               RevealText
-              -ml-10
-              active:scale-95
-              active:bg-foreground
-              active:text-background
-              group
               inline-flex
               items-center
               gap-2
@@ -100,6 +104,7 @@ export function ProductsPreview() {
             <ProductCard
               key={c.key}
               video={c.video}
+              thumb={c.thumb}
               title={t(`productsPreview.categories.${c.key}.name`)}
               description={t(`productsPreview.categories.${c.key}.description`)}
               explore={t("productsPreview.explore")}
@@ -113,6 +118,7 @@ export function ProductsPreview() {
 
 type ProductCardProps = {
   video: string;
+  thumb: string;
   title: string;
   description: string;
   explore: string;
@@ -120,14 +126,41 @@ type ProductCardProps = {
 
 function ProductCard({
   video,
+  thumb,
   title,
   description,
   explore,
 }: ProductCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  /*
+  ========================================
+  DETECTA MOBILE
+  ========================================
+  */
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
+
+  /*
+  ========================================
+  VIDEO HOVER DESKTOP
+  ========================================
+  */
   const handleEnter = async () => {
-    if (window.innerWidth < 768) return;
+    if (isMobile) return;
 
     try {
       await videoRef.current?.play();
@@ -156,26 +189,42 @@ function ProductCard({
         rounded-3xl
       "
     >
-      {/* VIDEO */}
-      <video
-        ref={videoRef}
-        src={video}
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        className="
-          absolute
-          inset-0
-          h-full
-          w-full
-          object-cover
-          object-[center_80%]
-          transition-transform
-          duration-700
-          group-hover:scale-120
-        "
-      />
+      {/* MOBILE = IMAGEM */}
+      {isMobile ? (
+        <img
+          src={thumb}
+          alt={title}
+          className="
+            absolute
+            inset-0
+            h-full
+            w-full
+            object-cover
+            object-[center_80%]
+          "
+        />
+      ) : (
+        /* DESKTOP = VIDEO */
+        <video
+          ref={videoRef}
+          src={video}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="
+            absolute
+            inset-0
+            h-full
+            w-full
+            object-cover
+            object-[center_80%]
+            transition-transform
+            duration-700
+            group-hover:scale-110
+          "
+        />
+      )}
 
       {/* OVERLAY */}
       <div

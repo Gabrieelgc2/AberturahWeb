@@ -1,8 +1,9 @@
 {
   "hero": {
     "title": {
-      "line1": "Projetos de alto", 
-      "line2": "padrão em ACM"
+      "line1": "Acabamentos para", 
+      "line2": "arquitetura de alto",
+      "line3": "padrão"
     },
     "description": "Entregamos projetos personalizados em ACM para quem busca design, precisão e execução impecável. Somos especializados em portas, revestimentos, brises e pergolados.",
     "button": "Solicitar orçamento"
@@ -33,15 +34,15 @@
       "line1": "Por que nos",
       "line2": "escolher?"
     },
-    "description": "A ABERTURAh! chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos. Combinamos matéria-prima premium, tecnologia de beneficiamento e atendimento próximo para entregar resultados que valorizam cada obra.",
+    "description": "A ABERTURAH! chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos. Combinamos matéria-prima premium, tecnologia de ponta, produção e atendimento próximo, para entregar resultados que valorizam cada obra, incluindo produtos que oferecem durabilidade ao longo do tempo, com design e funcionalidade.",
     "items": {
       "quality": {
-        "title": "Qualidade",
-        "description": "Trabalhamos exclusivamente com chapas de ACM de primeira linha (Kynar), garantindo durabilidade superior, resistência a intempéries e acabamento impecável em cada projeto."
+        "title": "Qualidade certificada",
+        "description": "Trabalhamos exclusivamente com chapas de ACM e PVC de primeira linha, seguindo as normas de fabricação e montagem, para garantir durabilidade superior, resistência às intempéries e acabamento impecável em cada projeto."
       },
       "finishes": {
         "title": "Variedade de Acabamentos",
-        "description": "Mais de 40 cores e texturas disponíveis — do escovado ao brilhante, passando pelo acabamento fosco e efeitos metálicos. Sua fachada com a identidade que ela merece."
+        "description": "Mais de 40 cores e texturas disponíveis — do fosco ao brilhante, passando pelo acabamento amadeirado e efeitos metálicos. Cada detalhe com a identidade que ela merece."
       },
       "installation": {
         "title": "Instalação",
@@ -185,8 +186,8 @@
   "productsPreview": {
     "badge": "Linha de produtos",
     "title": {
-      "line1": "Material ACM",
-      "line2": "para cada estilo."
+      "line1": "Soluções personalizadas",
+      "line2": "para cada projeto."
     },
     "button": "Ver linha completa",
     "explore": "Explorar",
