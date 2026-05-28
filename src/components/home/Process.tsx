@@ -1,29 +1,32 @@
-import { SectionHeading } from "@/components/SectionHeading";
+import { useTranslation } from "react-i18next";
 
+export function Process() {
+const { t } = useTranslation();
 const steps = [
+
   {
     n: "01",
-    title: "Briefing técnico",
-    desc: "Entendemos o projeto, prazos e especificações. Visita técnica quando necessário.",
+    title: t("process.steps.0.title"),
+    desc: t("process.steps.0.description"),
   },
   {
     n: "02",
-    title: "Projeto e cotação",
-    desc: "Dimensionamento, escolha de acabamentos e proposta detalhada com prazos.",
+    title: t("process.steps.1.title"),
+    desc: t("process.steps.1.description"),
   },
   {
     n: "03",
-    title: "Beneficiamento",
-    desc: "Corte CNC, dobra e preparo das peças com precisão milimétrica em nossa fábrica.",
+    title: t("process.steps.2.title"),
+    desc: t("process.steps.2.description"),
   },
   {
     n: "04",
-    title: "Entrega e suporte",
-    desc: "Logística especializada e acompanhamento técnico durante toda a instalação.",
+    title: t("process.steps.3.title"),
+    desc: t("process.steps.3.description"),
   },
+  
 ];
 
-export function Process() {
   return (
     <section
       className="relative overflow-hidden py-24 sm:py-32"
