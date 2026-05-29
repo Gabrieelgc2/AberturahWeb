@@ -15,7 +15,7 @@ export const SITE_SOCIAL = {
 
 export const NAV_ITEMS = [
   { to: "/", label: "nav.home" },
-  { to: "/produtos", label: "nav.products" },
+  { to: "/acabamentos", label: "nav.acabamentos" },
   { to: "/sobre", label: "nav.about" },
   { to: "/contato", label: "nav.contact" },
 ] as const;

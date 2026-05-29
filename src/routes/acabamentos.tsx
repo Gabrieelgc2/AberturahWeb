@@ -5,17 +5,17 @@ import BackGroundProduto from "../assets/image-casa-aberturah.webp";
 import { PageLayout } from "@/components/PageLayout";
 import { useTranslation } from "react-i18next";
 
-export const Route = createFileRoute("/produtos")({
-  component: ProdutosPage,
+export const Route = createFileRoute("/acabamentos")({
+  component: AcabamentosPage,
   head: () => ({
     meta: [
-      { title: "ABERTURAh! | Produtos" },
+      { title: "ABERTURAh! | Acabamentos" },
       {
         name: "description",
         content:
           "Linha completa de chapas ACM: brilhante, escovado, madeirado e acabamentos especiais. Mais de 40 cores disponíveis.",
       },
-      { property: "og:title", content: "Produtos ACM — ABERTURAh!" },
+      { property: "og:title", content: "Acabamentos ACM — ABERTURAh!" },
       {
         property: "og:description",
         content: "Linha completa de chapas ACM com mais de 40 acabamentos.",
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/produtos")({
   }),
 });
 
-function ProdutosPage() {
+function AcabamentosPage() {
   const { t } = useTranslation();
   return (
     <>
