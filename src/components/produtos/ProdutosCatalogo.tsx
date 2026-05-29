@@ -1,462 +1,162 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-
-import { CATEGORIAS, PRODUTOS, type Produto } from "./produtos.data";
-import { useProdutosFiltro } from "./useProdutosFiltro";
-import { TiltCard } from "../animations/TiltCard";
-import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import { PRODUTOS } from "./produtos.data";
 
 export function ProdutosCatalogo() {
-  const { t } = useTranslation();
-  const [selected, setSelected] = useState<Produto | null>(null);
+    const [categoriaAtiva, setCategoriaAtiva] = useState("Todos");
 
-  const {
-    categoriaSelecionada,
-    setCategoriaSelecionada,
-    produtosFiltrados,
-  } = useProdutosFiltro(PRODUTOS);
+    const categorias = [
+        "Todos",
+        "Portas",
+        "Brises",
+        "Pergolados",
+        "Revestimentos",
+    ];
 
-  /* =========================================================
-     ESC FECHA MODAL
-  ========================================================= */
+    const produtosFiltrados =
+        categoriaAtiva === "Todos"
+            ? PRODUTOS
+            : PRODUTOS.filter(
+                  (produto) => produto.categoria === categoriaAtiva
+              );
 
-  useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setSelected(null);
-      }
-    };
+    return (
+        <section className="bg-background py-20 px-4">
+            <div className="max-w-7xl mx-auto">
 
-    window.addEventListener("keydown", handleKey);
+                {/* BOTÕES */}
 
-    return () => {
-      window.removeEventListener("keydown", handleKey);
-    };
-  }, []);
-
-  return (
-    <section className="bg-background py-20 px-4">
-      <div className="container mx-auto max-w-7xl">
-
-        {/* =========================================================
-            FILTROS
-        ========================================================= */}
-
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {CATEGORIAS.map((categoria) => (
-            <button
-              key={categoria}
-              onClick={() => setCategoriaSelecionada(categoria)}
-              className={`
-                rounded-full
-                border
-                px-5
-                py-2.5
-                text-sm
-                transition-all
-                duration-300
-
-                ${
-                  categoriaSelecionada === categoria
-                    ? "border-foreground bg-foreground text-background"
-                    : "border-[color:var(--steel-light)] text-[color:var(--steel)] hover:border-foreground hover:text-foreground"
-                }
-              `}
-            >
-               {t(`ProductsButton.Buttons.${categoria}`)}
-            </button>
-          ))}
-        </div>
-
-        {/* =========================================================
-            GRID
-        ========================================================= */}
-
-        <div
-          className="
-            grid
-            grid-cols-1
-            sm:grid-cols-2
-            xl:grid-cols-3
-            gap-8
-          "
-        >
-          {produtosFiltrados.map((produto) => (
-            <TiltCard key={produto.id}>
-
-              <motion.article
-                layoutId={produto.id}
-                onClick={() => setSelected(produto)}
-                whileHover={{ y: -6 }}
-                transition={{ duration: 0.25 }}
-                className="
-                  group
-                  relative
-                  cursor-pointer
-                  overflow-hidden
-                  rounded-[30px]
-                  bg-white
-                "
-              >
-
-                {/* =========================================================
-                    IMAGEM
-                ========================================================= */}
-
-                <div className="relative aspect-[5/5] overflow-hidden rounded-[30px]">
-
-                  <motion.div
-                    layoutId={`${produto.id}-bg`}
-                    className="
-                      absolute
-                      inset-0
-                      transition-transform
-                      duration-700
-                      group-hover:scale-110
-                    "
-                    style={{
-                      backgroundImage: `
-                        linear-gradient(
-                          to top,
-                          rgba(0,0,0,0.45),
-                          transparent 60%
-                        ),
-                        url(${produto.gradiente})
-                      `,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  />
-
-                  {/* =========================================================
-                      TEXTURA
-                  ========================================================= */}
-
-                  <div
-                    className="
-                      absolute
-                      inset-0
-                      opacity-20
-                      mix-blend-overlay
-                    "
-                    style={{
-                      backgroundImage:
-                        "repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(255,255,255,0.15) 6px, rgba(255,255,255,0.15) 7px)",
-                    }}
-                  />
-
-                  {/* =========================================================
-                      BADGE
-                  ========================================================= */}
-
-                  <span
-                    className="
-                      absolute
-                      right-4
-                      top-4
-                      rounded-full
-                      bg-white/80
-                      px-3
-                      py-1
-                      text-[10px]
-                      uppercase
-                      tracking-[0.2em]
-                      text-black
-                      backdrop-blur
-                    "
-                  >
-                    {produto.categoria}
-                  </span>
-
-                  {/* =========================================================
-                      TEXTO
-                  ========================================================= */}
-
-                  <div className="absolute bottom-0 left-0 p-6">
-
-                    <motion.h3
-                      layoutId={`${produto.id}-title`}
-                      className="
-                        text-2xl
-                        text-white
-                      "
-                    >
-                      {produto.nome}
-                    </motion.h3>
-
-                    <p className="mt-2 text-sm text-white/70">
-                      {produto.espessura}
-                    </p>
-
-                  </div>
-                </div>
-              </motion.article>
-            </TiltCard>
-          ))}
-        </div>
-
-        {/* =========================================================
-            MODAL
-        ========================================================= */}
-
-        <AnimatePresence>
-          {selected && (
-            <>
-              {/* OVERLAY */}
-
-              <motion.div
-                className="
-                  fixed
-                  inset-0
-                  z-40
-                  bg-black/50
-                  backdrop-blur-sm
-                "
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              />
-
-              {/* CONTAINER */}
-
-              <motion.div
-                className="
-                  fixed
-                  inset-0
-                  z-50
-                  flex
-                  items-center
-                  justify-center
-                  p-4
-                "
-                onClick={() => setSelected(null)}
-              >
-
-                <motion.article
-                  layoutId={selected.id}
-                  transition={{
-                    type: "spring",
-                    stiffness: 120,
-                    damping: 18,
-                  }}
-                  onClick={(e) => e.stopPropagation()}
-                  className="
-                    w-full
-                    max-w-5xl
-                    h-[70vh]
-                    overflow-hidden
-                    rounded-[32px]
-                    bg-white
-                    shadow-2xl
-                    grid
-                    md:grid-cols-2
-                  "
-                >
-
-                  {/* =========================================================
-                      IMAGEM
-                  ========================================================= */}
-
-                  <div
-                    className="
-                      relative
-                      h-[260px]
-                      md:h-full
-                      overflow-hidden
-                    "
-                  >
-
-                    <motion.div
-                      layoutId={`${selected.id}-bg`}
-                      className="absolute inset-0"
-                      style={{
-                        backgroundImage: `
-                          linear-gradient(
-                            to top,
-                            rgba(0,0,0,0.5),
-                            transparent 60%
-                          ),
-                          url(${selected.gradiente})
-                        `,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
-                    />
-
-                    {/* TEXTURA */}
-
+                <div className="mb-12 flex justify-center">
                     <div
-                      className="
-                        absolute
-                        inset-0
-                        opacity-20
-                        mix-blend-overlay
-                      "
-                      style={{
-                        backgroundImage:
-                          "repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(255,255,255,0.15) 6px, rgba(255,255,255,0.15) 7px)",
-                      }}
-                    />
-
-                    {/* TÍTULO SOBRE IMAGEM */}
-
-                    <div className="absolute bottom-0 left-0 p-8">
-
-                      <motion.h2
-                        layoutId={`${selected.id}-title`}
                         className="
-                          text-4xl
-                          text-white
+                            flex
+                            flex-wrap
+                            items-center
+                            justify-center
+                            gap-2
+                            rounded-full
+                            border
+                            border-zinc-200
+                            bg-white/80
+                            p-2
                         "
-                      >
-                        {selected.nome}
-                      </motion.h2>
+                    >
+                        {categorias.map((categoria) => (
+                            <button
+                                key={categoria}
+                                onClick={() =>
+                                    setCategoriaAtiva(categoria)
+                                }
+                                className={`
+                                    rounded-full
+                                    px-5
+                                    py-2.5
+                                    text-sm
+                                    transition-all
+                                    duration-300
 
-                      <p className="mt-3 text-white/70">
-                        {selected.espessura}
-                      </p>
-
+                                    ${
+                                        categoriaAtiva === categoria
+                                            ? "bg-[#1A1A1A] text-white"
+                                            : "text-zinc-500 hover:bg-zinc-100 hover:text-[#1A1A1A]"
+                                    }
+                                `}
+                            >
+                                {categoria}
+                            </button>
+                        ))}
                     </div>
-                  </div>
+                </div>
 
-                  {/* =========================================================
-                      CONTEÚDO
-                  ========================================================= */}
+                {/* HEADER */}
 
-                  <div
+                <div className="mb-24 max-w-3xl mx-auto text-center">
+                </div>
+
+                {/* CARDS */}
+
+                <div
                     className="
-                      flex
-                      flex-col
-                      overflow-y-auto
-                      p-8
+                        flex
+                        gap-4
+                        h-[620px]
                     "
-                  >
-
-                    {/* CATEGORIA */}
-
-                    <div className="mb-6">
-
-                      <span
-                        className="
-                          rounded-full
-                          bg-black
-                          px-4
-                          py-2
-                          text-xs
-                          uppercase
-                          tracking-[0.2em]
-                          text-white
-                        "
-                      >
-                        {selected.categoria}
-                      </span>
-
-                    </div>
-
-                    {/* DESCRIÇÃO */}
-
-                    <div className="space-y-6">
-
-                      <div>
-
-                        <h3
-                          className="
-                            text-lg
-                            text-foreground
-                          "
+                >
+                    {produtosFiltrados.map((produto) => (
+                        <div
+                            key={produto.nome}
+                            className="
+                                group
+                                relative
+                                overflow-hidden
+                                rounded-[28px]
+                                bg-white
+                                basis-[25%]
+                                hover:basis-[38%]
+                                transition-all
+                                duration-700
+                                ease-out
+                            "
                         >
-                          {t("products.modal.description")}
-                        </h3>
+                            {/* IMAGE */}
 
-                        <p
-                          className="
-                            mt-3
-                            leading-relaxed
-                            text-[#404142]
-                          "
-                        >
-                          {selected.descricao}
-                        </p>
+                            <img
+                                src={produto.imagem}
+                                alt={produto.nome}
+                                className="
+                                    absolute
+                                    inset-0
+                                    w-full
+                                    h-full
+                                    object-cover
+                                    transition-transform
+                                    duration-[1200ms]
+                                    ease-out
+                                    group-hover:scale-[1.02]
+                                "
+                            />
 
-                      </div>
+                            {/* SOFT OVERLAY */}
 
-                      {/* ESPECIFICAÇÕES */}
+                            <div
+                                className="
+                                    absolute
+                                    inset-0
+                                    bg-gradient-to-t
+                                    from-black/35
+                                    via-black/5
+                                    to-transparent
+                                "
+                            />
 
-                      <div
-                        className="
-                          rounded-2xl
-                          border
-                          bg-neutral-50
-                          p-6
-                        "
-                      >
+                            {/* CONTENT */}
 
-                        <h4
-                          className="
-                            text-sm
-                            uppercase
-                            tracking-[0.15em]
-                            text-neutral-500
-                          "
-                        >
-                          {t("products.modal.technicalInfo")}
-                        </h4>
+                            <div
+                                className="
+                                    absolute
+                                    bottom-0
+                                    left-0
+                                    right-0
+                                    p-8
+                                "
+                            >
 
-                        <div className="mt-4 space-y-3">
-
-                          <div className="flex justify-between">
-                            <span className="text-neutral-500">
-                              {t("products.modal.thickness")}
-                            </span>
-
-                            <span className="font-medium">
-                              {selected.espessura}
-                            </span>
-                          </div>
-
-                          <div className="flex justify-between">
-                            <span className="text-neutral-500">
-                              {t("products.modal.category")}
-                            </span>
-
-                            <span className="font-medium">
-                              {selected.categoria}
-                            </span>
-                          </div>
-
+                                <h3
+                                    className="
+                                        text-white
+                                        text-3xl
+                                        md:text-4xl
+                                        font-medium
+                                        tracking-[-0.03em]
+                                        font-serif
+                                    "
+                                >
+                                    {produto.nome}
+                                </h3>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-
-                    {/* BOTÃO */}
-
-                    <div className="mt-auto pt-8">
-
-                      <button
-                        className="
-                          w-full
-                          rounded-2xl
-                          bg-black
-                          px-6
-                          py-4
-                          text-sm
-                          text-white
-                          transition-all
-                          duration-300
-                          hover:scale-[1.02]
-                        "
-                      >
-                        {t("products.modal.requestQuote")}
-                      </button>
-
-                    </div>
-                  </div>
-                </motion.article>
-              </motion.div>
-            </>
-          )}
-        </AnimatePresence>
-      </div>
-    </section>
-  );
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }

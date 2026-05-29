@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CTA } from "@/components/home/CTA";
-import { ProdutosCatalogo } from "@/components/produtos/ProdutosCatalogo";
+import { ProdutosCatalogo } from "../components/produtos/ProdutosCatalogo";
 import BackGroundProduto from "../assets/image-casa-aberturah.webp";
 import { PageLayout } from "@/components/PageLayout";
 import { useTranslation } from "react-i18next";

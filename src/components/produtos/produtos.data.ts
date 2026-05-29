@@ -1,143 +1,68 @@
-import acm from "../../assets/ACM1.jpeg"
-import acm1 from "../../assets/ACM2.jpeg";
-import acm2 from "../../assets/ACM3.jpeg";
-import acm3 from "../../assets/ACM4.jpeg";
-import acm5 from "../../assets/ACM5.jpeg";
-import acm6 from "../../assets/ACM6.jpeg";
-import acm7 from "../../assets/ACM7.jpeg";
-import acm8 from "../../assets/ACM8.jpeg";
+import portas from "../../assets/thumbs/porta.webp";
+import brises from "../../assets/thumbs/brises.webp";
+import pergolados from "../../assets/thumbs/pergolados.webp";
+import revestimentos from "../../assets/thumbs/revestimentos.webp";
 
 export type ProdutoCategoria =
   | "Todos"
-  | "Brilhante"
-  | "Escovado"
-  | "Madeirado"
-  | "Especial";
+  | "Portas"
+  | "Brises"
+  | "Pergolados"
+  | "Revestimentos";
 
 export type Produto = {
   id: string;
   nome: string;
   categoria: Exclude<ProdutoCategoria, "Todos">;
-  espessura: string;
-  gradiente: string;
+  imagem: string;
   descricao: string;
 };
 
 export const CATEGORIAS: readonly ProdutoCategoria[] = [
   "Todos",
-  "Brilhante",
-  "Escovado",
-  "Madeirado",
-  "Especial",
+  "Portas",
+  "Brises",
+  "Pergolados",
+  "Revestimentos",
 ];
 
 export const PRODUTOS: Produto[] = [
   {
-    id: "vermelho",
-    nome: "ACM Vermelho Cardinal",
-    categoria: "Brilhante",
-    espessura: "4mm",
-    gradiente: acm,
+    id: "porta-acm-preta",
+    nome: "Porta",
+    categoria: "Portas",
+    imagem: portas,
     descricao:
-      "Chapa com brilho intenso para fachadas comerciais e comunicação visual de alto contraste.",
+      "Porta em ACM com acabamento premium e design minimalista para projetos contemporâneos.",
   },
+
   {
-    id: "branco",
-    nome: "ACM Branco Polar",
-    categoria: "Brilhante",
-    espessura: "4mm",
-    gradiente: acm1,
+    id: "Brise",
+    nome: "Brise",
+    categoria: "Brises",
+    imagem: brises,
     descricao:
-      "Acabamento clean e versátil, indicado para projetos corporativos e residenciais.",
+      "Controle solar sofisticado com linhas arquitetônicas modernas.",
   },
+
+
   {
-    id: "preto",
-    nome: "ACM Preto Onyx",
-    categoria: "Brilhante",
-    espessura: "4mm",
-    gradiente: acm2,
+    id: "Pergolado",
+    nome: "Pergolado",
+    categoria: "Pergolados",
+    imagem: pergolados,
     descricao:
-      "Visual elegante com profundidade de cor, ideal para composições modernas e sóbrias.",
+      "Estrutura sofisticada para áreas externas com acabamento refinado.",
   },
+
+
   {
-    id: "inox",
-    nome: "ACM Inox Escovado",
-    categoria: "Escovado",
-    espessura: "4mm",
-    gradiente: acm3,
+    id: "revestimento-fosco",
+    nome: "Revestimento",
+    categoria: "Revestimentos",
+    imagem: revestimentos,
     descricao:
-      "Textura metálica técnica para aplicações arquitetônicas de alta resistência visual.",
+      "Acabamento minimalista para fachadas elegantes e modernas.",
   },
-  {
-    id: "escovado",
-    nome: "ACM Champagne Escovado",
-    categoria: "Escovado",
-    espessura: "4mm",
-    gradiente: acm5,
-    descricao:
-      "Tom sofisticado para fachadas premium e painéis com estética contemporânea.",
-  },
-  {
-    id: "cobre",
-    nome: "ACM Cobre Escovado",
-    categoria: "Escovado",
-    espessura: "4mm",
-    gradiente: acm6,
-    descricao:
-      "Efeito quente e nobre para projetos autorais com identidade marcante.",
-  },
-  {
-    id: "carvalho",
-    nome: "ACM Carvalho",
-    categoria: "Madeirado",
-    espessura: "4mm",
-    gradiente: acm7,
-    descricao:
-      "Textura amadeirada de alta durabilidade para unir aconchego e performance técnica.",
-  },
-  {
-    id: "imbuia",
-    nome: "ACM Imbuia",
-    categoria: "Madeirado",
-    espessura: "4mm",
-    gradiente: acm7,
-    descricao:
-      "Acabamento escuro amadeirado para composições elegantes em fachadas e interiores.",
-  },
-  {
-    id: "espelhado",
-    nome: "ACM Espelhado",
-    categoria: "Especial",
-    espessura: "3mm",
-    gradiente: acm8,
-    descricao:
-      "Superfície reflexiva para efeitos visuais impactantes e projetos diferenciados.",
-  },
-  {
-    id: "perfurado",
-    nome: "ACM Perfurado",
-    categoria: "Especial",
-    espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.45 0.04 280), oklch(0.22 0.03 280))",
-    descricao:
-      "Opção técnica para ventilação, controle solar e linguagem arquitetônica exclusiva.",
-  },
-  {
-    id: "grafite",
-    nome: "ACM Grafite Fosco",
-    categoria: "Especial",
-    espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.32 0.01 240), oklch(0.18 0.005 240))",
-    descricao:
-      "Visual fosco discreto com excelente desempenho para propostas minimalistas.",
-  },
-  {
-    id: "azul",
-    nome: "ACM Azul Cobalto",
-    categoria: "Brilhante",
-    espessura: "4mm",
-    gradiente: "linear-gradient(135deg, oklch(0.45 0.18 250), oklch(0.25 0.14 250))",
-    descricao:
-      "Cor vibrante para identidade visual forte em fachadas e elementos de destaque.",
-  },
+
 ];
