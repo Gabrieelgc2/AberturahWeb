@@ -212,7 +212,7 @@ function ProductCard({
   return (
     <Link
       ref={cardRef}
-      to="/produtos"
+      to="/acabamentos"
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
       className="
