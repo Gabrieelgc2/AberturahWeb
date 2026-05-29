@@ -67,7 +67,7 @@ export function ProductsPreview() {
           />
 
           <Link
-            to="/produtos"
+            to="/acabamentos"
             className="
               font-sans
               RevealText
