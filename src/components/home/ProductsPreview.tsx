@@ -258,7 +258,7 @@ function ProductCard({
       />
 
       {/* CONTENT */}
-      <div className="absolute inset-0 z-10 p-6 text-white flex flex-col min-h-[110px] justify-end">
+      <div className="absolute inset-0 z-10 p-6 text-white flex flex-col justify-end">
         <h3 className="font-serif text-2xl leading-none">
           {title}
         </h3>
@@ -266,11 +266,11 @@ function ProductCard({
         <p
           className="
             mt-2
+            min-h-[95px]
             text-sm
             text-[#D9D9D9]
             font-sans
             leading-relaxed
-            max-w-[260px]
           "
         >
           {description}
@@ -278,7 +278,6 @@ function ProductCard({
 
         <div
           className="
-            mt-4
             inline-flex
             items-center
             gap-1.5

@@ -51,11 +51,10 @@ export function ProdutosCatalogo() {
               <button
                 key={categoria}
                 onClick={() => setCategoriaAtiva(categoria)}
-                className={`px-5 py-2 rounded-full text-sm transition ${
-                  categoriaAtiva === categoria
+                className={`px-5 py-2 rounded-full text-sm transition ${categoriaAtiva === categoria
                     ? "bg-black text-white"
                     : "text-zinc-500 hover:text-black"
-                }`}
+                  }`}
               >
                 {categoria}
               </button>
@@ -84,7 +83,7 @@ export function ProdutosCatalogo() {
               <div className="absolute bottom-0 p-6 text-white">
                 <h3 className="text-2xl font-medium">{produto.nome}</h3>
                 <p className="text-sm text-white/70 mt-1">
-                 {produto.descricao}
+                  {produto.descricao}
                 </p>
               </div>
             </div>
@@ -163,38 +162,38 @@ export function ProdutosCatalogo() {
                     </button>
                   </div>
 
-<div className="
-  grid grid-cols-3 gap-2
-  max-h-[300px]
-  overflow-y-auto
-  pr-1
-  scrollbar-thin scrollbar-thumb-zinc-300 scrollbar-track-transparent
-">
-  {CORES[material].map((img, i) => (
-    <div
-      key={i}
-      className="
-        aspect-square
-        rounded-lg
-        overflow-hidden
-        cursor-pointer
-        group
-      "
-    >
-      <img
-        src={img}
-        className="
-          w-full
-          h-full
-          object-cover
-          transition
-          duration-500
-          group-hover:scale-110
-        "
-      />
-    </div>
-  ))}
-</div>
+                  <div className="
+                  grid grid-cols-3 gap-2
+                  max-h-[300px]
+                  overflow-y-auto
+                  pr-1
+                  scrollbar-thin scrollbar-thumb-zinc-300 scrollbar-track-transparent
+                  ">
+                    {CORES[material].map((img, i) => (
+                      <div
+                        key={i}
+                        className="
+                        aspect-square
+                        rounded-lg
+                        overflow-hidden
+                        cursor-pointer
+                        group
+                        "
+                      >
+                        <img
+                          src={img}
+                          className="
+                          w-full
+                          h-full
+                          object-cover
+                          transition
+                          duration-500
+                          group-hover:scale-110
+                          "
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </>
               )}
             </div>

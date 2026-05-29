@@ -220,19 +220,19 @@
     "explore": "Explorar",
     "categories": {
       "solid": {
-        "name": "PORTA",
+        "name": "Porta",
         "description": "Portas internas e externas produzidas em ACM com estrutura de abertura em giro, pivotante ou de correr."
       },
       "wood": {
-        "name": "BRISE",
+        "name": "Brise",
         "description": "Para instalação em áreas internas e externas produzidas em ACM ou PVC."
       },
       "matte": {
-        "name": "PERGOLADO",
+        "name": "Pergolado",
         "description": "Para instalação em áreas internas e externas produzidas em ACM ou PVC."
       },
       "satin": {
-        "name": "REVESTIMENTO",
+        "name": "Revestimento",
         "description": "Para instalação em áreas internas e externas produzidas, no modelo ripado ou plano, produzidas em ACM ou PVC."
       }
     }
