@@ -154,7 +154,7 @@
   "pvc":{
     "title":{
       "line1": "Tire suas dúvidas",
-      "line2": "Sobre PVC."
+      "line2": "sobre PVC."
     },
     "items":[
       {
@@ -219,19 +219,19 @@
     "button": "Ver linha completa",
     "explore": "Explorar",
     "categories": {
-      "solid": {
+      "porta": {
         "name": "Porta",
         "description": "Portas internas e externas produzidas em ACM com estrutura de abertura em giro, pivotante ou de correr."
       },
-      "wood": {
+      "brises": {
         "name": "Brise",
         "description": "Para instalação em áreas internas e externas produzidas em ACM ou PVC."
       },
-      "matte": {
+      "pergolados": {
         "name": "Pergolado",
         "description": "Para instalação em áreas internas e externas produzidas em ACM ou PVC."
       },
-      "satin": {
+      "revestimento": {
         "name": "Revestimento",
         "description": "Para instalação em áreas internas e externas produzidas, no modelo ripado ou plano, produzidas em ACM ou PVC."
       }
