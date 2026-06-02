@@ -19,12 +19,12 @@ export function Header() {
   }, []);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#404142]  shadow-md" : "bg-transparent"}`}>
+    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#404142] shadow-md" : "bg-transparent"}`}>
       <div className="container mx-auto flex max-w-7xl items-center px-6 py-5">
         <div className="flex flex-1 justify-start">
-          <img src={Aberturah} alt="Aberturah" className="h-11 w-auto md:h-13 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
+          <img src={Aberturah} alt="Aberturah" className="h-11 w-auto md:h-10 lg:h-13 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"  />
         </div>
-        <nav className="hidden lg:flex items-center gap-10">
+        <nav className="hidden sm:flex lg:flex items-center gap-10">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.to}
@@ -33,7 +33,7 @@ export function Header() {
               activeProps={{
                 className: "text-white bg-[length:100%_2px]"
               }}
-              className="group relative text-white/90 text-[14px] uppercase tracking-[0.2em]  transition-all hover:text-white py-1
+              className="group relative text-white/90 text-xs lg:text-[14px] uppercase tracking-[0.2em]  transition-all hover:text-white py-1
                  bg-gradient-to-r from-white to-white 
                  bg-[length:0%_2px] bg-left-bottom bg-no-repeat 
                  hover:bg-[length:100%_2px] transition-[background-size] duration-300 ease-out"
@@ -57,7 +57,7 @@ export function Header() {
               <span className="text-[10px] text-white uppercase tracking-tighter">PT</span>
             </button>
           </div>
-          <button onClick={() => setOpen(!open)} className="text-white lg:hidden">
+          <button onClick={() => setOpen(!open)} className="text-white md:hidden lg:hidden">
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
