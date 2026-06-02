@@ -122,7 +122,7 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
                   <button onClick={handleReset} className="text-sm text-[#404142] hover:text-black underline">Voltar</button>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-40 overflow-y-auto pr-2 scrollbar-thin">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-40 sm:max-h-100 overflow-y-auto pr-2 scrollbar-thin">
                   {coresExibidas.map((cor, i) => (
                     <div key={i}
                       onClick={() => setCorAmpliada(cor)}
