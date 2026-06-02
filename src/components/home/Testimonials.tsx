@@ -35,6 +35,7 @@ const testimonials = Array.isArray(testimonialsRaw) ? testimonialsRaw : [];
               >
                 "{testimonial.quote}"
               </p>
+              
               <div
                 className={`mt-8 border-t pt-6`}
               >

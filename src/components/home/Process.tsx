@@ -32,20 +32,17 @@ const steps = [
       className="relative overflow-hidden py-24 sm:py-32"
       style={{ background: "#D9D9D9" }}
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.05]"
-      />
 
       <div className="container relative mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#404142] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#404142]">
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#404142] px-4 py-1.5 text-xs uppercase tracking-widest text-[#404142]">
             <span
               className="h-1.5 w-1.5 rounded-full"
               style={{ background: "var(--brand)" }}
             />
             Como trabalhamos
           </div>
-          <h2 className="mx-auto mt-6 max-w-3xl font-serif text-5xl font-bold leading-[1.05] tracking-tight text-[#404142] sm:text-6xl">
+          <h2 className="mx-auto mt-6 max-w-3xl font-serif text-5xl leading-[1.05] tracking-tight text-[#404142] sm:text-6xl">
             Do esboço à fachada,
             <br />
             <span
@@ -66,7 +63,7 @@ const steps = [
               key={s.n}
               className="relative bg-[oklch(0.14_0.012_55)] p-8 transition-colors hover:bg-[oklch(0.18_0.015_55)]"
             >
-              <h3 className="mt-6 font-serif text-2xl font-semibold text-white">
+              <h3 className="mt-6 font-serif text-2xl text-white">
                 {s.title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-[#D9D9D9]">
