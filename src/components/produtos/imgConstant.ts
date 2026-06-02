@@ -6,7 +6,7 @@ import revestimento from "../../assets/thumbs/revestimentos.webp";
 
 // PVC Interno Imagens
 import pvcIntEuca from "../../assets/PVC/Interno/Eucalyptus.jpg";
-import pvcIntOak from "../../assets/PVC/Interno/Oak.jpg";
+import pvcIntOak from "../../assets/PVC/Interno/OAK.jpg";
 import pvcIntPoplar from "../../assets/PVC/Interno/Poplar.jpg";
 import pvcIntTeak from "../../assets/PVC/Interno/Teak.jpg";
 import pvcIntWalnut from "../../assets/PVC/Interno/Walnut.jpg";
