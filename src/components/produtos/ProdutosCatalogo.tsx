@@ -37,7 +37,7 @@ export function ProdutosCatalogo() {
         </div>
 
         {/* GRID DE CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6 md:px-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6 px-10 lg:px-0">
           {produtosFiltrados.map((produto) => (
             <div
               key={produto.id}

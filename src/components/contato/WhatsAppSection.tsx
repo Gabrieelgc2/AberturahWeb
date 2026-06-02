@@ -26,7 +26,7 @@ export function WhatsAppSection() {
                 <MessageCircle className="h-3.5 w-3.5 text-[#D9D9D9] RevealText font-sans" />
                 {t("contactPage.whatsapp.badge")}
               </div>
-              <h2 className="mt-6 font-sans text-2xl leading-[1.05] text-white sm:text-3xl RevealText">
+              <h2 className="mt-6 font-sans text-xl leading-[1.05] text-white sm:text-3xl RevealText">
                 {t("contactPage.whatsapp.title.line1")}<br />
                 <span
                   style={{
@@ -36,7 +36,7 @@ export function WhatsAppSection() {
                   {t("contactPage.whatsapp.title.line2")}
                 </span>
               </h2>
-              <p className="mt-6 max-w-md text-lg font-sans leading-relaxed text-[#D9D9D9] RevealText">
+              <p className="mt-6 max-w-md text-md sm:text-lg font-sans leading-relaxed text-[#D9D9D9] RevealText">
                 {t("contactPage.whatsapp.description")}
               </p>
 
