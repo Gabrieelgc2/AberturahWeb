@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { Produto } from "./produtos.data";
+import type { Produto } from "../produtos.data";
 
 export function useProdutosFiltro(produtos: Produto[]) {
   // Gera categorias dinamicamente a partir dos produtos

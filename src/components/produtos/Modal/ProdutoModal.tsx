@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import { Produto, Material, EscopoPVC, Cor } from "./produtos.data";
+import { Produto, Material, EscopoPVC, Cor } from "../produtos.data";
+import { AnimatePresence } from "framer-motion";
+import { ModalAmpliaCor } from "./ModalAmpliaCor";
 
 interface ProdutoModalProps {
   produto: Produto;
@@ -7,11 +9,13 @@ interface ProdutoModalProps {
 }
 
 export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
+
   const [materialSelecionado, setMaterialSelecionado] = useState<Material | null>(null);
   const [escopoPvc, setEscopoPvc] = useState<EscopoPVC | null>(null);
+  const [corAmpliada, setCorAmpliada] = useState<Cor | null>(null);
 
   let coresExibidas: Cor[] = [];
-  
+
   if (materialSelecionado) {
     if (materialSelecionado.tipo === "ACM") {
       // ACM direto da propriedade 'cores'
@@ -47,7 +51,7 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* BOTÃO FECHAR */}
-        <button 
+        <button
           onClick={onClose}
           className="absolute top-6 right-6 text-zinc-400 hover:text-black text-xl"
         >
@@ -68,7 +72,7 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
         {/* LADO DIREITO: SELEÇÕES E ACABAMENTOS */}
         <div className="flex-1 flex flex-col justify-between pt-4">
           <div>
-            
+
             {/* ETAPA 1: Selecionar Tipo de Material (ACM ou PVC) */}
             {!materialSelecionado && (
               <div>
@@ -120,7 +124,9 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-40 overflow-y-auto pr-2 scrollbar-thin">
                   {coresExibidas.map((cor, i) => (
-                    <div key={i} className="flex flex-col gap-1.5 group cursor-pointer">
+                    <div key={i}
+                      onClick={() => setCorAmpliada(cor)}
+                      className="flex flex-col gap-1.5 group cursor-pointer">
                       <div className="aspect-square rounded-xl overflow-hidden bg-zinc-100 border border-zinc-200">
                         <img src={cor.imagem} alt={cor.nome} className="w-full h-full object-cover transition duration-300 group-hover:scale-110" />
                       </div>
@@ -129,11 +135,23 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
                   ))}
                 </div>
               </div>
-            )}
 
+            )}
           </div>
+
         </div>
       </div>
+
+      <AnimatePresence>
+        {corAmpliada && (
+          <ModalAmpliaCor
+            isOpen={!!corAmpliada}
+            src={corAmpliada.imagem}
+            alt={corAmpliada.nome}
+            onClose={() => setCorAmpliada(null)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import * as img from "./imgConstant";
+import * as img from "./img/imgConstant";
 
 export interface Cor {
   nome: string;
@@ -11,7 +11,7 @@ export type EscopoPVC = "Interno" | "Externo";
 export interface Material {
   tipo: TipoMaterial;
   cores?: Cor[];
-  coresPorEscopo?: Record<EscopoPVC, Cor[]>; // Facilita a separação no modal
+  coresPorEscopo?: Record<EscopoPVC, Cor[]>;
 }
 
 export interface Produto {

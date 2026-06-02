@@ -1,23 +1,23 @@
 // Imagens dos produtos
-import porta from "../../assets/thumbs/porta.webp";
-import brise from "../../assets/thumbs/brises.webp";
-import pergolado from "../../assets/thumbs/pergolados.webp";
-import revestimento from "../../assets/thumbs/revestimentos.webp";
+import porta from "../../../assets/thumbs/porta.webp";
+import brise from "../../../assets/thumbs/brises.webp";
+import pergolado from "../../../assets/thumbs/pergolados.webp";
+import revestimento from "../../../assets/thumbs/revestimentos.webp";
 
 // PVC Interno Imagens
-import pvcIntEuca from "../../assets/PVC/Interno/Eucalyptus.jpg";
-import pvcIntOak from "../../assets/PVC/Interno/OAK.jpg";
-import pvcIntPoplar from "../../assets/PVC/Interno/Poplar.jpg";
-import pvcIntTeak from "../../assets/PVC/Interno/Teak.jpg";
-import pvcIntWalnut from "../../assets/PVC/Interno/Walnut.jpg";
+import pvcIntEuca from "../../../assets/PVC/Interno/Eucalyptus.jpg";
+import pvcIntOak from "../../../assets/PVC/Interno/OAK.jpg";
+import pvcIntPoplar from "../../../assets/PVC/Interno/Poplar.jpg";
+import pvcIntTeak from "../../../assets/PVC/Interno/Teak.jpg";
+import pvcIntWalnut from "../../../assets/PVC/Interno/Walnut.jpg";
 
 // PVC Externo Imagens
-import pvcExtBlackMatt from "../../assets/PVC/Externo/BlackMatt.png";
-import pvcExtGoldenMatt from "../../assets/PVC/Externo/GoldenMatt.jpeg";
-import pvcExtLarchmarrone from "../../assets/PVC/Externo/Larchmarrone.jpeg";
-import pvcExtLarchNature from "../../assets/PVC/Externo/LarchNature.jpeg";
-import pvcExtLarchterrabrown from "../../assets/PVC/Externo/Larchterrabrown.jpeg";
-import pvcExtMontanaOak from "../../assets/PVC/Externo/MontanaOak.jpeg";
+import pvcExtBlackMatt from "../../../assets/PVC/Externo/BlackMatt.png";
+import pvcExtGoldenMatt from "../../../assets/PVC/Externo/GoldenMatt.jpeg";
+import pvcExtLarchmarrone from "../../../assets/PVC/Externo/Larchmarrone.jpeg";
+import pvcExtLarchNature from "../../../assets/PVC/Externo/LarchNature.jpeg";
+import pvcExtLarchterrabrown from "../../../assets/PVC/Externo/Larchterrabrown.jpeg";
+import pvcExtMontanaOak from "../../../assets/PVC/Externo/MontanaOak.jpeg";
 
 export const portaImg = porta
 export const briseImg = brise

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PRODUTOS, Produto } from "./produtos.data";
-import { useProdutosFiltro } from "./useProdutosFiltro";
-import { ProdutoModal } from "./ProdutoModal";
+import { useProdutosFiltro } from "./Filter/useProdutosFiltro";
+import { ProdutoModal } from "./Modal/ProdutoModal";
 
 export function ProdutosCatalogo() {
   const { 
