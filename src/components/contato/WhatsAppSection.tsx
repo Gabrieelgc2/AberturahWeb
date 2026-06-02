@@ -26,11 +26,10 @@ export function WhatsAppSection() {
                 <MessageCircle className="h-3.5 w-3.5 text-[#D9D9D9] RevealText font-sans" />
                 {t("contactPage.whatsapp.badge")}
               </div>
-              <h2 className="mt-6 font-sans text-5xl leading-[1.05] text-white sm:text-6xl RevealText">
+              <h2 className="mt-6 font-sans text-3xl leading-[1.05] text-white sm:text-3xl RevealText">
                 {t("contactPage.whatsapp.title.line1")}<br />
                 <span
                   style={{
-                    background: "#D9D9D9",
                     WebkitBackgroundClip: "text",
                   }}
                 >

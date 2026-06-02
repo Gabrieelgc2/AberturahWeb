@@ -37,12 +37,12 @@ export function ProdutosCatalogo() {
         </div>
 
         {/* GRID DE CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6 md:px-10">
           {produtosFiltrados.map((produto) => (
             <div
               key={produto.id}
               onClick={() => setProdutoAtivoModal(produto)}
-              className="w-[80%] sm:w-full mx-auto group relative aspect-3/4 cursor-pointer overflow-hidden rounded-[24px] shadow-sm bg-white"
+              className="w-full mx-auto group relative aspect-3/4 cursor-pointer overflow-hidden rounded-[24px] shadow-sm bg-white"
             >
               <img
                 src={produto.imagem}

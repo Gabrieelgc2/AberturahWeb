@@ -22,7 +22,7 @@ export function ProductsPreview() {
               <>
                 <span className="font-serif">{t("productsPreview.title.line1")}</span>
                 <br />
-                <span className="font-normal text-[#404142] font-serif">
+                <span className="font-serif text-[#404142] ">
                   {t("productsPreview.title.line2")}
                 </span>
               </>
@@ -31,7 +31,7 @@ export function ProductsPreview() {
 
           <Link
             to="/acabamentos"
-            className="group font-sans RevealText inline-flex items-center gap-2 rounded-full border border-foreground px-5 py-3 text-sm text-foreground transition-colors hover:bg-foreground hover:text-background"
+            className="group font-sans RevealText inline-flex items-center gap-2 rounded-full border border-foreground px-5 md:px-2 py-3 text-sm text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
             {t("productsPreview.button")}
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
