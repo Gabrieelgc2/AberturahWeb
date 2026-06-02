@@ -79,7 +79,7 @@ export function ProductCard({ video, title, description, explore, poster }: Prod
         loop
         playsInline
         preload="metadata"
-        className="absolute inset-0 h-full w-full object-cover object-[center_80%] transition-transform duration-700 group-hover:scale-110"
+        className="absolute inset-0 h-full w-full object-cover object-[center_80%] transition-transform duration-700 lg:group-hover:scale-110"
       />
 
       {/* OVERLAY */}

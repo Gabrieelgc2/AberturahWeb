@@ -26,42 +26,25 @@ const testimonials = Array.isArray(testimonialsRaw) ? testimonialsRaw : [];
             <article
               key={testimonial.name}
               className="RevealText group relative flex flex-col rounded-3xl border border-[color:var(--steel-light)] bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"
-              style={{
-                background:
-                  i === 1
-                    ? "var(--gradient-dark)"
-                    : "var(--background)",
-              }}
             >
               <Quote
                 className="RevealText h-10 w-10"
-                style={{ color: i === 1 ? "var(--brand)" : "var(--brand)" }}
               />
               <p
-                className={`RevealText mt-6 flex-1 font-sans text-xl leading-relaxed ${
-                  i === 1 ? "text-white" : "text-foreground"
-                }`}
+                className={`RevealText mt-6 flex-1 font-sans text-xl leading-relaxed`}
               >
                 "{testimonial.quote}"
               </p>
               <div
-                className={`mt-8 border-t pt-6 ${
-                  i === 1 ? "border-white/10" : "border-[color:var(--steel-light)]"
-                }`}
+                className={`mt-8 border-t pt-6`}
               >
                 <div
-                  className={`RevealText font-sans ${
-                    i === 1 ? "text-white" : "text-foreground"
-                  }`}
+                  className={`RevealText font-sans`}
                 >
                   {testimonial.name}
                 </div>
                 <div
-                  className={`RevealText mt-1 text-sm font-sans ${
-                    i === 1
-                      ? "text-[color:var(--steel-light)]"
-                      : "text-[color:var(--steel)]"
-                  }`}
+                  className={`RevealText mt-1 text-sm font-sans`}
                 >
                   {testimonial.role}
                 </div>

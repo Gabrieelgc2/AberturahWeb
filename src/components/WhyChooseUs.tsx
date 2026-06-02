@@ -42,32 +42,24 @@ export function WhyChooseUs() {
   return (
     <section 
     className="relative bg-white py-24 sm:py-32">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage:
-            "linear-gradient(var(--white) 1px, transparent 1px), linear-gradient(90deg, var(--white) 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-      <div
-        className="pointer-events-none absolute -top-40 right-0 h-125 w-125 rounded-full opacity-20 blur-3xl"
-        style={{ background: "var(--white)" }}
-      />
 
       <div className="container relative mx-auto max-w-7xl px-6">
+
         <div className="mx-auto max-w-3xl text-center">
+
           <div className="RevealText mb-6 inline-flex items-center gap-2 
-          rounded-full border border-(--steel-light)
+          rounded-full border border-[#D9D9D9]
           bg-background px-4 py-1.5 text-xs
           tracking-widest text-(--steel)"
           style={{"--delay": "0ms"} as React.CSSProperties}>
+
             <span
               className="h-1.5 w-1.5 rounded-full"
               style={{ background: "var(--brand)" }}
             />
             {t("whyChooseUs.badge")}
           </div>
+
           <h2 className="RevealText font-serif text-5xl leading-[1.05] tracking-tight text-[foreground] sm:text-6xl lg:text-7xl"
             style={{"--delay": "150ms"} as React.CSSProperties}>
             {t("whyChooseUs.title.line1")}
@@ -86,7 +78,7 @@ export function WhyChooseUs() {
         </div>
 
         <div 
-        className="RevealText mt-20 grid gap-px rounded-3xl border border-steel-light bg-(--steel-light) sm:grid-cols-2"
+        className="RevealText mt-20 grid gap-px rounded-3xl border border-[#D9D9D9] bg-[#D9D9D9] sm:grid-cols-2"
         >
           {reasons.map((reason) => {
             const Icon = reason.icon;

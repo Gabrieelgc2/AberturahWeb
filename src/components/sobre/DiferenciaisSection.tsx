@@ -14,6 +14,7 @@ export function DiferenciaisSection() {
     { icon: Users },
     { icon: Target },
   ];
+  
   return (
 
     <Section size="default">
@@ -36,7 +37,7 @@ export function DiferenciaisSection() {
             return (
               <div
                 key={i}
-                className="group relative rounded-3xl border p-8 bg-[#D9D9D9]/15 transition-all hover:-translate-y-2 hover:shadow-2xl"
+                className="group relative rounded-3xl border border-[#D9D9D9] p-8 bg-[#D9D9D9]/15 transition-all hover:-translate-y-2 hover:shadow-2xl"
               >
                 {/* GLOW */}
                 <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition"
