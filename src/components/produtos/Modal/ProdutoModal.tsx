@@ -31,6 +31,16 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
     setEscopoPvc(null);
   };
 
+  const handleVoltarDaGrade = () => {
+  if (materialSelecionado?.tipo === "PVC") {
+    // Se for PVC, volta para a seleção de Interno/Externo
+    setEscopoPvc(null);
+  } else {
+    // Se for ACM (ou qualquer outro), volta para o início de tudo
+    setMaterialSelecionado(null);
+  }
+};
+
   useEffect(() => {
     // Quando o modal abre, adiciona a classe que esconde o overflow do site
     document.body.classList.add("overflow-hidden");
@@ -119,7 +129,7 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
                   <h3 className="text-md text-[#404142]">
                     Acabamentos em {materialSelecionado.tipo} {escopoPvc ? `(${escopoPvc})` : ""}
                   </h3>
-                  <button onClick={handleReset} className="text-sm text-[#404142] hover:text-black underline">Voltar</button>
+                  <button onClick={handleVoltarDaGrade} className="text-sm text-[#404142] hover:text-black underline">Voltar</button>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-40 sm:max-h-100 overflow-y-auto pr-2 scrollbar-thin">

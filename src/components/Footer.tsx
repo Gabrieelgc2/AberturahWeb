@@ -8,7 +8,7 @@ export function Footer() {
   const { t } = useTranslation();
   return (
     <footer
-      className="RevealText relative text-black"
+      className="relative text-black"
       style={{ background: "#D9D9D9" }}
     >
       <div
@@ -54,7 +54,7 @@ export function Footer() {
             <h4 className="RevealText font-serif text-sm uppercase tracking-widest text-black">
               {t("footer.contact")}
             </h4>
-            <ul className="mt-5 space-y-3 text-sm">
+            <ul className="mt-5 space-y-3 text-sm RevealText">
               <li className="flex items-start gap-3">
                 <MapPin className="RevealText mt-0.5 h-4 w-4 shrink-0 text-[--brand]" />
                 <span>{SITE_CONTACT.address.line1} - {SITE_CONTACT.address.line2}</span>

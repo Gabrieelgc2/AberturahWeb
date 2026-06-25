@@ -18,7 +18,7 @@ export function ProdutosCatalogo() {
       <div className="max-w-7xl mx-auto">
 
         {/* NAVEGAÇÃO DE FILTROS */}
-        <div className="mb-12 flex justify-center items-center">
+        <div className="mb-12 flex justify-center items-center RevealText">
           <div className="flex flex-wrap justify-center gap-1.5 rounded-full border border-zinc-200 bg-white/80 backdrop-blur-sm p-1.5 shadow-sm">
             {categorias.map((categoria) => (
               <button
@@ -37,7 +37,7 @@ export function ProdutosCatalogo() {
         </div>
 
         {/* GRID DE CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6 px-10 lg:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6 px-10 lg:px-0 RevealText">
           {produtosFiltrados.map((produto) => (
             <div
               key={produto.id}
