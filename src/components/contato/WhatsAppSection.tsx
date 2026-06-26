@@ -1,6 +1,7 @@
 import { MessageCircle, Instagram, Youtube } from "lucide-react";
 import { SITE_CONTACT, SITE_SOCIAL, WHATSAPP_URL } from "@/config/site";
 import { useTranslation } from "react-i18next";
+import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoWhatsapp } from "react-icons/io5";
 
 export function WhatsAppSection() {
   const { t } = useTranslation();
@@ -63,10 +64,16 @@ export function WhatsAppSection() {
 
               <div className="mt-8 flex gap-3">
                 <a href={SITE_SOCIAL.instagram} target="_blank" rel="noreferrer" aria-label={t("footer.ariaLabels.instagram")} className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">
-                  <Instagram className="h-5 w-5" />
+                  <IoLogoInstagram className="h-5 w-5" />
                 </a>
-                <a href={SITE_SOCIAL.youtube} target="_blank" rel="noreferrer" aria-label={t("footer.ariaLabels.youtube")} className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">
-                  <Youtube className="h-5 w-5" />
+                <a href={SITE_SOCIAL.linkedin} target="_blank" rel="noreferrer" aria-label={t("footer.ariaLabels.youtube")} className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">
+                  <IoLogoLinkedin className="h-5 w-5" />
+                </a>
+                   <a href={SITE_SOCIAL.facebook} target="_blank" rel="noreferrer" aria-label={t("footer.ariaLabels.instagram")} className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">
+                  <IoLogoFacebook className="h-5 w-5" />
+                </a>
+                <a href={SITE_SOCIAL.whatsapp} target="_blank" rel="noreferrer" aria-label={t("footer.ariaLabels.youtube")} className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:border-[color:var(--brand)] hover:text-[color:var(--brand)]">
+                  <IoLogoWhatsapp className="h-5 w-5" />
                 </a>
               </div>
             </div>

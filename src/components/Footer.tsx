@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Youtube, Mail, Phone, MapPin, Linkedin, Facebook } from "lucide-react";
 import AberturahLogo from "@/assets/Aberturah.webp";
 import { NAV_ITEMS, SITE_CONTACT, SITE_SOCIAL } from "@/config/site";
 import { useTranslation } from "react-i18next";
+import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoWhatsapp } from "react-icons/io5";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -80,18 +81,36 @@ export function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={t("footer.ariaLabels.instagram")}
-                className="flex h-11 w-11 items-center justify-center transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
+                className="flex h-10.5 w-11 sm:w-11 sm:h-11 items-center justify-center transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
-                <Instagram className="RevealText h-5 w-5" />
+                <IoLogoInstagram className="RevealText h-30 w-5" />
               </a>
               <a
-                href={SITE_SOCIAL.youtube}
+                href={SITE_SOCIAL.linkedin}
                 target="_blank"
                 rel="noreferrer"
                 aria-label={t("footer.ariaLabels.youtube")}
-                className="flex h-12.5 w-11 sm:h-11 items-center justify-center transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
+                className="flex h-11.5 w-11 sm:h-11 items-center justify-center transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
               >
-                <Youtube className="h-5 w-5" />
+                <IoLogoLinkedin className="h-5 w-5" />
+              </a>
+                <a
+                href={SITE_SOCIAL.facebook}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={t("footer.ariaLabels.youtube")}
+                className="flex h-11.5 w-11 sm:h-11 items-center justify-center transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
+              >
+                <IoLogoFacebook className="h-5 w-5" />
+              </a>
+              <a
+                href={SITE_SOCIAL.whatsapp}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={t("footer.ariaLabels.youtube")}
+                className="flex h-11.5 w-11 sm:h-11 items-center justify-center transition-all hover:scale-110 hover:border-[(--brand)] hover:text-[(--brand)]"
+              >
+                <IoLogoWhatsapp className="h-5 w-5" />
               </a>
             </div>
             <p className="RevealText mt-6 text-xs uppercase tracking-widest text-[(--steel)]">
