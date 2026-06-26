@@ -72,7 +72,7 @@ export function Sidebars() {
             <span
               className="
                 absolute
-                left-16
+                left-12
                 whitespace-nowrap
                 rounded-lg
                 bg-[#404142]
@@ -128,7 +128,6 @@ export function Sidebars() {
               duration-300
               hover:bg-[#5DADEC]
               hover:text-white
-              active:scale-95
             "
           >
             <Icon className="text-2xl sm:text-[26px]" />

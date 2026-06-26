@@ -87,9 +87,13 @@
       "badge": "Atendimento direto",
       "title": {
         "line1": "Entre em contato direto",
-        "line2": "com um de nossos consultores comerciais."
+        "line2": "com um de nossos",
+        "line3": "consultores comerciais."
       },
-      "description": "Nosso time comercial atende pelo WhatsApp em horário comercial. Envie o briefing do seu projeto e receba orçamento personalizado.",
+      "description": "Nosso time comercial atende pelo",
+      "description2": "WhatsApp em horário comercial.",
+      "description3": "Envie o briefing do seu projeto e",
+      "description4": "receba orçamento personalizado.",
       "button": "Conversar no WhatsApp",
       "commercial": "WhatsApp comercial",
       "helper": "Envie fotos, plantas ou descrições. Quanto mais detalhes, mais precisa será nossa proposta."

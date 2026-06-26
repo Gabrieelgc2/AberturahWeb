@@ -34,10 +34,18 @@ export function WhatsAppSection() {
                   }}
                 >
                   {t("contactPage.whatsapp.title.line2")}
+                  <br />
+                  {t("contactPage.whatsapp.title.line3")}
                 </span>
               </h2>
               <p className="mt-6 max-w-md text-md sm:text-lg font-sans leading-relaxed text-[#D9D9D9] RevealText">
                 {t("contactPage.whatsapp.description")}
+                <br />
+                {t("contactPage.whatsapp.description2")}
+                <br />
+                {t("contactPage.whatsapp.description3")}
+                <br />
+                {t("contactPage.whatsapp.description4")}
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -64,7 +72,7 @@ export function WhatsAppSection() {
             </div>
 
             <div
-              className="relative aspect-square rounded-3xl border border-[#D9D9D9] p-12 RevealText"
+              className="relative aspect-square rounded-3xl border border-[#D9D9D9] p-2 RevealText"
               style={{
                 background:
                   "#D9D9D98D",
@@ -72,7 +80,7 @@ export function WhatsAppSection() {
             >
               <div className="flex h-full flex-col items-center justify-center text-center">
                 <div
-                  className="flex h-16 w-16 items-center justify-center rounded-3xl sm:h-24 sm:w-24 RevealText"
+                  className="flex h-10 w-16 items-center justify-center rounded-3xl sm:h-24 sm:w-24 RevealText"
                   style={{ background: "#4041429D" }}
                 >
                   <MessageCircle className="h-8 w-8 text-[#D9D9D9] RevealText" strokeWidth={1.75}/>
