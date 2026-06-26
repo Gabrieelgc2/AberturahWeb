@@ -54,7 +54,7 @@ export function ProdutosCatalogo() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
               
               <div className="absolute bottom-0 p-6 text-white w-full">
-                <h3 className="text-2xl font-serif tracking-tight">{produto.nome}</h3>
+                <h3 className="text-2xl font-sans tracking-tight">{produto.nome}</h3>
                 <p className="text-xs text-[#D9D9D9] font-sans mt-1">
                   {produto.descricao}
                 </p>

@@ -30,7 +30,7 @@ const steps = [
   return (
     <section
       className="relative overflow-hidden py-24 sm:py-32"
-      style={{ background: "#D9D9D9" }}
+      style={{ background: "#D9D9D91D" }}
     >
 
       <div className="container relative mx-auto max-w-7xl px-6">
@@ -42,7 +42,7 @@ const steps = [
             />
             Como trabalhamos
           </div>
-          <h2 className="mx-auto mt-6 max-w-3xl font-serif text-5xl leading-[1.05] tracking-tight text-[#404142] sm:text-6xl">
+          <h2 className="mx-auto mt-6 max-w-3xl font-sans text-5xl leading-[1.05] tracking-tight text-[#404142]">
             Do esboço à fachada,
             <br />
             <span
@@ -61,9 +61,9 @@ const steps = [
           {steps.map((s) => (
             <div
               key={s.n}
-              className="relative bg-[oklch(0.14_0.012_55)] p-8 transition-colors hover:bg-[oklch(0.18_0.015_55)]"
+              className="relative bg-black p-8 transition-colors hover:bg-[oklch(0.18_0.015_55)]"
             >
-              <h3 className="mt-6 font-serif text-2xl text-white">
+              <h3 className="mt-6 font-sans text-2xl text-white">
                 {s.title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-[#D9D9D9]">

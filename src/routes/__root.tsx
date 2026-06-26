@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 import appCss from "../styles.css?url";
+import { Sidebars } from "@/components/sidebar/sidebar";
 
 function NotFoundComponent() {
   return (
@@ -81,6 +82,7 @@ function RootComponent() {
     <div className="flex min-h-screen flex-col bg-background">
       <div className="progress" />
       <Header />
+      <Sidebars />
       <main className="flex-1">
         <Outlet />
       </main>

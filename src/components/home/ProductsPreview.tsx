@@ -20,9 +20,9 @@ export function ProductsPreview() {
             eyebrow={t("productsPreview.badge")}
             title={
               <>
-                <span className="font-serif">{t("productsPreview.title.line1")}</span>
+                <span className="font-sans text-5xl">{t("productsPreview.title.line1")}</span>
                 <br />
-                <span className="font-serif text-[#404142] ">
+                <span className="font-sans text-[#404142] text-5xl">
                   {t("productsPreview.title.line2")}
                 </span>
               </>

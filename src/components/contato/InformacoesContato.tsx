@@ -18,13 +18,13 @@ export function InformacoesContato() {
         {informacoes.map((info) => {
           const Icon = info.icon;
           return (
-            <div key={info.key} className="RevealText rounded-3xl border border-[color:#D9D9D9] bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]">
-              <div
-                className="flex h-12 w-12 items-center justify-center rounded-2xl RevealText"
-                style={{ background: "#D9D9D9" }}
-              >
-                <Icon className="h-6 w-6 text-[color:#404142] RevealText" strokeWidth={1.75} />
-              </div>
+            <div key={info.key} className="group RevealText rounded-3xl border border-[color:#D9D9D9] bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]">
+                <div
+                  className="RevealText mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110"
+                  style={{ background: "#5DADEC" }}
+                >
+                  <Icon className="h-7 w-7 text-shadow-black" strokeWidth={1.75} />
+                </div>
               <h3 className="mt-5 font-sans text-xl font-normal text-foreground RevealText">{t(`contactPage.info.${info.key}`)}</h3>
               <div className="mt-3 space-y-1 text-sm text-[#404142] font-sans RevealText">
                 {info.linhas.map((l) => (

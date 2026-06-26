@@ -27,7 +27,7 @@ export function SectionHeading({
           {eyebrow}
         </div>
       )}
-      <h2 className="RevealText font-serif text-4xl leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+      <h2 className="RevealText font-serif text-5xl leading-[0.80] tracking-tight text-foreground sm:text-5xl lg:text-5xl">
         {title}
       </h2>
       {description && (

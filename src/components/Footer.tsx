@@ -23,7 +23,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
-              <span className="font-serif text-2xl tracking-tight text-white">
+              <span className="font-sans text-2xl tracking-tight text-white">
                <img src={AberturahLogo} alt={t("footer.logoAlt")} className="RevealText h-13 w-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]" />
               </span>
             </div>
@@ -33,7 +33,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="RevealText font-serif text-sm uppercase tracking-widest text-[black]">
+            <h4 className="RevealText font-sans text-sm uppercase tracking-widest text-[black]">
               {t("footer.navigation")}
             </h4>
             <ul className="RevealText mt-5 space-y-3 text-md">
@@ -51,7 +51,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="RevealText font-serif text-sm uppercase tracking-widest text-black">
+            <h4 className="RevealText font-sans text-sm uppercase tracking-widest text-black">
               {t("footer.contact")}
             </h4>
             <ul className="mt-5 space-y-3 text-sm RevealText">
@@ -71,7 +71,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="RevealText font-serif text-sm uppercase tracking-widest text-black">
+            <h4 className="RevealText font-sans text-sm uppercase tracking-widest text-black">
               {t("footer.followUs")}
             </h4>
             <div className="RevealText mt-5 flex gap-3">

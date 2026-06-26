@@ -43,13 +43,13 @@ export function FAQ() {
               eyebrowClassName="RevealText"
               title={
                 <>
-                  <span className="font-serif">
+                  <span className="font-sans">
                     {t("faq.acm.title.line1")}
                   </span>
 
                   <br />
 
-                  <span className="font-serif">
+                  <span className="font-sans">
                     {t("faq.acm.title.line2")}
                   </span>
                 </>
@@ -114,13 +114,13 @@ export function FAQ() {
             <SectionHeading
               title={
                 <>
-                <span className="font-serif">
+                <span className="font-sans">
                     {t("faq.pvc.title.line1")}
                   </span>
 
                   <br />
 
-                  <span className="font-serif">
+                  <span className="font-sans">
                     {t("faq.pvc.title.line2")}
                   </span>
                 </>

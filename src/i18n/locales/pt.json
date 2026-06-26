@@ -5,7 +5,7 @@
       "line2": "arquitetura de alto",
       "line3": "padrão"
     },
-    "description": "Entregamos projetos personalizados para quem busca design, precisão e execução impecável. Somos especializados em portas, revestimentos, brises e pergolados.",
+    "description": "Entregamos projetos personalizados para quem busca design, precisão e execução impecáveis. Somos especializados em portas, revestimentos, ripados, brises, decks e pergolados.",
     "button": "Solicitar orçamento"
   },
   "nav": {
@@ -221,19 +221,19 @@
     "categories": {
       "porta": {
         "name": "Porta",
-        "description": "Portas internas e externas produzidas em ACM com estrutura de abertura em giro, pivotante ou de correr."
+        "description": "Portas internas e externas produzidas em ACM ou PVC com estrutura de abertura em giro, pivotante ou de correr."
       },
       "brises": {
         "name": "Brise",
-        "description": "Para instalação em áreas internas e externas produzidas em ACM ou PVC."
+        "description": "Para áreas internas e externas produzidas em ACM ou PVC."
       },
       "pergolados": {
         "name": "Pergolado",
-        "description": "Para instalação em áreas internas e externas produzidas em ACM ou PVC."
+        "description": "Para áreas internas e externas produzidas em ACM ou PVC."
       },
       "revestimento": {
         "name": "Revestimentos",
-        "description": "Para instalação em áreas internas e externas produzidas, no modelo ripado ou plano, produzidas em ACM ou PVC."
+        "description": "Para áreas internas e externas produzidas, no modelo ripado ou plano em ACM ou PVC."
       }
     }
   },

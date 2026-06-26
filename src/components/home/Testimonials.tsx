@@ -14,9 +14,9 @@ const testimonials = Array.isArray(testimonialsRaw) ? testimonialsRaw : [];
           eyebrowClassName="RevealText"
           title={
             <>
-              <span className="font-sans">{t("testimonials.title.line1")}</span>
+              <span className="font-sans text-5xl">{t("testimonials.title.line1")}</span>
               <br />
-              <span className="font-sans">{t("testimonials.title.line2")}</span>
+              <span className="font-sans text-5xl">{t("testimonials.title.line2")}</span>
             </>
           }
         />

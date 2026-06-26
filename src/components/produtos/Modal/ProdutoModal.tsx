@@ -74,7 +74,7 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
             <img src={produto.imagem} alt={produto.nome} className="w-full h-full object-cover" />
           </div>
           <div>
-            <h2 className="text-3xl tracking-[-0.03em] font-serif">{produto.nome}</h2>
+            <h2 className="text-3xl tracking-[-0.03em] font-sans">{produto.nome}</h2>
             <p className="text-[#404142] mt-1 text-sm font-sans">Categoria: {produto.categoria}</p>
           </div>
         </div>

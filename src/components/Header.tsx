@@ -33,7 +33,7 @@ export function Header() {
               activeProps={{
                 className: "text-white bg-[length:100%_2px]"
               }}
-              className="group relative text-white/90 text-xs lg:text-[14px] uppercase tracking-[0.2em]  transition-all hover:text-white py-1
+              className="group relative text-white text-xs lg:text-[14px] uppercase tracking-[0.2em]  transition-all hover:text-white py-1
                  bg-gradient-to-r from-white to-white 
                  bg-[length:0%_2px] bg-left-bottom bg-no-repeat 
                  hover:bg-[length:100%_2px] transition-[background-size] duration-300 ease-out"
@@ -68,7 +68,7 @@ export function Header() {
             <Link
               key={item.to}
               to={item.to}
-              className="text-white text-xl uppercase tracking-widest font-light border-b border-white/10 pb-4"
+              className="text-white text-xl uppercase tracking-widest border-b border-white/10 pb-4"
               onClick={() => setOpen(false)}
             >
               {t(item.label)}
@@ -78,7 +78,7 @@ export function Header() {
              <button className="text-white text-sm cursor-pointer"
              onClick={() => changeLanguage("pt")}
              >PT</button>
-             <button className="text-white/50 text-sm cursor-pointer"
+             <button className="text-white text-sm cursor-pointer"
              onClick={() => changeLanguage("en")}
              >EN</button>
           </div>

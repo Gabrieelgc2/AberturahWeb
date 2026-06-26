@@ -29,10 +29,10 @@ export function AboutPreview() {
               eyebrowClassName="text-[#D9D9D9]"
               title={
                 <>
-                <span className="text-[#D9D9D9] font-serif">
+                <span className="text-[#D9D9D9] font-sans text-5xl">
                   {t("aboutPreview.title.line1")}
                   </span><br />
-                  <span className="text-[#D9D9D9] font-serif">{t("aboutPreview.title.line2")}</span>
+                  <span className="text-[#D9D9D9] font-sans text-5xl">{t("aboutPreview.title.line2")}</span>
                 </>
               }
             />

@@ -120,11 +120,12 @@ export function Hero() {
           <h1
             className="
               text-white
-              font-serif
+              font-sans
+              font-normal
               text-3xl
               leading-tight
               tracking-normal
-              sm:text-6xl
+              sm:text-5xl
               sm:leading-[1.1]
             "
           >
@@ -154,7 +155,8 @@ export function Hero() {
               leading-relaxed
               text-white
               sm:text-xl
-              font-serif
+              font-sans
+              font-normal
             "
           >
             {t("hero.description")}
