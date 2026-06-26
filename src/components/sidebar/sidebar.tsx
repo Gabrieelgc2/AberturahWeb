@@ -1,7 +1,7 @@
 import {
   IoLogoFacebook,
   IoLogoInstagram,
-  IoLogoTwitter,
+  IoLogoLinkedin,
   IoLogoWhatsapp,
 } from "react-icons/io5";
 
@@ -22,9 +22,9 @@ const socials = [
     href: "https://instagram.com",
   },
   {
-    icon: IoLogoTwitter,
-    label: "Twitter",
-    href: "https://twitter.com",
+    icon: IoLogoLinkedin,
+    label: "LinkedIn",
+    href: "https://linkedin.com",
   },
 ];
 
@@ -45,7 +45,7 @@ export function Sidebars() {
           gap-5
           rounded-xl
           bg-white
-          p-4
+          p-2
           shadow-lg
         "
       >
@@ -60,7 +60,6 @@ export function Sidebars() {
             <div
               className="
                 rounded-lg
-                p-2
                 transition-all
                 duration-300
                 hover:bg-[#5DADEC]
