@@ -32,7 +32,7 @@ const Process = lazy(() =>
   })),
 );
 const FAQ = lazy(() =>
-  import("../components/Faq/FAQ").then((module) => ({
+  import("../components/Faq/Faq").then((module) => ({
     default: module.Faq,
   })),
 );
