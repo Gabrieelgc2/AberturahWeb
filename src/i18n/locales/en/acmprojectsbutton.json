@@ -1,0 +1,12 @@
+{
+     "ACMProjectsButton":{
+    "Buttons":{
+      "Todos": "All",
+      "Portas": "Doors",
+      "Brises": "Brise Screens",
+      "Revestimentos": "Claddings",
+      "Pergolados": "Pergolas",
+      "Ripados": "Slatted Panels"
+    }
+  }
+}

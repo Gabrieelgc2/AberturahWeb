@@ -4,13 +4,13 @@ import { SITE_CONTACT } from "@/config/site";
 import { useTranslation } from "react-i18next";
 
 export function InformacoesContato() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("contact");
 
   const informacoes = [
     { icon: MapPin, key: "address", linhas: [SITE_CONTACT.address.line1, SITE_CONTACT.address.line2] },
     { icon: Phone, key: "phone", linhas: [SITE_CONTACT.phoneDisplay] },
     { icon: Mail, key: "email", linhas: [SITE_CONTACT.email] },
-    { icon: Clock, key: "hours", linhas: [t("Contact.businessHours")] },
+    { icon: Clock, key: "hours", linhas: [t("businessHours")] },
   ];
   return (
     <Section>
@@ -25,7 +25,7 @@ export function InformacoesContato() {
                 >
                   <Icon className="h-7 w-7 text-shadow-black" strokeWidth={1.75} />
                 </div>
-              <h3 className="mt-5 font-sans text-xl font-normal text-foreground RevealText">{t(`contactPage.info.${info.key}`)}</h3>
+              <h3 className="mt-5 font-sans text-xl font-normal text-foreground RevealText">{t(`info.${info.key}`)}</h3>
               <div className="mt-3 space-y-1 text-sm text-[#404142] font-sans RevealText">
                 {info.linhas.map((l) => (
                   <p key={l}>{l}</p>

@@ -1,0 +1,30 @@
+{
+    "meta": {
+      "title": "ABERTURAh! | Contato",
+      "description": "Fale com a ABERTURAh! Entre em contato com a nossa equipe comercial e solicite um orçamento para o seu projeto. ",
+      "ogTitle": "Contato — ABERTURAh!",
+      "ogDescription": "WhatsApp, telefone, e-mail e endereço da ABERTURAh!."
+    },
+    "info": {
+      "address": "Endereço",
+      "phone": "Telefone",
+      "email": "E-mail",
+      "hours": "Horário"
+    },
+    "whatsapp": {
+      "badge": "Atendimento direto",
+      "title": {
+        "line1": "Entre em contato direto",
+        "line2": "com um de nossos",
+        "line3": "consultores comerciais."
+      },
+      "description": "Nosso time comercial atende pelo",
+      "description2": "WhatsApp em horário comercial.",
+      "description3": "Envie o briefing do seu projeto e",
+      "description4": "receba orçamento personalizado.",
+      "button": "Conversar no WhatsApp",
+      "commercial": "WhatsApp comercial",
+      "helper": "Envie fotos, plantas ou descrições. Quanto mais detalhes, mais precisa será nossa proposta."
+    },
+    "businessHours": "Segunda a Sexta - 8h às 18h"
+}

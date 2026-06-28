@@ -16,10 +16,10 @@ export const SITE_SOCIAL = {
 } as const;
 
 export const NAV_ITEMS = [
-  { to: "/", label: "nav.home" },
-  { to: "/acabamentos", label: "nav.acabamentos" },
-  { to: "/sobre", label: "nav.about" },
-  { to: "/contato", label: "nav.contact" },
+  { to: "/", label: "home" },
+  { to: "/acabamentos", label: "acabamentos" },
+  { to: "/sobre", label: "about" },
+  { to: "/contato", label: "contact" },
 ] as const;
 
 export const WHATSAPP_URL = `https://wa.me/${SITE_CONTACT.whatsappNumber}`;

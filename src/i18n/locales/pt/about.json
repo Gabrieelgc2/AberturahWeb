@@ -1,0 +1,56 @@
+{
+    "history": {
+      "title": "NOSSA MARCA",
+      "subtitle": "Oferecemos produtos de alta perfomance e qualidade",
+      "paragraph1": "Desde o início, nossa missão sempre foi elevar o padrão dos revestimentos arquitetônicos, oferecendo soluções que unem durabilidade, estética e inovação. Atuamos com foco na excelência, desde a escolha dos materiais até a entrega final, garantindo resultados que valorizam cada projeto.",
+      "paragraph2": "Com uma trajetória construída pautada pela confiança e compromisso, buscamos constantemente evoluir nossos processos e acompanhar as tendências do mercado. Nosso objetivo é proporcionar aos clientes não apenas um produto, mas uma experiência completa, com suporte técnico especializado e atenção em cada detalhe.",
+      "paragraph3": "Estamos consolidando nossa presença no setor através de parcerias sólidas e projetos bem-sucedidos. Seguimos trabalhando com dedicação para transformar ideias em realidade, entregando qualidade que se destaca e agrega valor em cada aplicação."
+    },
+    "missionValues": {
+      "title": "Base sólida para",
+      "titleItalic": "crescimento consistente.",
+      "mission": {
+        "title": "Missão",
+        "description": "Transformar projetos arquitetônicos em realidade, criando soluções exclusivas com qualidade e criatividade."
+      },
+      "vision": {
+        "title": "Visão",
+        "description": "Ser a indústria de inovação no segmento de ACM e PVCreconhecida por qualidade e eficiência."
+      },
+      "values": {
+        "title": "Valores",
+        "description": "Compromisso, transparência, precisão técnica e parceria de longo prazo com cada cliente."
+      }
+    },
+    "differentials": {
+      "title": "Diferenciais",
+      "subtitle": "O que nos torna",
+      "subtitleItalic": "referência.",
+      "items": [
+        {
+          "title": "Qualidade certificada",
+          "description": "Apenas chapas premium com selo de procedência."
+        },
+        {
+          "title": "+40 acabamentos",
+          "description": "Maior variedade de cores e texturas do mercado."
+        },
+        {
+          "title": "Beneficiamento CNC",
+          "description": "Precisão milimétrica em fábrica própria."
+        },
+        {
+          "title": "Garantia estendida",
+          "description": "Até 10 anos para projetos arquitetônicos."
+        },
+        {
+          "title": "Suporte técnico",
+          "description": "Equipe técnica à disposição em todas as fases."
+        },
+        {
+          "title": "Prazo cumprido",
+          "description": "Estoque robusto para atender urgências."
+        }
+      ]
+    }
+}

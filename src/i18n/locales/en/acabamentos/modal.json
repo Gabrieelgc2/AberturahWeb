@@ -1,0 +1,35 @@
+{
+  "category": "Category",
+
+  "categoriesModal": {
+    "doors": "Doors",
+    "brises": "Brise-soleils",
+    "pergolas": "Pergolas",
+    "cladding": "Cladding"
+  },
+
+  "name": {
+    "doors": "Door",
+    "brises": "Brise-soleil",
+    "pergolas": "Pergola",
+    "cladding": "Cladding"
+  },
+
+  "selectBaseMaterial": "Select the base material:",
+  "premiumSolutions": "Premium Solutions",
+  "pvcUsage": "PVC Usage",
+  "environment": "Environment",
+  "finishesIn": "Finishes in",
+  "back": "Back",
+  "selectedFinish": "Selected Finish",
+
+  "materials": {
+    "acm": "ACM",
+    "pvc": "PVC"
+  },
+
+  "scope": {
+    "Interno": "Indoor",
+    "Externo": "Outdoor"
+  }
+}

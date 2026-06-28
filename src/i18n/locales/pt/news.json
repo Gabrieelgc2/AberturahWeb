@@ -1,0 +1,11 @@
+{
+     "newsFeed": {
+    "filters": {
+      "all": "Todos",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    },
+    "viewPost": "Ver publicação",
+    "loadMore": "Carregar mais publicações"
+  }
+}

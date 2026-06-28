@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Produto, Material, EscopoPVC, Cor } from "../produtos.data";
 import { AnimatePresence } from "framer-motion";
 import { ModalAmpliaCor } from "./ModalAmpliaCor";
+import { useTranslation } from "react-i18next";
 
 interface ProdutoModalProps {
   produto: Produto;
@@ -9,6 +10,7 @@ interface ProdutoModalProps {
 }
 
 export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
+  const { t } = useTranslation("modal");
 
   const [materialSelecionado, setMaterialSelecionado] = useState<Material | null>(null);
   const [escopoPvc, setEscopoPvc] = useState<EscopoPVC | null>(null);
@@ -74,8 +76,8 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
             <img src={produto.imagem} alt={produto.nome} className="w-full h-full object-cover" />
           </div>
           <div>
-            <h2 className="text-3xl tracking-[-0.03em] font-sans">{produto.nome}</h2>
-            <p className="text-[#404142] mt-1 text-sm font-sans">Categoria: {produto.categoria}</p>
+            <h2 className="text-3xl tracking-[-0.03em] font-sans">{t(`name.${produto.nome}`)}</h2>
+            <p className="text-[#404142] mt-1 text-sm font-sans"> {t("category")}: {t(`categoriesModal.${produto.categoria}`)}</p>
           </div>
         </div>
 
@@ -86,7 +88,7 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
             {/* ETAPA 1: Selecionar Tipo de Material (ACM ou PVC) */}
             {!materialSelecionado && (
               <div>
-                <h3 className="text-lg mb-4">Selecione o Material base:</h3>
+                <h3 className="text-lg mb-4">{t("selectBaseMaterial")}</h3>
                 <div className="flex flex-col gap-3">
                   {produto.materiais.map((m) => (
                     <button
@@ -94,7 +96,7 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
                       onClick={() => setMaterialSelecionado(m)}
                       className="w-full py-2 rounded-xl border-2 border-zinc-200 text-left px-6 text-lg transition hover:border-black hover:bg-zinc-50"
                     >
-                      {m.tipo} — Soluções Premium
+                      {t(`materials.${m.tipo.toLowerCase()}`)} — {t("premiumSolutions")}
                     </button>
                   ))}
                 </div>
@@ -105,8 +107,8 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
             {materialSelecionado?.tipo === "PVC" && !escopoPvc && (
               <div>
                 <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-lg font-sans">Uso do PVC:</h3>
-                  <button onClick={handleReset} className="text-sm font-sans text-[#404142] hover:text-black underline">Voltar</button>
+                  <h3 className="text-lg font-sans">{t("pvcUsage")}</h3>
+                  <button onClick={handleReset} className="text-sm font-sans text-[#404142] hover:text-black underline">{t("back")}</button>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   {(["Interno", "Externo"] as EscopoPVC[]).map((tipo) => (
@@ -115,7 +117,7 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
                       onClick={() => setEscopoPvc(tipo)}
                       className="py-3 rounded-xl border text-center text-base font-sans transition hover:bg-black hover:text-white"
                     >
-                      Ambiente {tipo}
+                      {t("environment")} {t(`scope.${tipo}`)}
                     </button>
                   ))}
                 </div>
@@ -127,9 +129,10 @@ export function ProdutoModal({ produto, onClose }: ProdutoModalProps) {
               <div>
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="text-md text-[#404142]">
-                    Acabamentos em {materialSelecionado.tipo} {escopoPvc ? `(${escopoPvc})` : ""}
+                     {t("finishesIn")} {t(`materials.${materialSelecionado.tipo.toLowerCase()}`)}
+                     {escopoPvc ? ` (${t(`scope.${escopoPvc}`)})` : ""}
                   </h3>
-                  <button onClick={handleVoltarDaGrade} className="text-sm text-[#404142] hover:text-black underline">Voltar</button>
+                  <button onClick={handleVoltarDaGrade} className="text-sm text-[#404142] hover:text-black underline">{t("back")}</button>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-40 sm:max-h-100 overflow-y-auto pr-2 scrollbar-thin">

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface ModalAmpliaCorProps {
   isOpen: boolean;
@@ -8,6 +9,7 @@ interface ModalAmpliaCorProps {
 }
 
 export function ModalAmpliaCor({ isOpen, src, alt, onClose }: ModalAmpliaCorProps) {
+  const { t } = useTranslation("modal")
   if (!isOpen) return null;
 
   return (
@@ -19,8 +21,8 @@ export function ModalAmpliaCor({ isOpen, src, alt, onClose }: ModalAmpliaCorProp
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         onClick={(e) => {
-        e.stopPropagation();
-        onClose();
+          e.stopPropagation();
+          onClose();
         }}
       />
 
@@ -51,8 +53,10 @@ export function ModalAmpliaCor({ isOpen, src, alt, onClose }: ModalAmpliaCorProp
         {/* LEGENDA */}
         <div className="text-center pb-2">
           <h4 className="text-xl font-sans font-medium text-zinc-900">{alt}</h4>
-          <p className="text-xs text-zinc-400 mt-1 uppercase tracking-widest font-sans">Acabamento Selecionado</p>
-        </div>
+          <p className="text-xs text-zinc-400 mt-1 uppercase tracking-widest font-sans">
+            {t("selectedFinish")}
+          </p>        
+          </div>
       </motion.div>
     </div>
   );

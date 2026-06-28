@@ -1,0 +1,24 @@
+{
+    "badge": "Trusted by",
+    "title": {
+      "line1": "Voices of those who",
+      "line2": "built with us."
+    },
+    "items": [
+      {
+        "quote": "ABERTURAh! delivered our façade with millimeter precision and impeccable deadlines. I recommend them for any high-end project.",
+        "name": "Rafael Monteiro",
+        "role": "Architect, MR Studio"
+      },
+      {
+        "quote": "The technical support made all the difference. We had assistance from sizing to installation. A true partnership.",
+        "name": "Camila Duarte",
+        "role": "Engineer, Vértice Construction"
+      },
+      {
+        "quote": "Impressive variety of finishes and flawless quality. The panels arrived packaged like works of art.",
+        "name": "Lucas Andrade",
+        "role": "Director, Andrade Façades"
+      }
+    ]
+}

@@ -1,0 +1,42 @@
+{    
+    "badge": "ABERTURAh! · ACM MATERIAL",
+    "title": {
+      "line1": "Why choose",
+      "line2": "us?"
+    },
+    "description": "ABERTURAh! was created to deliver integrated architectural solutions and transform façades, cladding, and architectural projects. We combine premium raw materials, advanced manufacturing technology, and close customer support to deliver outstanding results for every project.",
+    "items": {
+      "quality": {
+        "title": "Quality",
+        "description": "We work exclusively with premium ACM panels (Kynar), ensuring superior durability, weather resistance, and flawless finishing in every project."
+      },
+      "finishes": {
+        "title": "Wide Range of Finishes",
+        "description": "More than 40 colors and textures available — from brushed and glossy finishes to matte and metallic effects. Your façade with the identity it deserves."
+      },
+      "installation": {
+        "title": "Installation",
+        "description": "In-house team trained for high-rise installation work according to Brazilian standards."
+      },
+      "manufacturing": {
+        "title": "In-House Manufacturing",
+        "description": "CNC cutting, bending, state-of-the-art machinery, and machining performed in our own factory. Millimeter precision for ventilated façades, doors, brise-soleils, pergolas, and custom cladding."
+      },
+      "deadline": {
+        "title": "On-Time Delivery",
+        "description": "Optimized production line for delivery and installation according to the established schedule."
+      },
+      "logistics": {
+        "title": "Efficient Logistics",
+        "description": "Structured logistics to serve your project anywhere. Your panels and doors arrive fully protected and ready for installation."
+      },
+      "support": {
+        "title": "Complete Technical Support",
+        "description": "Technical team available for sizing, substructure specification, and project monitoring from start to finish."
+      },
+      "warranty": {
+        "title": "Warranty",
+        "description": "Our products include a 10-year warranty according to technical specifications and the Customer Manual."
+      }
+    }
+}

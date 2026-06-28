@@ -1,0 +1,64 @@
+{
+    "badge": "Perguntas frequentes",
+    "acm": {
+    "title": {
+      "line1": "Tire suas dúvidas",
+      "line2": "sobre ACM."
+    },
+    "items": [
+      {
+        "question": "O que é ACM e onde pode ser aplicado?",
+        "answer": "ACM (Aluminum Composite Material) é um painel composto por duas chapas de alumínio com núcleo de polietileno. É amplamente usado em fachadas ventiladas, revestimentos internos, totens, comunicação visual e mobiliário urbano por ser leve, plano e altamente durável."
+      },
+      {
+        "question": "Qual a espessura ideal para fachadas?",
+        "answer": "Para fachadas externas recomendamos painéis de 4mm com lâmina de alumínio de 0,30mm a 0,50mm. Para uso interno ou comunicação visual, espessuras de 3mm já são suficientes. Nossa equipe técnica orienta a melhor especificação para cada caso."
+      },
+      {
+        "question": "Vocês fazem o beneficiamento das chapas?",
+        "answer": "Sim. Realizamos corte CNC, dobra, fresagem, usinagem e preparação de bandejas em nossa própria fábrica. Isso garante precisão milimétrica e otimiza o tempo de instalação na obra."
+      },
+      {
+        "question": "Quais são os prazos de entrega?",
+        "answer": "Trabalhamos com materiais de alta qualidade e sob medida, portanto, nossos prazos são definidos e acordado entre as partes conforme a personalização e complexidade de cada projeto."
+      },
+      {
+        "question": "Vocês entregam em quais regiões?",
+        "answer": "Realizamos entregas nacionais e internacionais. Contamos com logística especializada para materiais planos e embalagem técnica de alta segurança, garantindo a integridade das chapas durante todo o transporte"
+      },
+      {
+        "question": "Como funciona a garantia?",
+        "answer": "Nossas chapas têm garantia de até 10 anos para projetos arquitetônicos, dependendo do acabamento escolhido. Fornecemos toda a documentação técnica e suporte pós-venda."
+      }
+    ]
+  },
+  "pvc":{
+    "title":{
+      "line1": "Tire suas dúvidas",
+      "line2": "sobre PVC."
+    },
+    "items":[
+      {
+        "question": "O que é PVC?",
+        "answer": "PVC é a sigla para Policloreto de Vinila, um dos tipos de plástico mais produzidos e versáteis do mundo. Ele é formado por 57% de cloro (derivado do sal marinho) e 43% de eteno (derivado do petróleo). É um material rígido por natureza, mas que se torna f lexível com a adição de aditivos.  "
+      },
+      {
+        "question": "Onde o PVC pode ser utilizado?",
+         "answer": "O material é amplamente utilizado em diversas indústrias devido às suas propriedades únicas, como durabilidade, resistência ao fogo e isolamento.\n\nAs principais aplicações incluem:\n\n• Construção Civil: Tubos e conexões de água e esgoto, perfis para portas e janelas, forros, pisos vinílicos e revestimentos.\n\n• Saúde: Bolsas de sangue e soro, tubos de oxigênio e cateteres.\n\n• Elétrica e Telecomunicações: Capas de isolamento para fios e cabos elétricos.\n\n• Comunicação Visual e Moda: Fabricação de lonas para faixas, cartazes e couro sintético para bolsas e sapatos."
+      },
+      {
+        "question": "O PVC é um material reciclável? ",
+        "answer": "O PVC é um material 100% reciclável, podendo ser derretido e remodelado diversas vezes ao ser aquecido. Todas as sobre derivadas do processo de fabricação em nossa unidade fabril são devidamente separadas para empresas de reciclagem."
+      },
+      {
+        "question": "O PVC é um material durável?",
+        "answer": "Uma das principais vantagens do PVC é a sua durabilidade. É um material plástico altamente resistente a impactos, umidade, corrosão e insetos. Isso significa que o PVC resistir às intempéries e ao desgaste ao longo do tempo, sem a necessidade de manutenção constante."
+      },
+      {
+        "question": "Como deve ser realizado a manutenção do PVC? ",
+        "answer": "Diferentemente de materiais como a madeira, o PVC exige pouca manutenção. Não apodrecem, não enferrujam e não precisam ser pintados regularmente. Basta uma limpeza ocasional com água e sabão para mantê-los em bom estado. Isso economiza tempo e dinheiro a longo prazo."
+      }
+    ]
+
+  }
+}

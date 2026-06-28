@@ -8,7 +8,7 @@ import { WHATSAPP_URL } from "@/config/site";
 import SplittingText from "../animations/animations";
 
 export function Hero() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("hero");
 
   const sectionRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -130,18 +130,18 @@ export function Hero() {
             "
           >
             <SplittingText
-              text={t("hero.title.line1")}
+              text={t("title.line1")}
             />
 
             <br />
 
             <SplittingText
-              text={t("hero.title.line2")}
+              text={t("title.line2")}
               delay={1200}
             />
             <br />
               <SplittingText
-              text={t("hero.title.line3")}
+              text={t("title.line3")}
               delay={2000}
             />
           </h1>
@@ -159,7 +159,7 @@ export function Hero() {
               font-normal
             "
           >
-            {t("hero.description")}
+            {t("description")}
           </p>
 
           {/* BUTTON */}
@@ -197,7 +197,7 @@ export function Hero() {
                 background: "var(--gradient-brand)",
               }}
             >
-              {t("hero.button")}
+              {t("button")}
 
               <ArrowRight
                 className="

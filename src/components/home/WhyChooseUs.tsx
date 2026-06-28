@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 export function WhyChooseUs() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("whychooseus");
 
   const reasons = [
     {
@@ -57,23 +57,23 @@ export function WhyChooseUs() {
               className="h-1.5 w-1.5 rounded-full"
               style={{ background: "var(--brand)" }}
             />
-            {t("whyChooseUs.badge")}
+            {t("badge")}
           </div>
 
           <h2 className="RevealText font-sans text-5xl leading-[1.05] tracking-tight text-[foreground]"
             style={{"--delay": "150ms"} as React.CSSProperties}>
-            {t("whyChooseUs.title.line1")}
+            {t("title.line1")}
             {" "}
             <span
               style={{
                 WebkitTextFillColor: "#404142"
               }}
             >
-            {t("whyChooseUs.title.line2")}
+            {t("title.line2")}
             </span>
           </h2>
           <p className="RevealText font-sans mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#404142]">
-            {t("whyChooseUs.description")}
+            {t("description")}
           </p>
         </div>
 
@@ -94,10 +94,10 @@ export function WhyChooseUs() {
                   <Icon className="h-7 w-7 text-shadow-black" strokeWidth={1.75} />
                 </div>
                 <h3 className="RevealText font-sans text-2xl text-foreground transition-colors group-hover:text-[color:var(--brand-foreground)]">
-                  {t(`whyChooseUs.items.${reason.key}.title`)}
+                  {t(`items.${reason.key}.title`)}
                 </h3>
                 <p className="RevealText font-sans mt-3 text-[15px] leading-relaxed text-[color:var(--steel)] transition-colors group-hover:text-[color:var(--steel-light)]">
-                  {t(`whyChooseUs.items.${reason.key}.description`)}
+                  {t(`items.${reason.key}.description`)}
                 </p>
                 <div
                   className="absolute bottom-0 left-8 right-8 h-px origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"

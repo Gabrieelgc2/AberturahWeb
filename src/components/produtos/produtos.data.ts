@@ -17,7 +17,7 @@ export interface Material {
 export interface Produto {
   id: string;
   nome: string;
-  categoria: "Portas" | "Brises" | "Pergolados" | "Revestimentos";
+  categoria: "doors" | "brises" | "pergolas" | "cladding";
   imagem: string;
   descricao: string;
   materiais: Material[];
@@ -52,10 +52,10 @@ export const CORES_PVC_EXTERNO: Cor[] = [
 export const PRODUTOS: Produto[] = [
   {
     id: "porta",
-    nome: "Porta",
-    categoria: "Portas",
+    nome: "doors",
+    categoria: "doors",
     imagem: img.portaImg,
-    descricao: "Clique para ver mais detalhes",
+    descricao: "doors",
     materiais: [
       {
         tipo: "PVC",
@@ -68,10 +68,10 @@ export const PRODUTOS: Produto[] = [
   },
   {
     id: "brise",
-    nome: "Brise",
-    categoria: "Brises",
+    nome: "brises",
+    categoria: "brises",
     imagem: img.briseImg,
-    descricao: "Clique para ver mais detalhes",
+    descricao: "brises",
     materiais: [
       { tipo: "ACM", cores: CORES_ACM },
       {
@@ -85,10 +85,10 @@ export const PRODUTOS: Produto[] = [
   },
   {
     id: "pergolado",
-    nome: "Pergolado",
-    categoria: "Pergolados",
+    nome: "pergolas",
+    categoria: "pergolas",
     imagem: img.pergoladoImg,
-    descricao: "Clique para ver mais detalhes",
+    descricao: "pergolas",
     materiais: [
       { tipo: "ACM", cores: CORES_ACM },
       {
@@ -102,10 +102,10 @@ export const PRODUTOS: Produto[] = [
   },
   {
     id: "revestimento",
-    nome: "Revestimento",
-    categoria: "Revestimentos",
+    nome: "cladding",
+    categoria: "cladding",
     imagem: img.revestimentoImg,
-    descricao: "Clique para ver mais detalhes",
+    descricao: "cladding",
     materiais: [
       { tipo: "ACM", cores: CORES_ACM },
       {

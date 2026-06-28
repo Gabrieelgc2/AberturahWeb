@@ -1,0 +1,27 @@
+{
+    "badge": "Linha de produtos",
+    "title": {
+      "line1": "Soluções personalizadas",
+      "line2": "para cada projeto."
+    },
+    "button": "Ver linha completa",
+    "explore": "Explorar",
+    "categories": {
+      "porta": {
+        "name": "Porta",
+        "description": "Portas internas e externas produzidas em ACM ou PVC com estrutura de abertura em giro, pivotante ou de correr."
+      },
+      "brise": {
+        "name": "Brise",
+        "description": "Para áreas internas e externas produzidas em ACM ou PVC."
+      },
+      "pergolado": {
+        "name": "Pergolado",
+        "description": "Para áreas internas e externas produzidas em ACM ou PVC."
+      },
+      "revestimento": {
+        "name": "Revestimentos",
+        "description": "Para áreas internas e externas produzidas, no modelo ripado ou plano em ACM ou PVC."
+      }
+    }
+}

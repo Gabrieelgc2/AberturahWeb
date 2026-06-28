@@ -1,12 +1,12 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Youtube, Mail, Phone, MapPin, Linkedin, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import AberturahLogo from "@/assets/Aberturah.webp";
 import { NAV_ITEMS, SITE_CONTACT, SITE_SOCIAL } from "@/config/site";
 import { useTranslation } from "react-i18next";
 import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoWhatsapp } from "react-icons/io5";
 
 export function Footer() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["footer", "navbar"]);
   return (
     <footer
       className="relative text-black"
@@ -25,17 +25,17 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5">
               <span className="font-sans text-2xl tracking-tight text-white">
-               <img src={AberturahLogo} alt={t("footer.logoAlt")} className="RevealText h-13 w-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]" />
+               <img src={AberturahLogo} alt={t("footer:logoAlt")} className="RevealText h-13 w-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]" />
               </span>
             </div>
             <p className="RevealText mt-5 text-sm leading-relaxed">
-              {t("footer.description")}
+              {t("footer:description")}
             </p>
           </div>
 
           <div>
             <h4 className="RevealText font-sans text-sm uppercase tracking-widest text-[black]">
-              {t("footer.navigation")}
+              {t("footer:navigation")}
             </h4>
             <ul className="RevealText mt-5 space-y-3 text-md">
               {NAV_ITEMS.map((l) => (
@@ -44,7 +44,7 @@ export function Footer() {
                     to={l.to}
                     className="transition-colors hover:text-black/70"
                   >
-                    {t(l.label)}
+                    {t(`navbar:${l.label}`)}
                   </Link>
                 </li>
               ))}
@@ -53,7 +53,7 @@ export function Footer() {
 
           <div>
             <h4 className="RevealText font-sans text-sm uppercase tracking-widest text-black">
-              {t("footer.contact")}
+              {t("footer:contact")}
             </h4>
             <ul className="mt-5 space-y-3 text-sm RevealText">
               <li className="flex items-start gap-3">
@@ -73,7 +73,7 @@ export function Footer() {
 
           <div>
             <h4 className="RevealText font-sans text-sm uppercase tracking-widest text-black">
-              {t("footer.followUs")}
+              {t("footer:followUs")}
             </h4>
             <div className="RevealText mt-5 flex gap-3">
               <a
@@ -114,14 +114,14 @@ export function Footer() {
               </a>
             </div>
             <p className="RevealText mt-6 text-xs uppercase tracking-widest text-[(--steel)]">
-              {t("Contact.businessHours")}
+              {t("footer:businessHours")}
             </p>
           </div>
         </div>
 
         <div className="RevealText mt-16 flex flex-col items-center justify-between gap-4 border-t border-black pt-8 text-xs text-[black] sm:flex-row">
           <span>
-            © {new Date().getFullYear()} ABERTURAh! {t("footer.rights")}
+            © {new Date().getFullYear()} ABERTURAh! {t("rights")}
           </span>
         </div>
       </div>

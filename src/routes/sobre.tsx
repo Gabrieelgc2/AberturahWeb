@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
-import { CTA } from "@/components/home/CTA";
+import { CTA } from "@/components/CTA";
 import { HistoriaSection } from "@/components/sobre/HistoriaSection";
 import { MissaoValoresSection } from "@/components/sobre/MissaoValoresSection";
 import { DiferenciaisSection } from "@/components/sobre/DiferenciaisSection";
@@ -27,18 +27,18 @@ export const Route = createFileRoute("/sobre")({
 });
 
 function SobrePage() {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation("pagelayout"); 
   return (
     <>
       <PageLayout
-        eyebrow={t("PageLayout.eyebrow3")}
+        eyebrow={t("eyebrow3")}
         title={
           <>
-            {t("PageLayout.title3.line1")}<br />
-            <span>{t("PageLayout.title3.line2")}</span>
+            {t("title3.line1")}<br />
+            <span>{t("title3.line2")}</span>
           </>
         }
-        description={t("PageLayout.description3")}
+        description={t("description3")}
         image={BackGroundSobre}
       />
       <HistoriaSection />

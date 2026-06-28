@@ -9,7 +9,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { t } = useTranslation();
+  const { t } = useTranslation("navbar");
   const { changeLanguage } = useLanguage();
 
   useEffect(() => {

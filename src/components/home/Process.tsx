@@ -1,28 +1,28 @@
 import { useTranslation } from "react-i18next";
 
 export function Process() {
-const { t } = useTranslation();
+const { t } = useTranslation("process");
 const steps = [
 
   {
     n: "01",
-    title: t("process.steps.0.title"),
-    desc: t("process.steps.0.description"),
+    title: t("steps.0.title"),
+    desc: t("steps.0.description"),
   },
   {
     n: "02",
-    title: t("process.steps.1.title"),
-    desc: t("process.steps.1.description"),
+    title: t("steps.1.title"),
+    desc: t("steps.1.description"),
   },
   {
     n: "03",
-    title: t("process.steps.2.title"),
-    desc: t("process.steps.2.description"),
+    title: t("steps.2.title"),
+    desc: t("steps.2.description"),
   },
   {
     n: "04",
-    title: t("process.steps.3.title"),
-    desc: t("process.steps.3.description"),
+    title: t("steps.3.title"),
+    desc: t("steps.3.description"),
   },
   
 ];
@@ -40,10 +40,10 @@ const steps = [
               className="h-1.5 w-1.5 rounded-full"
               style={{ background: "var(--brand)" }}
             />
-            Como trabalhamos
+            {t("badge")}
           </div>
           <h2 className="mx-auto mt-6 max-w-3xl font-sans text-5xl leading-[1.05] tracking-tight text-[#404142]">
-            Do esboço à fachada,
+            {t("title.line1")}
             <br />
             <span
               style={{
@@ -52,7 +52,7 @@ const steps = [
                 WebkitTextFillColor: "transparent",
               }}
             >
-              em 4 etapas.
+              {t("title.line2")}
             </span>
           </h2>
         </div>

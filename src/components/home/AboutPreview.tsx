@@ -6,7 +6,7 @@ import AberturahCasa from "../../assets/image.webp";
 import { useTranslation } from "react-i18next";
 
 export function AboutPreview() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("aboutpreview");
   return (
     <section
       className="relative py-24 sm:py-32"
@@ -25,25 +25,25 @@ export function AboutPreview() {
           <div>
             <SectionHeading
               align="left"
-              eyebrow={t("aboutPreview.badge")}
+              eyebrow={t("badge")}
               eyebrowClassName="text-[#D9D9D9]"
               title={
                 <>
                 <span className="text-[#D9D9D9] font-sans text-5xl">
-                  {t("aboutPreview.title.line1")}
+                  {t("title.line1")}
                   </span><br />
-                  <span className="text-[#D9D9D9] font-sans text-5xl">{t("aboutPreview.title.line2")}</span>
+                  <span className="text-[#D9D9D9] font-sans text-5xl">{t("title.line2")}</span>
                 </>
               }
             />
             <p className="RevealText mt-6 text-lg leading-relaxed text-[#D9D9D9] font-sans">
-              {t("aboutPreview.description")}
+              {t("description")}
             </p>
             <Link
               to="/sobre"
               className="RevealText mt-8 inline-flex items-center gap-2 text-sm text-[color:#D9D9D9] underline-offset-4 hover:underline font-sans"
             >
-              {t("aboutPreview.button")}
+              {t("button")}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -74,7 +74,7 @@ export function AboutPreview() {
                 100%
               </div>
               <p className="RevealText mt-2 text-sm text-[#404142] font-sans">
-                {t("aboutPreview.highlight.description")}
+                {t("highlight.description")}
               </p>
             </div>
           </div>

@@ -1,0 +1,26 @@
+{  
+    "meta": {
+      "title": "ABERTURAh! | Contact",
+      "description": "Get in touch with ABERTURAh! via WhatsApp, phone, or email. Technical support for projects throughout Brazil.",
+      "ogTitle": "Contact — ABERTURAh!",
+      "ogDescription": "WhatsApp, phone, email, and address of ABERTURAh!."
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours"
+    },
+    "whatsapp": {
+      "badge": "Direct support",
+      "title": {
+        "line1": "Response within",
+        "line2": "minutes."
+      },
+      "description": "Our commercial team is available via WhatsApp during business hours. Send your project briefing and receive a personalized quote.",
+      "button": "Chat on WhatsApp",
+      "commercial": "Business WhatsApp",
+      "helper": "Send photos, plans, or descriptions. The more details you provide, the more accurate our proposal will be."
+    },
+      "businessHours": "Monday to Friday - 8 AM to 6 PM"
+  }

@@ -1,10 +1,10 @@
-import { MessageCircle, Instagram, Youtube } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { SITE_CONTACT, SITE_SOCIAL, WHATSAPP_URL } from "@/config/site";
 import { useTranslation } from "react-i18next";
 import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoWhatsapp } from "react-icons/io5";
 
 export function WhatsAppSection() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("contact");
   return (
     <section className="pb-24 sm:pb-32">
       <div className="container mx-auto max-w-7xl px-6">
@@ -25,28 +25,28 @@ export function WhatsAppSection() {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-1.5 text-xs  uppercase tracking-widest text-[#D9D9D9]">
                 <MessageCircle className="h-3.5 w-3.5 text-[#D9D9D9] RevealText font-sans" />
-                {t("contactPage.whatsapp.badge")}
+                {t("whatsapp.badge")}
               </div>
               <h2 className="mt-6 font-sans text-xl leading-[1.05] text-white sm:text-3xl RevealText">
-                {t("contactPage.whatsapp.title.line1")}<br />
+                {t("whatsapp.title.line1")}<br />
                 <span
                   style={{
                     WebkitBackgroundClip: "text",
                   }}
                 >
-                  {t("contactPage.whatsapp.title.line2")}
+                  {t("whatsapp.title.line2")}
                   <br />
-                  {t("contactPage.whatsapp.title.line3")}
+                  {t("whatsapp.title.line3")}
                 </span>
               </h2>
               <p className="mt-6 max-w-md text-md sm:text-lg font-sans leading-relaxed text-[#D9D9D9] RevealText">
-                {t("contactPage.whatsapp.description")}
+                {t("whatsapp.description")}
                 <br />
-                {t("contactPage.whatsapp.description2")}
+                {t("whatsapp.description2")}
                 <br />
-                {t("contactPage.whatsapp.description3")}
+                {t("whatsapp.description3")}
                 <br />
-                {t("contactPage.whatsapp.description4")}
+                {t("whatsapp.description4")}
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -58,7 +58,7 @@ export function WhatsAppSection() {
                   style={{ background: "var(--gradient-brand)" }}
                 >
                   <MessageCircle className="h-5 w-5 RevealText" />
-                  <span className="RevealText font-sans">{t("contactPage.whatsapp.button")}</span>
+                  <span className="RevealText font-sans">{t("whatsapp.button")}</span>
                 </a>
               </div>
 
@@ -96,10 +96,10 @@ export function WhatsAppSection() {
                   {SITE_CONTACT.phoneDisplay}
                 </p>
                 <p className="mt-4 font-sans text-sm uppercase tracking-widest text-[#404142] RevealText">
-                  {t("contactPage.whatsapp.commercial")}
+                  {t("whatsapp.commercial")}
                 </p>
                 <p className="mt-4 max-w-xs text-sm text-[#404142] font-sans RevealText">
-                  {t("contactPage.whatsapp.helper")}
+                  {t("whatsapp.helper")}
                 </p>
               </div>
             </div>

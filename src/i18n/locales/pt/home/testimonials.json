@@ -1,0 +1,24 @@
+{
+    "badge": "Nossos clientes",
+    "title": {
+      "line1": "Satisfação de quem",
+      "line2": "construiu com a gente."
+    },
+    "items": [
+      {
+        "quote": "A ABERTURAh! entregou nossa fachada com precisão milimétrica e prazo cumprido à risca. Recomendo para qualquer obra de alto padrão.",
+        "name": "Rafael Monteiro",
+        "role": "Arquiteto, MR Studio"
+      },
+      {
+        "quote": "O suporte técnico fez toda a diferença. Tivemos acompanhamento desde o dimensionamento até a instalação. Parceria de verdade.",
+        "name": "Camila Duarte",
+        "role": "Engenheira, Construtora Vértice"
+      },
+      {
+        "quote": "Variedade de acabamentos impressionante e qualidade impecável. As chapas chegaram embaladas como obra-prima.",
+        "name": "Lucas Andrade",
+        "role": "Diretor, Andrade Fachadas"
+      }
+    ]
+}

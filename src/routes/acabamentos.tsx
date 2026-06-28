@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CTA } from "@/components/home/CTA";
+import { CTA } from "@/components/CTA";
 import { ProdutosCatalogo } from "../components/produtos/ProdutosCatalogo";
 import BackGroundProduto from "../assets/image-casa-aberturah.webp";
 import { PageLayout } from "@/components/PageLayout";
@@ -25,20 +25,20 @@ export const Route = createFileRoute("/acabamentos")({
 });
 
 function AcabamentosPage() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("pagelayout");
   return (
     <>
       <PageLayout
-        eyebrow={t("PageLayout.eyebrow1")}
+        eyebrow={t("eyebrow1")}
         title={
           <>
-            {t("PageLayout.title1.line1")} <br />
+            {t("title1.line1")} <br />
             <span>
-              {t("PageLayout.title1.line2")}
+              {t("title1.line2")}
             </span>
           </>
         }
-        description={t("PageLayout.description1")}
+        description={t("description1")}
         image={BackGroundProduto}
       />
       <ProdutosCatalogo />

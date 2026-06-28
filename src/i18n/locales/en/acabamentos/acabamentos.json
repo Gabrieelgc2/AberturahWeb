@@ -1,0 +1,21 @@
+{
+    "categoriesButton": {
+        "Todos": "All",
+        "doors": "Doors",
+        "brises": "Brise-soleils",
+        "pergolas": "Pergolas",
+        "cladding": "Cladding"
+    },
+    "name": {
+        "doors": "Door",
+        "brises": "Brise-soleils",
+        "pergolas": "Pergolas",
+        "cladding": "Cladding"
+    },
+    "description": {
+        "doors": "Click to see more details",
+        "brises": "Click to see more details",
+        "pergolas": "Click to see more details",
+        "cladding": "Click to see more details"
+    }
+}

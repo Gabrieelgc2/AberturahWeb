@@ -26,12 +26,12 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     poster: revestimentofoto,
   },
   {
-    key: "brises",
+    key: "brise",
     video: brises,
     poster: brisesfoto,
   },
   {
-    key: "pergolados",
+    key: "pergolado",
     video: pergolados,
     poster: pergoladosfoto,
   },

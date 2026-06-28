@@ -1,0 +1,32 @@
+{
+    "eyebrow1": "Products",
+    "eyebrow2": "Construction",
+    "eyebrow3": "About us",
+    "eyebrow4": "News",
+    "eyebrow5": "Contact",
+    "title1": {
+      "line1": "Complete line",
+      "line2": "of premium ACM"
+    },
+    "title2":{
+      "line1": "Projects that transform",
+      "line2": "every design"
+    },
+     "title3":{
+      "line1": "Industry,",
+      "line2": "precision and design."
+    },
+    "title4":{
+      "line1": "Behind the scenes and",
+      "line2": "new projects"
+    },
+    "title5":{
+      "line1": "Talk to",
+      "line2": "ABERTURAh!"
+    },
+    "description1": "We offer a wide range of products to turn your construction into a successful project.",
+    "description2": "The complete ACM solution for modern and sophisticated projects.",
+    "description3": "Turning technical specifications into efficient solutions for every project.",
+    "description4": "Follow our projects, production process, and updates published on Instagram and YouTube.",
+    "description5": "We are ready to understand your project and send you a proposal within 48 hours."
+}

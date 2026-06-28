@@ -1,0 +1,27 @@
+{
+    "badge": "Product line",
+    "title": {
+      "line1": "Custom solutions",
+      "line2": "for every project."
+    },
+    "button": "View full line",
+    "explore": "Explore",
+    "categories": {
+      "porta": {
+        "name": "Doors",
+        "description": "Interior and exterior doors manufactured in ACM or PVC, available in hinged, pivot, or sliding configurations."
+      },
+      "revestimento": {
+        "name": "Cladding",
+        "description": "Interior and exterior cladding available in slatted or flat panel systems, manufactured in ACM or PVC."
+      },
+      "brise": {
+        "name": "Brise-Soleils",
+        "description": "Architectural brise-soleil systems for interior and exterior applications, manufactured in ACM or PVC."
+      },
+      "pergolado": {
+        "name": "Pergolas",
+        "description": "Custom pergolas for interior and exterior spaces, manufactured in ACM or PVC."
+      }
+    }
+}

@@ -4,7 +4,7 @@ import { Text } from "../ui/TextVariant";
 import { useTranslation } from "react-i18next";
 
 export function DiferenciaisSection() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("about");
 
   const diferenciais = [
     { icon: ShieldCheck },
@@ -21,18 +21,18 @@ export function DiferenciaisSection() {
 
       <div className="text-center max-w-2xl mx-auto">
         <Text variant="Title" className="RevealText uppercase tracking-widest text-[#404142] font-sans">
-          {t("about.differentials.title")}
+          {t("differentials.title")}
         </Text>
 
         <Text variant="Subtitle" className="RevealText mt-4 font-sans">
-          {t("about.differentials.subtitle")} <span>{t("about.differentials.subtitleItalic")}</span>
+          {t("differentials.subtitle")} <span>{t("differentials.subtitleItalic")}</span>
         </Text>
       </div>
 
       <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {diferenciais.map((d, i) => {
           const Icon = d.icon;
-          const item = t("about.differentials.items", { returnObjects: true }) as Array<{ title: string; description: string }>;
+          const item = t("differentials.items", { returnObjects: true }) as Array<{ title: string; description: string }>;
 
           return (
             <div

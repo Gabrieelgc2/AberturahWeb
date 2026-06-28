@@ -1,0 +1,56 @@
+{
+    "history": {
+      "title": "OUR BRAND",
+      "subtitle": "Bringing quality ACM",
+      "paragraph1": "From the beginning, our mission has always been to raise the standard of architectural cladding, offering ACM solutions that combine durability, aesthetics, and innovation. We operate with a focus on excellence, from material selection to final delivery, ensuring results that enhance every project.",
+      "paragraph2": "With a trajectory built on trust and commitment, we constantly seek to evolve our processes and keep up with market trends. Our goal is to provide customers not just a product, but a complete experience, with specialized technical support and attention to every detail.",
+      "paragraph3": "We are consolidating our presence in the sector through solid partnerships and successful projects. We continue to work with dedication to transform ideas into reality, delivering quality that stands out and adds value in every application."
+    },
+    "missionValues": {
+      "title": "Solid foundation for",
+      "titleItalic": "consistent growth.",
+      "mission": {
+        "title": "Mission",
+        "description": "Transform architectural projects into reality, creating exclusive solutions with quality and creativity"
+      },
+      "vision": {
+        "title": "Vision",
+        "description": "To be the innovation industry in the ACM segment recognized for quality and efficiency."
+      },
+      "values": {
+        "title": "Values",
+        "description": "Commitment, transparency, technical precision, and long-term partnership with each client."
+      }
+    },
+    "differentials": {
+      "title": "Differentials",
+      "subtitle": "What makes us a",
+      "subtitleItalic": "reference.",
+      "items": [
+        {
+          "title": "Certified quality",
+          "description": "Only premium panels with certificate of origin."
+        },
+        {
+          "title": "+40 finishes",
+          "description": "Largest variety of colors and textures in the market."
+        },
+        {
+          "title": "CNC processing",
+          "description": "Millimeter precision in our own factory."
+        },
+        {
+          "title": "Extended warranty",
+          "description": "Up to 10 years for architectural projects."
+        },
+        {
+          "title": "Technical support",
+          "description": "Technical team available at all stages."
+        },
+        {
+          "title": "On-time delivery",
+          "description": "Robust inventory to meet urgent needs."
+        }
+      ]
+    }
+}

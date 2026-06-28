@@ -1,0 +1,29 @@
+{
+    "badge": "How we work",
+    "title": {
+      "line1": "From sketch to façade,",
+      "line2": "in 4 steps."
+    },
+    "steps": [
+      {
+        "number": "01",
+        "title": "Technical briefing",
+        "description": "We understand the project, deadlines, and specifications."
+      },
+      {
+        "number": "02",
+        "title": "Design and quotation",
+        "description": "Sizing, finish selection, and detailed proposal with timelines."
+      },
+      {
+        "number": "03",
+        "title": "Manufacturing",
+        "description": "CNC cutting, bending, and part preparation with millimeter precision in our factory."
+      },
+      {
+        "number": "04",
+        "title": "Delivery and installation",
+        "description": "Specialized logistics and technical support throughout the installation."
+      }
+    ]
+}

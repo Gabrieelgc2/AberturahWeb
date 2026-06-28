@@ -25,18 +25,18 @@ export const Route = createFileRoute("/contato")({
 });
 
 function ContatoPage() {
-const {t} = useTranslation();
+const {t} = useTranslation("pagelayout");
   return (
     <>
       <PageLayout
-        eyebrow={t("PageLayout.eyebrow5")}
+        eyebrow={t("eyebrow5")}
         title={
           <>
-            {t("PageLayout.title5.line1")}<br />
-            <span>{t("PageLayout.title5.line2")}</span>
+            {t("title5.line1")}<br />
+            <span>{t("title5.line2")}</span>
           </>
         }
-        description={t("PageLayout.description5")}
+        description={t("description5")}
         image={contato}
       />
       <InformacoesContato />

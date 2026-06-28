@@ -3,26 +3,26 @@ import { SectionHeading } from "../../components/SectionHeading";
 import { useTranslation } from "react-i18next";
 
 export function Testimonials() {
-const { t } = useTranslation();
-const testimonialsRaw = t("testimonials.items", { returnObjects: true, defaultValue: [], }); 
+const { t } = useTranslation("testimonials");
+const testimonialsRaw = t("items", { returnObjects: true, defaultValue: [], }); 
 const testimonials = Array.isArray(testimonialsRaw) ? testimonialsRaw : [];
   return (
     <section className="bg-background py-24 sm:py-32">
       <div className="container mx-auto max-w-7xl px-6">
         <SectionHeading
-          eyebrow={t("testimonials.badge")}
+          eyebrow={t("badge")}
           eyebrowClassName="RevealText"
           title={
             <>
-              <span className="font-sans text-5xl">{t("testimonials.title.line1")}</span>
+              <span className="font-sans text-5xl">{t("title.line1")}</span>
               <br />
-              <span className="font-sans text-5xl">{t("testimonials.title.line2")}</span>
+              <span className="font-sans text-5xl">{t("title.line2")}</span>
             </>
           }
         />
 
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
-          {testimonials.map((testimonial, i) => (
+          {testimonials.map((testimonial) => (
             <article
               key={testimonial.name}
               className="RevealText group relative flex flex-col rounded-3xl border border-[color:var(--steel-light)] bg-background p-8 transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-card)]"

@@ -9,7 +9,7 @@ interface Props {
 }
 
 export function PageLayout({ eyebrow, title, description, image }: Props) {
-  const { t } = useTranslation();
+  const { t } = useTranslation("pagelayout");
   return (
     <section
       className="relative overflow-hidden pb-20 pt-40 sm:pb-28 sm:pt-48 w-full background"
@@ -17,7 +17,7 @@ export function PageLayout({ eyebrow, title, description, image }: Props) {
       <div
         className="pointer-events-none absolute inset-0 opacity-[.20]"
       >
-        <img src={image ?? heroImage} alt={t("pageLayout.backgroundAlt")} className="h-full w-full object-cover" />
+        <img src={image ?? heroImage} alt={t("backgroundAlt")} className="h-full w-full object-cover" />
       </div>
       <div className="container relative mx-auto max-w-5xl px-6 text-center">
         <div className="RevealText inline-flex items-center gap-2 rounded-full border border-[#white]/30 px-4 py-1.5 text-xs uppercase tracking-widest text-[white] font-sans">

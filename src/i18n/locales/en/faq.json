@@ -1,0 +1,63 @@
+{
+    "badge": "Frequently Asked Questions",
+    "acm": {
+      "title": {
+        "line1": "Everything you need to know",
+        "line2": "about ACM."
+      },
+      "items": [
+        {
+          "question": "What is ACM and where can it be used?",
+          "answer": "ACM (Aluminum Composite Material) is a panel composed of two aluminum sheets bonded to a polyethylene core. It is widely used for ventilated façades, interior wall cladding, signage, and urban furniture due to its lightweight structure, flat surface, and exceptional durability."
+        },
+        {
+          "question": "What is the recommended thickness for façades?",
+          "answer": "For exterior façades, we recommend 4 mm panels with aluminum skins ranging from 0.30 mm to 0.50 mm. For interior applications or signage, 3 mm panels are generally sufficient. Our technical team will recommend the ideal specification for each project."
+        },
+        {
+          "question": "Do you provide panel fabrication services?",
+          "answer": "Yes. We offer CNC cutting, routing, folding, machining, and cassette panel fabrication in our own manufacturing facility. This ensures millimeter-level precision and reduces installation time on site."
+        },
+        {
+          "question": "What are your lead times?",
+          "answer": "Since all of our products are custom-made using premium materials, lead times are defined according to the level of customization and complexity of each project."
+        },
+        {
+          "question": "Which regions do you deliver to?",
+          "answer": "We provide both domestic and international shipping. Our specialized logistics and protective packaging ensure that every panel arrives safely and in perfect condition."
+        },
+        {
+          "question": "How does the warranty work?",
+          "answer": "Our ACM panels include warranties of up to 10 years for architectural applications, depending on the selected finish. We also provide complete technical documentation and after-sales support."
+        }
+      ]
+    },
+    "pvc": {
+      "title": {
+        "line1": "Everything you need to know",
+        "line2": "about PVC."
+      },
+      "items": [
+        {
+          "question": "What is PVC?",
+          "answer": "PVC (Polyvinyl Chloride) is one of the world's most widely used and versatile plastics. It is composed of approximately 57% chlorine (derived from salt) and 43% ethylene (derived from petroleum). Naturally rigid, PVC can also be made flexible through the addition of specific additives."
+        },
+        {
+          "question": "Where can PVC be used?",
+          "answer": "PVC is widely used across multiple industries thanks to its durability, fire resistance, and excellent insulating properties.\n\nMain applications include:\n\n• Construction: Pipes and fittings, doors and window profiles, ceilings, vinyl flooring, and wall cladding.\n\n• Healthcare: Blood and IV bags, oxygen tubing, and catheters.\n\n• Electrical and Telecommunications: Insulation for electrical wires and cables.\n\n• Signage and Fashion: Vinyl banners, advertising materials, and synthetic leather for bags and footwear."
+        },
+        {
+          "question": "Is PVC recyclable?",
+          "answer": "Yes. PVC is 100% recyclable and can be melted and reshaped multiple times. All production waste generated in our manufacturing facility is carefully separated and sent to certified recycling companies."
+        },
+        {
+          "question": "Is PVC a durable material?",
+          "answer": "PVC is highly resistant to impact, moisture, corrosion, and insects, making it an extremely durable material. It withstands weather exposure and everyday wear with minimal maintenance."
+        },
+        {
+          "question": "How should PVC products be maintained?",
+          "answer": "Unlike materials such as wood, PVC requires very little maintenance. It does not rot, rust, or require regular painting. Occasional cleaning with mild soap and water is enough to keep it looking its best, saving both time and maintenance costs."
+        }
+      ]
+    }
+}

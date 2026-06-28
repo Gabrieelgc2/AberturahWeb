@@ -1,0 +1,35 @@
+{
+  "category": "Categoria",
+
+  "categoriesModal": {
+    "doors": "Portas",
+    "brises": "Brises",
+    "pergolas": "Pergolados",
+    "cladding": "Revestimentos"
+  },
+
+  "name": {
+    "doors": "Porta",
+    "brises": "Brise",
+    "pergolas": "Pergolado",
+    "cladding": "Revestimento"
+  },
+
+  "selectBaseMaterial": "Selecione o material base:",
+  "premiumSolutions": "Soluções Premium",
+  "pvcUsage": "Uso do PVC",
+  "environment": "Ambiente",
+  "finishesIn": "Acabamentos em",
+  "back": "Voltar",
+  "selectedFinish": "Acabamento Selecionado",
+
+  "materials": {
+    "acm": "ACM",
+    "pvc": "PVC"
+  },
+
+  "scope": {
+    "Interno": "Interno",
+    "Externo": "Externo"
+  }
+}

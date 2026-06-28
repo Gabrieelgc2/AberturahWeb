@@ -1,0 +1,42 @@
+{
+    "badge": "ABERTURAh! · MATERIAL ACM",
+    "title": {
+      "line1": "Por que nos",
+      "line2": "escolher?"
+    },
+    "description": "A ABERTURAH! chega ao mercado para propor soluções integradas e transformar fachadas, revestimentos e projetos arquitetônicos. Combinamos matéria-prima premium, tecnologia de ponta, produção e atendimento próximo, para entregar resultados que valorizam cada obra, incluindo produtos que oferecem durabilidade ao longo do tempo, com design e funcionalidade.",
+    "items": {
+      "quality": {
+        "title": "Qualidade certificada",
+        "description": "Trabalhamos exclusivamente com chapas de ACM e PVC de primeira linha, seguindo as normas de fabricação e montagem, para garantir durabilidade superior, resistência às intempéries e acabamento impecável em cada projeto."
+      },
+      "finishes": {
+        "title": "Variedade de Acabamentos",
+        "description": "Mais de 40 cores e texturas disponíveis — do fosco ao brilhante, passando pelo acabamento amadeirado e efeitos metálicos. Cada detalhe com a identidade que ela merece."
+      },
+      "installation": {
+        "title": "Instalação",
+        "description": "Equipe própria capacitada para trabalhos em altura de acordo com as normas técnicas exigidas."
+      },
+      "manufacturing": {
+        "title": "Produção própria",
+        "description": "Corte CNC, dobra e usinagem realizados em nossa fábrica. Precisão milimétrica para fachadas ventiladas, portas, brises, pergolados e revestimentos sob medida."
+      },
+      "deadline": {
+        "title": "Prazo",
+        "description": "Linha de produção otimizada para entrega e instalação de acordo com os cronogramas estabelecidos."
+      },
+      "logistics": {
+        "title": "Logística Eficiente",
+        "description": "Logística estruturada para atender seu projeto em qualquer localidade. Suas chapas e portas chegam devidamente protegidas, prontas para início das etapas de instalação."
+      },
+      "support": {
+        "title": "Suporte Técnico Completo",
+        "description": "Equipe técnica à disposição para dimensionamento, especificação de subestrutura e acompanhamento de obra do início ao fim."
+      },
+      "warranty": {
+        "title": "Garantia",
+        "description": "Nossos produtos possuem garantia de 10 anos de acordo com as especificações técnicas e Manual do Cliente."
+      }
+    }
+}

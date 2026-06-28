@@ -1,0 +1,21 @@
+{
+    "categoriesButton": {
+        "Todos": "Todos",
+        "doors": "Portas",
+        "brises": "Brises",
+        "pergolas": "Pergolados",
+        "cladding": "Revestimentos"
+    },
+    "name": {
+        "doors": "Portas",
+        "brises": "Brises",
+        "pergolas": "Pergolados",
+        "cladding": "Revestimentos"
+    },
+    "description": {
+        "doors": "Clique para ver mais detalhes",
+        "brises": "Clique para ver mais detalhes",
+        "pergolas": "Clique para ver mais detalhes",
+        "cladding": "Clique para ver mais detalhes"
+    }
+}

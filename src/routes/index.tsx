@@ -9,7 +9,7 @@ const ProductsPreview = lazy(() =>
 );
 
 const WhyChooseUs = lazy(() =>
-  import("../components/WhyChooseUs").then((module) => ({
+  import("../components/home/WhyChooseUs").then((module) => ({
     default: module.WhyChooseUs,
   })),
 );
@@ -32,12 +32,12 @@ const Process = lazy(() =>
   })),
 );
 const FAQ = lazy(() =>
-  import("../components/home/FAQ").then((module) => ({
-    default: module.FAQ,
+  import("../components/Faq/FAQ").then((module) => ({
+    default: module.Faq,
   })),
 );
 const CTA = lazy(() =>
-  import("../components/home/CTA").then((module) => ({
+  import("../components/CTA").then((module) => ({
     default: module.CTA,
   })),
 );

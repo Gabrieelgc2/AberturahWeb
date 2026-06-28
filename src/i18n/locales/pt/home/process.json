@@ -1,0 +1,29 @@
+{
+    "badge": "Como trabalhamos",
+    "title": {
+      "line1": "Do esboço à fachada,",
+      "line2": "em 4 etapas."
+    },
+    "steps": [
+      {
+        "number": "01",
+        "title": "Análise técnica",
+        "description": "Avaliamos o projeto, especificações e detalhamento."
+      },
+      {
+        "number": "02",
+        "title": "Projeto e cotação",
+        "description": "Dimensionamento, escolha de acabamentos e proposta detalhada."
+      },
+      {
+        "number": "03",
+        "title": "Produção",
+        "description": "Corte CNC, dobra e preparo das peças com precisão milimétrica em nossa fábrica."
+      },
+      {
+        "number": "04",
+        "title": "Entrega e instalação",
+        "description": "Logística especializada e acompanhamento técnico durante toda a instalação."
+      }
+    ]
+}
