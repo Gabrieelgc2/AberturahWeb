@@ -1,3 +1,4 @@
+import { SITE_SOCIAL, WHATSAPP_URL } from "@/config/site";
 import {
   IoLogoFacebook,
   IoLogoInstagram,
@@ -9,22 +10,22 @@ const socials = [
   {
     icon: IoLogoWhatsapp,
     label: "WhatsApp",
-    href: "https://wa.me/SEUNUMERO",
+    href: WHATSAPP_URL,
   },
   {
     icon: IoLogoFacebook,
     label: "Facebook",
-    href: "https://facebook.com",
+    href: SITE_SOCIAL.facebook
   },
   {
     icon: IoLogoInstagram,
     label: "Instagram",
-    href: "https://instagram.com",
+    href: SITE_SOCIAL.instagram,
   },
   {
     icon: IoLogoLinkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: SITE_SOCIAL.linkedin
   },
 ];
 

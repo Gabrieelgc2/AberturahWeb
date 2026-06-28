@@ -9,10 +9,9 @@ export const SITE_CONTACT = {
 } as const;
 
 export const SITE_SOCIAL = {
-  instagram: "https://www.instagram.com/aberturah",
+  instagram: "https://www.instagram.com/aberturah/",
   linkedin: "https://www.linkedin.com",
   facebook: "https://www.facebook.com",
-  whatsapp: "https://www.whatsapp.com",
 } as const;
 
 export const NAV_ITEMS = [
