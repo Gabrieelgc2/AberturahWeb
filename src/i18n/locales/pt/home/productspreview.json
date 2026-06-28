@@ -8,15 +8,15 @@
     "explore": "Explorar",
     "categories": {
       "porta": {
-        "name": "Porta",
+        "name": "Portas",
         "description": "Portas internas e externas produzidas em ACM ou PVC com estrutura de abertura em giro, pivotante ou de correr."
       },
       "brise": {
-        "name": "Brise",
+        "name": "Brises",
         "description": "Para áreas internas e externas produzidas em ACM ou PVC."
       },
       "pergolado": {
-        "name": "Pergolado",
+        "name": "Pergolados",
         "description": "Para áreas internas e externas produzidas em ACM ou PVC."
       },
       "revestimento": {

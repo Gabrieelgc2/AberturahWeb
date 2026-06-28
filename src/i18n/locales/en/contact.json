@@ -17,7 +17,10 @@
         "line1": "Response within",
         "line2": "minutes."
       },
-      "description": "Our commercial team is available via WhatsApp during business hours. Send your project briefing and receive a personalized quote.",
+     "description": "Our sales team is available on",
+     "description2": "WhatsApp during business hours.",
+     "description3": "Share your project details and",
+     "description4": "receive a personalized quotation.",
       "button": "Chat on WhatsApp",
       "commercial": "Business WhatsApp",
       "helper": "Send photos, plans, or descriptions. The more details you provide, the more accurate our proposal will be."
