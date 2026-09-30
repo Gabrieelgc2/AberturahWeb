@@ -1,4 +1,4 @@
-# ABERTURAh! Website
+# ABERTURAh!
 
 Website institucional da ABERTURAh!, empresa brasileira que atua com chapas ACM e  projetos arquitetônicos. O site apresenta a empresa, seus produtos, projetos realizados e canais de contato.
 
